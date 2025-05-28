@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTMX Doc</title>
+        <script src="/static/mods/htmx.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-400">
+        <h1
+            id="title"
+            class="p-4"
+            hx-get="/" 
+            hx-trigger="click"
+            hx-target="#title"
+            hx-swap="innerHTML"
+        >The real title</h1>
+        <div id="page-list" class="pl-4 flex flex-col w-[400px]">
+            Click button to load content.
+            <button
+                class="p-1 px-2 bg-blue-400 rounded"
+                hx-get="/page"
+                hx-target="#page-list"
+                hx-swap="innerHTML"
+            >Load</button>
+        </div>
+    </body>
+</html>
