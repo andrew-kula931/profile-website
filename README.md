@@ -1,3 +1,3 @@
 # profile-website
 
-Simple resume website detailing facts about me built in HTMX and Go for speed.
+Simple resume app, will update soon.

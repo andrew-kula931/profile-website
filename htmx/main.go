@@ -7,21 +7,22 @@ import (
 	"net/http"
 )
 
-type Todo struct {
-	Id      int
-	message string
-}
-
 func main() {
+	tmpl := template.Must(template.ParseGlob("/*.html"))
+
 	// Serves the static files
 	fs := http.FileServer(http.Dir("./static"))
 	http.Handle("/static/", http.StripPrefix("/static/", fs))
 
-	// Serving root page
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		tmpl := template.Must(template.ParseFiles("index.html"))
-		tmpl.Execute(w, nil)
+		tmpl.ExecuteTemplate(w, "index.html", nil)
 	})
+
+	// Serving root page
+	// http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+	// 	tmpl := template.Must(template.ParseFiles("index.html"))
+	// 	tmpl.Execute(w, nil)
+	// })
 
 	// Serve HTMX partials
 	http.HandleFunc("/page", func(w http.ResponseWriter, r *http.Request) {
