@@ -1,5 +1,6 @@
 ---
 import Nav from '../components/nav.astro';
+import '../styles/global.css';
 ---
 
 <html lang="en">
@@ -9,25 +10,28 @@ import Nav from '../components/nav.astro';
     <title>Astro</title>
   </head>
   <body>
-	<div class="flex flex-col h-screen bg-gradient-to-b from-blue-200 from-[93%] to-blue-500 to-[99%]">
+	<div class="flex flex-col h-screen bg-gradient-to-b from-blue-200 to-blue-400">
 		<Nav />
-    <div 
-      id="whoami" 
-      class="flex flex-col h-[200px] bg-gradient-to-r from-blue-300 to-blue-400 opacity-0 translate-y-10 transition-all duration-700"
+    <div class="p-4 space-y-2">
+      <div 
+        id="whoami" 
+        class="home-tile bg-gradient-to-r from-blue-300 to-blue-400 opacity-0 translate-y-10 transition-all duration-700"
       >
-      <p class="p-4 text-xl">Who Am I?</p>
-    </div>
-    <div 
-      id="second" 
-      class="flex flex-col h-[200px] bg-gradient-to-r from-blue-400 to-blue-300 opacity-0 translate-y-10 transition-all delay-200 duration-700"
+        <p class="p-4 text-xl">Who Am I?</p>
+        <p class="pl-6">Fill in bio here...</p>
+      </div>
+      <div 
+        id="second" 
+        class="home-tile bg-gradient-to-r from-blue-400 to-blue-300 opacity-0 translate-y-10 transition-all delay-200 duration-700"
       >
-      Text
-    </div>
-    <div 
-      id="third" 
-      class="flex flex-col h-[200px] bg-gradient-to-r from-blue-300 to-blue-400 opacity-0 translate-y-10 transition-all delay-400 duration-700"
+        Text
+      </div>
+      <div 
+        id="third" 
+        class="home-tile bg-gradient-to-r from-blue-300 to-blue-400 opacity-0 translate-y-10 transition-all delay-400 duration-700"
       >
-      Text
+        Text
+      </div>
     </div>
   </body>
   <script>
