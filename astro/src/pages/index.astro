@@ -9,9 +9,40 @@ import Nav from '../components/nav.astro';
     <title>Astro</title>
   </head>
   <body>
-	<div class="h-screen bg-gradient-to-b from-gray-200 from-[93%] to-gray-500 to-[99%]">
+	<div class="flex flex-col h-screen bg-gradient-to-b from-blue-200 from-[93%] to-blue-500 to-[99%]">
 		<Nav />
-		<h1>Personal Profile Website</h1>
-	</div>
+    <div 
+      id="whoami" 
+      class="flex flex-col h-[200px] bg-gradient-to-r from-blue-300 to-blue-400 opacity-0 translate-y-10 transition-all duration-700"
+      >
+      <p class="p-4 text-xl">Who Am I?</p>
+    </div>
+    <div 
+      id="second" 
+      class="flex flex-col h-[200px] bg-gradient-to-r from-blue-400 to-blue-300 opacity-0 translate-y-10 transition-all delay-200 duration-700"
+      >
+      Text
+    </div>
+    <div 
+      id="third" 
+      class="flex flex-col h-[200px] bg-gradient-to-r from-blue-300 to-blue-400 opacity-0 translate-y-10 transition-all delay-400 duration-700"
+      >
+      Text
+    </div>
   </body>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const content = document.getElementById('whoami');
+      content?.classList.remove('opacity-0', 'translate-y-10');
+      content?.classList.add('opacity-100', 'translate-y-0');
+
+      const content2 = document.getElementById('second');
+      content2?.classList.remove('opacity-0', 'translate-y-10');
+      content2?.classList.add('opacity-100', 'translate-y-0');
+
+      const content3 = document.getElementById('third');
+      content3?.classList.remove('opacity-0', 'translate-y-10');
+      content3?.classList.add('opacity-100', 'translate-y-0');
+    })
+  </script>
 </html>
