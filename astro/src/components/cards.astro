@@ -1,0 +1,60 @@
+---
+---
+
+<div id="carousel" class="w-full h-screen p-6 relative overflow-hidden">
+    <div class="relative w-full h-full flex items-center justify-center">
+        <!-- Buttons -->
+        <button onclick="changeSlide(-1)"
+        class="absolute left-4 top-1/2 transform -translate-y-1/2 text-4xl w-12 h-12 bg-blue-300 bg-opacity-50 rounded-full hover:opacity-80 z-20 hover:bg-blue-200">
+        &lt;
+        </button>
+
+        <button onclick="changeSlide(1)" 
+        class="absolute right-4 top-1/2 transform -translate-y-1/2 text-4xl w-12 h-12 bg-blue-300 bg-opacity-50 rounded-full hover:opacity-80 z-20 hover:bg-blue-200">
+        &gt;
+        </button>
+
+        <!-- Card Containers -->
+        <div id="cards" class="relative w-full h-full"></div>
+    </div>
+    <script type="module">
+        const cardsData = [
+            {title: 'Experience', content: 'Text here'},
+            {title: 'Card 2', content: 'Text here'},
+            {title: 'Card 3', content: 'Text here'}
+        ];
+
+        let current = 0;
+
+        function renderCards() {
+            const container = document.getElementById('cards');
+            container.innerHTML = '';
+
+            cardsData.forEach((card, index) => {
+                const cardDiv = document.createElement('div');
+                cardDiv.className = `
+                absolute h-[80%] w-[50%] transition-all duration-700 ease-in-out 
+                ${index === current ? 'z-10 opacity-100 left-1/2 transform -translate-x-1/2' :
+                    index < current ? 'z-0 opacity-50 left-[10%] transform scale-90' :
+                    'z-0 opacity-50 right-[10%] transform scale-90'}
+                bg-gray-100 border-4 border-blue-500 rounded shadow-lg
+                `;
+
+                cardDiv.innerHTML = `
+                <h1 class="p-4 text-2xl">${card.title}</h1>
+                <p class="px-4">${card.content}</p>
+                `;
+
+                container.appendChild(cardDiv);
+            });
+        }
+
+        function changeSlide(direction) {
+            console.log("Clicked");
+            current = (current + direction + cardsData.length) % cardsData.length;
+            renderCards();
+        }
+
+        renderCards();
+    </script>
+</div>

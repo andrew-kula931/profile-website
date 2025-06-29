@@ -1,7 +1,6 @@
 ---
 import Nav from '../components/nav.astro';
-
-const title = "About Me"
+import Cards from '../components/cards.astro';
 ---
 
 <html lang="en">
@@ -11,7 +10,9 @@ const title = "About Me"
     <title>Astro</title>
   </head>
   <body>
-    <Nav />
-    <h1>{title}</h1>
+    <div class="flex flex-col w-screen h-screen bg-gradient-to-b from-blue-200 to-blue-400">
+      <Nav />
+      <Cards />
+    </div>
   </body>
 </html>
