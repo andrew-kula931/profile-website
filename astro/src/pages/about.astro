@@ -12,7 +12,42 @@ import Cards from '../components/cards.astro';
   <body>
     <div class="flex flex-col w-screen h-screen bg-gradient-to-b from-blue-200 to-blue-400">
       <Nav />
-      <Cards />
+      <div class="p-4 space-y-2">
+        <div 
+          id="whoami" 
+          class="home-tile bg-gradient-to-r from-blue-300 to-blue-400 opacity-0 translate-y-10 transition-all duration-700"
+        >
+          <p class="p-4 text-xl">Who Am I?</p>
+          <p class="pl-6">Fill in bio here...</p>
+        </div>
+        <div 
+          id="second" 
+          class="home-tile bg-gradient-to-r from-blue-400 to-blue-300 opacity-0 translate-y-10 transition-all delay-200 duration-700"
+        >
+          Text
+        </div>
+        <div 
+          id="third" 
+          class="home-tile bg-gradient-to-r from-blue-300 to-blue-400 opacity-0 translate-y-10 transition-all delay-400 duration-700"
+        >
+          Text
+        </div>
+      </div>
     </div>
   </body>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const content = document.getElementById('whoami');
+      content?.classList.remove('opacity-0', 'translate-y-10');
+      content?.classList.add('opacity-100', 'translate-y-0');
+
+      const content2 = document.getElementById('second');
+      content2?.classList.remove('opacity-0', 'translate-y-10');
+      content2?.classList.add('opacity-100', 'translate-y-0');
+
+      const content3 = document.getElementById('third');
+      content3?.classList.remove('opacity-0', 'translate-y-10');
+      content3?.classList.add('opacity-100', 'translate-y-0');
+    })
+  </script>
 </html>

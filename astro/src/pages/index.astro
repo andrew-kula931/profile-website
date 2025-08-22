@@ -1,5 +1,6 @@
 ---
 import Nav from '../components/nav.astro';
+import Footer from '../components/footer.astro';
 import '../styles/global.css';
 ---
 
@@ -12,42 +13,52 @@ import '../styles/global.css';
   <body>
 	<div class="flex flex-col h-screen bg-gradient-to-b from-blue-200 to-blue-400">
     <Nav />
-    <div class="p-4 space-y-2">
-      <div 
-        id="whoami" 
-        class="home-tile bg-gradient-to-r from-blue-300 to-blue-400 opacity-0 translate-y-10 transition-all duration-700"
-      >
-        <p class="p-4 text-xl">Who Am I?</p>
-        <p class="pl-6">Fill in bio here...</p>
+    <div class="h-full w-full items-center">
+      <div class="flex flex-wrap items-center h-[400px] justify-center">
+        <div class="bg-blue-800">
+          <img class="h-[250px] w-[200px] p-4" src="/selfie.jpg" alt="Selfie">
+        </div>
+        <ul id="summary_list" class="list-disc pl-5 text-lg">
+          <li id="dev" class="opacity-0 translate-x-10 transition-all delay-100 duration-1000">Software Developer</li>
+          <li id="one" class="opacity-0 translate-x-10 transition-all delay-300 duration-1000">Fullstack Experience</li>
+          <li id="two" class="opacity-0 translate-x-10 transition-all delay-200 duration-1000">Flutter/Dart</li>
+          <li id="three" class="opacity-0 translate-x-10 transition-all delay-400 duration-1000">PostgreSQL</li>
+        </ul>
       </div>
-      <div 
-        id="second" 
-        class="home-tile bg-gradient-to-r from-blue-400 to-blue-300 opacity-0 translate-y-10 transition-all delay-200 duration-700"
-      >
-        Text
-      </div>
-      <div 
-        id="third" 
-        class="home-tile bg-gradient-to-r from-blue-300 to-blue-400 opacity-0 translate-y-10 transition-all delay-400 duration-700"
-      >
-        Text
-      </div>
+      <div id="scroll_text" class="flex w-full justify-center opacity-0 translate-y-10 transition-all duration-1000" data-animate>Text</div>
     </div>
+    <Footer />
   </div>
   </body>
   <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      const content = document.getElementById('whoami');
-      content?.classList.remove('opacity-0', 'translate-y-10');
-      content?.classList.add('opacity-100', 'translate-y-0');
+    window.addEventListener("DOMContentLoaded", () => {
+      const devContent = document.getElementById("dev");
+      devContent?.classList.remove('opacity-0', 'translate-x-10');
+      devContent?.classList.add('opacity-100', 'translate-x-0');
 
-      const content2 = document.getElementById('second');
-      content2?.classList.remove('opacity-0', 'translate-y-10');
-      content2?.classList.add('opacity-100', 'translate-y-0');
+      const firstContent = document.getElementById("one");
+      firstContent?.classList.remove('opacity-0', 'translate-x-10');
+      firstContent?.classList.add('opacity-100', 'translate-x-0');
 
-      const content3 = document.getElementById('third');
-      content3?.classList.remove('opacity-0', 'translate-y-10');
-      content3?.classList.add('opacity-100', 'translate-y-0');
-    })
+      const secondContent = document.getElementById("two");
+      secondContent?.classList.remove('opacity-0', 'translate-x-10');
+      secondContent?.classList.add('opacity-100', 'translate-x-0');
+
+      const thirdContent = document.getElementById("three");
+      thirdContent?.classList.remove('opacity-0', 'translate-x-10');
+      thirdContent?.classList.add('opacity-100', 'translate-x-0');
+
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.remove('opacity-0', 'translate-y-10')
+          e.target.classList.add("opacity-100", 'translate-y-0');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
   </script>
 </html>
