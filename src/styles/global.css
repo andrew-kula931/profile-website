@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @layer components {
     .home-tile {
         display: flex;
@@ -9,13 +11,4 @@
         border-color: #1d4ed8;
         border-style: solid;
     }
-}
-
-:root {
-    /* Light Theme */
-    --primary-color: #007bff;
-    --secondary-color: #a9d2fd;
-    --background-color: #007bff;
-    --text-color: #212529;
-    background: linear-gradient(to bottom, #bfdbfe, #60a5fa);
 }
