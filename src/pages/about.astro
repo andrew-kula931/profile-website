@@ -1,9 +1,10 @@
 ---
 import Nav from '../components/nav.astro';
+import Footer from '../components/footer.astro';
 import '../styles/global.css';
 ---
 
-<html lang="en">
+<html id="html" lang="en" class="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -15,20 +16,31 @@ import '../styles/global.css';
       <img class="fullscreen-img" id="fullscreen-img" src="/profile-website/PurchaseOrder.png" alt="Purchase Order Tracking Application">
     </div>  
 
-    <div class="flex flex-col h-full bg-gradient-to-b from-blue-200 to-blue-400">
+    <div class="flex flex-col h-full bg-gradient-to-b from-blue-200 to-blue-400 dark:from-slate-900 dark:via-gray-800 dark:to-black">
       <Nav />
+      <div id="day_button" class="text-white bg-gray-800 w-[32px] rounded p-1 cursor-pointer absolute right-2 top-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <circle cx="12" cy="12" r="5" stroke-width="2"/>
+          <path stroke-width="2" d="M12 1v2m0 18v2m11-11h-2M3 12H1m16.95-6.95l-1.414 1.414M6.464 17.536l-1.414 1.414m0-13.657l1.414 1.414M18.364 18.364l1.414 1.414"/>
+        </svg>
+      </div>
+      <div id="night_button" class="bg-blue-500 w-[32px] rounded p-1 cursor-pointer absolute right-2 top-3 hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/>
+        </svg>
+      </div>
       <div class="flex items-center justify-center">
         <div class="flex flex-col p-2 space-y-2 w-max max-w-[800px] justify-center items-center">
           <div 
             id="whoami" 
-            class="home-tile bg-gradient-to-r from-blue-300 to-blue-400 opacity-0 translate-y-10 transition-all duration-700"
+            class="home-tile bg-gradient-to-r from-blue-300 to-blue-400 dark:from-slate-800 dark:to-slate-900 dark:text-white opacity-0 translate-y-10 transition-all duration-700"
           >
             <p class="p-2 text-xl">Who Am I?</p>
             <p class="pl-4 pr-4 pb-4">Currently a software engineering student at the University of Nebraska-Lincoln while also working in industry and participating in research.</p>
           </div>
           <div 
             id="second" 
-            class="home-tile bg-gradient-to-r from-blue-400 to-blue-300 opacity-0 translate-y-10 transition-all delay-200 duration-700"
+            class="home-tile bg-gradient-to-r from-blue-400 to-blue-300 dark:from-slate-900 dark:to-slate-800 dark:text-white opacity-0 translate-y-10 transition-all delay-200 duration-700"
           >
             <section class="flex flex-row justify-between items-center border-b-2 border-blue-800">
               <div class="flex flex-col">
@@ -64,20 +76,21 @@ import '../styles/global.css';
                   <li>Realtime features, image editor, team/group/individual based messaging architecture.</li>
                 </ul>
             </ul>
+            <div class="flex justify-center items-center pb-4">
+              <img id="LiftUpImage" class="thumbnail" src="/profile-website/LiftUp.png" alt="Lift Up Social Media Platform"/>
+            </div>
 
-          </div>
-          <div 
-            id="third" 
-            class="home-tile bg-gradient-to-r from-blue-300 to-blue-400 opacity-0 translate-y-10 transition-all delay-400 duration-700"
-          >
-            Text
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   </body>
   <script>
     window.addEventListener('DOMContentLoaded', () => {
+      document.getElementById("night_button")?.addEventListener("click", () => switchTheme(true));
+      document.getElementById("day_button")?.addEventListener("click", () => switchTheme(false));
+
       const content = document.getElementById('whoami');
       content?.classList.remove('opacity-0', 'translate-y-10');
       content?.classList.add('opacity-100', 'translate-y-0');
@@ -91,8 +104,10 @@ import '../styles/global.css';
       content3?.classList.add('opacity-100', 'translate-y-0');
 
       const poImage = document.getElementById('poImage') as HTMLImageElement;
+      const liftUpImage = document.getElementById('LiftUpImage') as HTMLImageElement;
       const overlay = document.getElementById('overlay');
       poImage.addEventListener("click", () => openFullscreen(poImage));
+      liftUpImage.addEventListener("click", () => openFullscreen(liftUpImage));
       overlay?.addEventListener("click", closeFullscreen);
     })
 
@@ -106,6 +121,22 @@ import '../styles/global.css';
 
     function closeFullscreen() {
       document.getElementById("overlay")!.style.display = 'none';
+    }
+
+    function switchTheme(isDay: boolean) {
+      const html = document.getElementById("html");
+      const night = document.getElementById("night_button");
+      const day = document.getElementById("day_button");
+
+      if (isDay) {
+        html?.classList.add('dark');
+        night?.classList.add('hidden');
+        day?.classList.remove('hidden');
+      } else {
+        html?.classList.remove('dark');
+        night?.classList.remove('hidden');
+        day?.classList.add('hidden');
+      }
     }
   </script>
 </html>
