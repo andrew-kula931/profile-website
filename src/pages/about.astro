@@ -1,6 +1,6 @@
 ---
 import Nav from '../components/nav.astro';
-import Cards from '../components/cards.astro';
+import '../styles/global.css';
 ---
 
 <html lang="en">
@@ -10,27 +10,67 @@ import Cards from '../components/cards.astro';
     <title>Astro</title>
   </head>
   <body>
-    <div class="flex flex-col w-screen h-screen bg-gradient-to-b from-blue-200 to-blue-400">
+
+    <div class="overlay" id="overlay" onclick="closeFullscreen()">
+      <img class="fullscreen-img" id="fullscreen-img" src="/profile-website/PurchaseOrder.png" alt="Purchase Order Tracking Application">
+    </div>  
+
+    <div class="flex flex-col w-screen h-full bg-gradient-to-b from-blue-200 to-blue-400">
       <Nav />
-      <div class="p-4 space-y-2">
-        <div 
-          id="whoami" 
-          class="home-tile bg-gradient-to-r from-blue-300 to-blue-400 opacity-0 translate-y-10 transition-all duration-700"
-        >
-          <p class="p-4 text-xl">Who Am I?</p>
-          <p class="pl-6">Fill in bio here...</p>
-        </div>
-        <div 
-          id="second" 
-          class="home-tile bg-gradient-to-r from-blue-400 to-blue-300 opacity-0 translate-y-10 transition-all delay-200 duration-700"
-        >
-          Text
-        </div>
-        <div 
-          id="third" 
-          class="home-tile bg-gradient-to-r from-blue-300 to-blue-400 opacity-0 translate-y-10 transition-all delay-400 duration-700"
-        >
-          Text
+      <div class="flex w-screen items-center justify-center">
+        <div class="flex flex-col p-4 space-y-2 max-w-[800px] justify-center items-center">
+          <div 
+            id="whoami" 
+            class="home-tile bg-gradient-to-r from-blue-300 to-blue-400 opacity-0 translate-y-10 transition-all duration-700"
+          >
+            <p class="p-2 text-xl">Who Am I?</p>
+            <p class="pl-4 pr-4 pb-4">I'm currently a software engineering student at the University of Nebraska-Lincoln while also working in industry and participating in research.</p>
+          </div>
+          <div 
+            id="second" 
+            class="home-tile bg-gradient-to-r from-blue-400 to-blue-300 opacity-0 translate-y-10 transition-all delay-200 duration-700"
+          >
+            <section class="flex flex-row justify-between items-center border-b-2 border-blue-800">
+              <div class="flex flex-col">
+                <p class="pl-2 pt-2 text-xl">2Mation Solutions Inc.</p>
+                <p class="pl-2 text-xs">April 2024 - Present</p>
+              </div>
+              <img class="h-[75px] w-[100px] p-2" src="/profile-website/2mation.png" alt="2Mation Logo">
+            </section>
+            <p class="pl-4 pt-2 font-bold">Responsbilities:</p>
+            <ul class="list-disc pl-8 pb-4 pt-1 space-y-1">
+              <li>Developing and maintaining multi-platform applications using a Flutter, PostgreSQL, and Azure stack.</li>
+              <li>Designed and implemented database schemas, server-side logic, RLS, and microservices.</li>
+              <li>Handled performance oriented processes and optimized client-server connections for smooth UX.</li>
+              <li>Implemented realtime features such as chats using websockets.</li>
+            </ul>
+
+            <p class="pl-4 pt-2 font-bold">Projects:</p>
+            <ul class="list-disc pl-8 pb-4 pt-1 space-y-1">
+              <li>Inventory Management Software</li>
+                <ul class="list-disc pl-8">
+                  <li>A series of multiple apps segmenting financial documentation accordingly.</li>
+                  <li>Purchase Orders, Receipts, Staff Requests, Textbook Inventories</li>
+                </ul>
+            </ul>
+            <div class="flex justify-center items-center pb-4">
+              <img id="poImage" class="thumbnail" src="/profile-website/PurchaseOrder.png" alt="Purchase Order Tracking Application"/>
+            </div>
+
+            <ul class="list-disc pl-8 pb-4 pt-4">
+              <li>Social Media Application</li>
+                <ul class="list-disc pl-8 space-y-1">
+                  <li>A social platform for individuals of a community to help one another.</li>
+                </ul>
+            </ul>
+
+          </div>
+          <div 
+            id="third" 
+            class="home-tile bg-gradient-to-r from-blue-300 to-blue-400 opacity-0 translate-y-10 transition-all delay-400 duration-700"
+          >
+            Text
+          </div>
         </div>
       </div>
     </div>
@@ -48,6 +88,23 @@ import Cards from '../components/cards.astro';
       const content3 = document.getElementById('third');
       content3?.classList.remove('opacity-0', 'translate-y-10');
       content3?.classList.add('opacity-100', 'translate-y-0');
+
+      const poImage = document.getElementById('poImage') as HTMLImageElement;
+      const overlay = document.getElementById('overlay');
+      poImage.addEventListener("click", () => openFullscreen(poImage));
+      overlay?.addEventListener("click", closeFullscreen);
     })
+
+    function openFullscreen(img: HTMLImageElement) {
+      const overlay = document.getElementById("overlay");
+      const overlayImage = document.getElementById("fullscreen-img") as HTMLImageElement;
+
+      overlayImage!.src = img.src;
+      overlay!.style.display = 'flex';
+    }
+
+    function closeFullscreen() {
+      document.getElementById("overlay")!.style.display = 'none';
+    }
   </script>
 </html>
