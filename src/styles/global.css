@@ -13,8 +13,8 @@
 
     .thumbnail {
         cursor: pointer;
-        max-width: 400px;
-        max-height: 400px;
+        max-width: 350px;
+        max-height: 350px;
         transition: transform 0.2s;
     }
 
