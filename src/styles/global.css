@@ -9,6 +9,8 @@
         border-width: 2px;
         border-color: #1d4ed8;
         border-style: solid;
+        width: 100vw;
+        max-width: 800px;
     }
 
     .thumbnail {
