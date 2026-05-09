@@ -1,0 +1,99 @@
+---
+import Nav from "../../../components/novel_nav.astro";
+import PageNav from "../../../components/novel_page_nav.astro";
+import { type CollectionEntry, getCollection, render } from 'astro:content';
+
+function href_name_converter(name: string): string {
+  return name.toLowerCase().replaceAll(" ", "-").replaceAll("/", "-").replaceAll("'", "");
+}
+
+export async function getStaticPaths() {
+	const books = await getCollection('experimentt');
+	return books.map((book: any) => ({
+		params: { slug: book.id },
+		props: book,
+	}));
+}
+type Props = CollectionEntry<'experimentt'>;
+const allBooks = await getCollection('experimentt');
+
+const book = Astro.props;
+const { Content } = await render(book);
+
+const prevBook = allBooks.find((b) => b.data.chapNum == book.data.chapNum - 1) ?? null;
+const prevHref = (prevBook) ? `./${href_name_converter(prevBook?.data.title ?? "")}` : undefined;
+const nextBook = allBooks.find((b) => b.data.chapNum == book.data.chapNum + 1) ?? null;
+const nextHref = (nextBook) ? `./${href_name_converter(nextBook?.data.title ?? "")}` : undefined;
+---
+
+<html id="html" lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{book.data.title}</title>
+  </head>
+  <body>
+	<div class="fixed inset-0 -z-10 bg-gradient-to-b from-blue-200 to-blue-400 dark:from-slate-900 dark:via-slate-800 dark:to-slate-950"></div>
+    <div class="flex flex-col min-h-screen">
+        <Nav title={book.data.book} chapter={book.data.title} prevFilePath={`./toc`}/>
+        <div id="day_button" class="text-white bg-gray-800 w-[32px] rounded p-1 cursor-pointer absolute right-2 top-3 hover:bg-gray-700">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <circle cx="12" cy="12" r="5" stroke-width="2"/>
+            <path stroke-width="2" d="M12 1v2m0 18v2m11-11h-2M3 12H1m16.95-6.95l-1.414 1.414M6.464 17.536l-1.414 1.414m0-13.657l1.414 1.414M18.364 18.364l1.414 1.414"/>
+            </svg>
+        </div>
+        <div id="night_button" class="bg-blue-500 w-[32px] rounded p-1 cursor-pointer absolute right-2 top-3 hover:bg-blue-400 hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/>
+            </svg>
+        </div>
+
+		<!-- Chapter Content -->
+
+		<main class="flex justify-center px-4 py-6">
+			<article class="markdown-body home-tile-hoverless w-full max-w-[800px] p-8 pt-2">
+				<h2>{book.data.title}</h2>
+        {(book.data.updatedDate) ?
+          <div>
+            <div>Written: {book.data.pubDate.toLocaleDateString()} | Updated: {book.data.updatedDate.toLocaleDateString()}</div>
+          </div> :
+          <div>Written: {book.data.pubDate.toLocaleDateString()}</div>
+        }
+        <div>
+          {(book.data.updatedDate) ? <div>Updated: {book.data.updatedDate ?? ""}</div> : <div></div>}
+        </div>
+        <br/>
+
+				<Content />
+        <PageNav 
+          prevHref={prevHref} prevTitle={prevBook?.data.title}
+          nextHref={nextHref} nextTitle={nextBook?.data.title} 
+        />
+			</article>
+		</main>
+
+    </div>
+  </body>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.getElementById("night_button")?.addEventListener("click", () => switchTheme(true));
+      document.getElementById("day_button")?.addEventListener("click", () => switchTheme(false));
+    })
+
+    function switchTheme(isDay: boolean) {
+      const html = document.getElementById("html");
+      const night = document.getElementById("night_button");
+      const day = document.getElementById("day_button");
+
+      if (isDay) {
+        html?.classList.add('dark');
+        night?.classList.add('hidden');
+        day?.classList.remove('hidden');
+      } else {
+        html?.classList.remove('dark');
+        night?.classList.remove('hidden');
+        day?.classList.add('hidden');
+      }
+    }
+  </script>
+</html>

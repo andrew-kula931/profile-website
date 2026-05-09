@@ -1,0 +1,136 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  prevHref?: string;
+  prevTitle?: string;
+
+  nextHref?: string;
+  nextTitle?: string;
+}
+
+const {
+  prevHref,
+  prevTitle,
+  nextHref,
+  nextTitle
+} = Astro.props;
+---
+
+<nav class="w-full flex justify-center mt-4 px-4">
+  <div
+    class="w-full max-w-[800px] grid grid-cols-2 gap-4"
+  >
+
+    <!-- Previous -->
+    {
+      prevHref ? (
+        <a
+          href={prevHref}
+          class="
+            group
+            home-tile
+            p-4
+            min-h-[40px]
+
+            flex flex-row items-center
+            gap-4
+
+            hover:scale-[1.01]
+          "
+        >
+          <div
+            class="
+              text-3xl
+              transition-transform
+              duration-300
+              group-hover:-translate-x-1
+            "
+          >
+            ←
+          </div>
+
+          <div class="flex flex-col overflow-hidden">
+            <p class="text-xs uppercase tracking-widest mb-0">
+              Previous
+            </p>
+
+            <p
+              class="
+                text-md truncate mb-0
+              "
+            >
+              {prevTitle}
+            </p>
+          </div>
+        </a>
+      ) : (
+        <div></div>
+      )
+    }
+
+    <!-- Next -->
+    {
+      nextHref ? (
+        <a
+          href={nextHref}
+          class="
+            group home-tile p-2 min-h-[30px]
+
+            flex flex-row items-center justify-end
+            gap-4
+
+            text-right
+            hover:scale-[1.01]
+          "
+        >
+          <div class="flex flex-col overflow-hidden">
+            <p class="text-xs uppercase tracking-widest mb-0">
+              Next
+            </p>
+
+            <p
+              class="
+                text-md truncate mb-0
+              "
+            >
+              {nextTitle}
+            </p>
+          </div>
+
+          <div
+            class="
+              text-3xl
+              transition-transform
+              duration-300
+              group-hover:translate-x-1
+            "
+          >
+            →
+          </div>
+        </a>
+      ) : (
+        <div
+          class="
+            home-tile p-2 min-h-[30px]
+
+            flex flex-row items-center justify-end
+            gap-4
+
+            text-right
+          "
+        >
+          <div class="flex flex-col overflow-hidden">
+            <p
+              class="
+                text-md truncate mb-0 mr-4
+              "
+            >
+              That's all for now
+            </p>
+          </div>
+        </div>
+      )
+    }
+  </div>
+</nav>

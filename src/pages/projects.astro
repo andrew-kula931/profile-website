@@ -1,16 +1,131 @@
 ---
 import Nav from '../components/nav.astro';
+import Footer from '../components/footer.astro';
+import '../styles/global.css';
 ---
 
-<html lang="en">
+<html id="html" lang="en" class="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Astro</title>
+    <title>Andrew Kula</title>
   </head>
   <body>
-    <Nav />
-    <h1>Projects</h1>
-    <p>Some text</p>
-  </body>
+    <div class="overlay" id="overlay" onclick="closeFullscreen()">
+      <img class="fullscreen-img" id="fullscreen-img" src="/profile-website/PurchaseOrder.png" alt="Purchase Order Tracking Application">
+    </div>  
+
+    <div class="flex flex-col h-full bg-gradient-to-b from-blue-200 to-blue-400 dark:from-slate-900 dark:via-gray-800 dark:to-black">
+      <Nav />
+      <div id="day_button" class="text-white bg-gray-800 w-[32px] rounded p-1 cursor-pointer absolute right-2 top-3 hover:bg-gray-700">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <circle cx="12" cy="12" r="5" stroke-width="2"/>
+          <path stroke-width="2" d="M12 1v2m0 18v2m11-11h-2M3 12H1m16.95-6.95l-1.414 1.414M6.464 17.536l-1.414 1.414m0-13.657l1.414 1.414M18.364 18.364l1.414 1.414"/>
+        </svg>
+      </div>
+      <div id="night_button" class="bg-blue-500 w-[32px] rounded p-1 cursor-pointer absolute right-2 top-3 hover:bg-blue-400 hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/>
+        </svg>
+      </div>
+      <div class="flex items-center justify-center">
+        <div class="flex flex-col p-2 space-y-2 w-max max-w-[800px] justify-center items-center">
+          <div 
+            id="poSystem" 
+            class="home-tile bg-gradient-to-r from-blue-400 to-blue-300 dark:from-slate-900 
+            dark:to-slate-800 dark:text-white opacity-0 translate-y-10 transition-all duration-700"
+          >
+            <section class="flex flex-row justify-between items-center border-b-2 border-blue-800">
+              <div class="flex flex-col">
+                <p class="pl-2 pt-2 text-xl">Inventory Management System</p>
+              </div>
+              <img class="h-[75px] w-[100px] p-2" src="/profile-website/2mation.png" alt="2Mation Logo">
+            </section>
+            <ul class="list-disc pl-8 pb-4 pt-1 space-y-1">
+              <li>Inventory Management Software</li>
+                <ul class="list-disc pl-8">
+                  <li>A series of multiple apps segmenting financial documentation and operation respectively.</li>
+                  <li>Purchase Orders, Receipts, Staff Requests, Textbook Inventories</li>
+                </ul>
+            </ul>
+            <div class="flex justify-center items-center pb-4">
+              <img id="poImage" class="thumbnail" src="/profile-website/PurchaseOrder.png" alt="Purchase Order Tracking Application"/>
+            </div>
+
+          </div>
+
+          <div id="liftup" class="home-tile bg-gradient-to-r from-blue-400 to-blue-300 dark:from-slate-900 
+          dark:to-slate-800 dark:text-white opacity-0 translate-y-10 transition-all delay-200 duration-700">
+            <section class="flex flex-row justify-between items-center border-b-2 border-blue-800">
+              <div class="flex flex-col">
+                <p class="pl-2 pt-2 text-xl">Social Media Application</p>
+              </div>
+              <img class="h-[75px] w-[100px] p-2" src="/profile-website/2mation.png" alt="2Mation Logo">
+            </section>
+            <ul class="list-disc pl-8 pb-4 pt-4">
+              <li>Social Media Application</li>
+                <ul class="list-disc pl-8 space-y-1">
+                    <li>A social platform for individuals of a community to help one another.</li>
+                    <li>Realtime features, image editor, team/group/individual based messaging architecture.</li>
+                  </ul>
+            </ul>
+            <div class="flex justify-center items-center pb-4">
+              <img id="LiftUpImage" class="thumbnail" src="/profile-website/LiftUp.png" alt="Lift Up Social Media Platform"/>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <Footer />
+      </div>
+    </body>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        document.getElementById("night_button")?.addEventListener("click", () => switchTheme(true));
+        document.getElementById("day_button")?.addEventListener("click", () => switchTheme(false));
+
+        const content2 = document.getElementById('poSystem');
+        content2?.classList.remove('opacity-0', 'translate-y-10');
+        content2?.classList.add('opacity-100', 'translate-y-0');
+
+        const content3 = document.getElementById('liftup');
+        content3?.classList.remove('opacity-0', 'translate-y-10');
+        content3?.classList.add('opacity-100', 'translate-y-0');
+
+        const poImage = document.getElementById('poImage') as HTMLImageElement;
+        const liftUpImage = document.getElementById('LiftUpImage') as HTMLImageElement;
+        const overlay = document.getElementById('overlay');
+        poImage.addEventListener("click", () => openFullscreen(poImage));
+        liftUpImage.addEventListener("click", () => openFullscreen(liftUpImage));
+        overlay?.addEventListener("click", closeFullscreen);
+      })
+
+      function openFullscreen(img: HTMLImageElement) {
+        const overlay = document.getElementById("overlay");
+        const overlayImage = document.getElementById("fullscreen-img") as HTMLImageElement;
+
+        overlayImage!.src = img.src;
+        overlay!.style.display = 'flex';
+      }
+
+      function closeFullscreen() {
+        document.getElementById("overlay")!.style.display = 'none';
+      }
+
+      function switchTheme(isDay: boolean) {
+        const html = document.getElementById("html");
+        const night = document.getElementById("night_button");
+      const day = document.getElementById("day_button");
+
+      if (isDay) {
+        html?.classList.add('dark');
+        night?.classList.add('hidden');
+        day?.classList.remove('hidden');
+      } else {
+        html?.classList.remove('dark');
+        night?.classList.remove('hidden');
+        day?.classList.add('hidden');
+      }
+    }
+  </script>
 </html>

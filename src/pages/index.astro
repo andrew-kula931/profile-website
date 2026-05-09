@@ -8,7 +8,7 @@ import '../styles/global.css';
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Astro</title>
+    <title>Andrew Kula</title>
   </head>
   <body>
 	<div class="bg-gradient-to-t from-blue-400 to-blue-100 dark:from-black dark:via-gray-800 dark:to-slate-900">
@@ -26,22 +26,22 @@ import '../styles/global.css';
         </svg>
       </div>
     </div>
-    <div id="hero_animation" class="flex h-[calc(100vh-100px)] w-full items-center justify-center sticky top-13 transition-opacity duration-200 opacity-100">
+    <div id="hero_animation" class="flex h-[calc(100vh-125px)] w-full items-center justify-center sticky top-13 transition-opacity duration-200 opacity-100">
       <div class="flex flex-wrap justify-center items-center">
         <div class="bg-gray-600 rounded-full m-5">
           <img class="h-[200px] w-[200px] p-2 rounded-full" src="/profile-website/GithubProfile.png" alt="Github Profile Image">
         </div>
         <ul id="summary_list" class="list-disc pl-5 text-lg m-5">
-          <li id="dev" class="opacity-0 translate-x-10 transition-all delay-100 duration-1000 dark:text-gray-200">Software Developer</li>
+          <li id="dev" class="opacity-0 translate-x-10 transition-all delay-100 duration-1000 dark:text-gray-200">Software Engineer</li>
           <li id="one" class="opacity-0 translate-x-10 transition-all delay-300 duration-1000 dark:text-gray-200">Fullstack Experience</li>
           <li id="two" class="opacity-0 translate-x-10 transition-all delay-200 duration-1000 dark:text-gray-200">Flutter/Dart</li>
           <li id="three" class="opacity-0 translate-x-10 transition-all delay-400 duration-1000 dark:text-gray-200">PostgreSQL</li>
         </ul>
       </div>
     </div>
-    <div class="flex h-[calc(100vh-50px)] w-full items-center justify-center">
-      <div class="flex flex-wrap justify-center items-center dark:text-gray-200">
-        Text
+    <div id="anti_hero" class="flex h-[calc(100vh-50px)] w-full items-center justify-center">
+      <div id="bottom-text" class="flex flex-wrap justify-center items-center dark:text-gray-200">
+        Feel free to reach out!
       </div>
     </div>
     <Footer />
@@ -82,7 +82,6 @@ import '../styles/global.css';
       const thirdContent = document.getElementById("three");
       thirdContent?.classList.remove('opacity-0', 'translate-x-10');
       thirdContent?.classList.add('opacity-100', 'translate-x-0');
-
     });
 
     const observer = new IntersectionObserver((entries) => {
@@ -97,18 +96,37 @@ import '../styles/global.css';
     document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
 
     const hero = document.getElementById("hero_animation");
+    const antiHero = document.getElementById("anti_hero")
 
-    window.addEventListener('scroll', () => {
+    let currentOpacityClass = "opacity-100";
+    let currentAntiClass = "opacity-0";
+
+    window.addEventListener("scroll", () => {
       const progress = window.scrollY / window.innerHeight;
 
       hero?.classList.remove('opacity-100', 'opacity-80', 'opacity-60', 'opacity-40', 'opacity-20', 'opacity-0');
+      antiHero?.classList.remove('opacity-100', 'opacity-80', 'opacity-60', 'opacity-40', 'opacity-20', 'opacity-0');
 
-      if (progress < 0.15) hero?.classList.add('opacity-100');
-      else if (progress < 0.3) hero?.classList.add('opacity-80');
-      else if (progress < 0.45) hero?.classList.add('opacity-60');
-      else if (progress < 0.6) hero?.classList.add('opacity-40');
-      else if (progress < 0.75) hero?.classList.add('opacity-20');
-      else hero?.classList.add('opacity-0');
+      if (progress < 0.15) {
+        hero?.classList.add('opacity-100');
+        antiHero?.classList.add('opacity-0');
+      } else if (progress < 0.3) {
+        hero?.classList.add('opacity-80');
+        antiHero?.classList.add('opacity-0');
+      } else if (progress < 0.45) {
+        hero?.classList.add('opacity-60');
+        antiHero?.classList.add('opacity-20');
+      } else if (progress < 0.6) {
+        hero?.classList.add('opacity-40');
+        antiHero?.classList.add('opacity-40');
+      } else if (progress < 0.75) {
+        hero?.classList.add('opacity-20');
+        antiHero?.classList.add('opacity-60');
+      } else {
+        hero?.classList.add('opacity-0');
+        antiHero?.classList.add('opacity-100');
+      }
+
     });
   </script>
 </html>

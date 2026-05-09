@@ -1,0 +1,74 @@
+---
+import Nav from '../../../components/novel_nav.astro';
+import '../../../styles/global.css';
+
+import { getCollection } from 'astro:content';
+
+const books = await getCollection('experimentt');
+---
+
+<html id="html" lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Experiment T</title>
+  </head>
+  <body>
+    <div class="flex flex-col h-screen bg-gradient-to-b from-blue-200 to-blue-400 dark:from-slate-900 dark:via-gray-800 dark:to-black">
+        <Nav title="Experiment T" chapter="Table of Contents" prevFilePath="./toc" />
+        <div id="day_button" class="text-white bg-gray-800 w-[32px] rounded p-1 cursor-pointer absolute right-2 top-3 hover:bg-gray-700">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <circle cx="12" cy="12" r="5" stroke-width="2"/>
+            <path stroke-width="2" d="M12 1v2m0 18v2m11-11h-2M3 12H1m16.95-6.95l-1.414 1.414M6.464 17.536l-1.414 1.414m0-13.657l1.414 1.414M18.364 18.364l1.414 1.414"/>
+            </svg>
+        </div>
+        <div id="night_button" class="bg-blue-500 w-[32px] rounded p-1 cursor-pointer absolute right-2 top-3 hover:bg-blue-400 hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/>
+            </svg>
+        </div>
+
+        <div class=
+          "
+            flex flex-col self-center justify-center w-full max-w-[800px] m-2 p-2 text-xl dark:text-white
+            border-b border-b border-slate-600
+          ">
+          Experiment T Chapters
+        </div>
+        {
+          books.sort((a, b) => a.data.chapNum - b.data.chapNum).map((book) => (
+            <section class="flex flex-col self-center justify-center w-full max-w-[800px] p-1">
+              <a href={`./${book.id}`}>
+                <div 
+                  class="home-tile bg-gradient-to-r from-blue-300 to-blue-400 dark:from-slate-800 dark:to-slate-900 dark:text-white" >
+                  <p class="p-2 text-xl">{book.data.chapNum}. {book.data.title}</p>
+                </div>
+              </a>
+            </section>
+          ))
+        }
+    </div>
+  </body>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.getElementById("night_button")?.addEventListener("click", () => switchTheme(true));
+      document.getElementById("day_button")?.addEventListener("click", () => switchTheme(false));
+    })
+
+    function switchTheme(isDay: boolean) {
+      const html = document.getElementById("html");
+      const night = document.getElementById("night_button");
+      const day = document.getElementById("day_button");
+
+      if (isDay) {
+        html?.classList.add('dark');
+        night?.classList.add('hidden');
+        day?.classList.remove('hidden');
+      } else {
+        html?.classList.remove('dark');
+        night?.classList.remove('hidden');
+        day?.classList.add('hidden');
+      }
+    }
+  </script>
+</html>

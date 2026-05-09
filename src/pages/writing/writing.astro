@@ -1,0 +1,71 @@
+---
+import Nav from '../../components/nav.astro';
+import '../../styles/global.css';
+---
+
+<html id="html" lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Novel Directory</title>
+  </head>
+  <body>
+    <div class="flex flex-col h-screen bg-gradient-to-b from-blue-200 to-blue-400 dark:from-slate-900 dark:via-gray-800 dark:to-black">
+        <Nav />
+        <div id="day_button" class="text-white bg-gray-800 w-[32px] rounded p-1 cursor-pointer absolute right-2 top-3 hover:bg-gray-700">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <circle cx="12" cy="12" r="5" stroke-width="2"/>
+            <path stroke-width="2" d="M12 1v2m0 18v2m11-11h-2M3 12H1m16.95-6.95l-1.414 1.414M6.464 17.536l-1.414 1.414m0-13.657l1.414 1.414M18.364 18.364l1.414 1.414"/>
+            </svg>
+        </div>
+        <div id="night_button" class="bg-blue-500 w-[32px] rounded p-1 cursor-pointer absolute right-2 top-3 hover:bg-blue-400 hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/>
+            </svg>
+        </div>
+      <section class="flex justify-center">
+        <div class="flex flex-col p-2 space-y-2 w-full max-w-[800px] self-center">
+            <a href="/profile-website/writing/experimentt/toc" class="hover:text-gray-700 dark:hover:text-gray-400">
+              <div 
+                  class="home-tile bg-gradient-to-r from-blue-300 to-blue-400 dark:from-slate-800 dark:to-slate-900 dark:text-white" >
+                  <p class="p-2 pb-1 text-xl"><strong>Experiment T</strong></p>
+                  <strong class="pl-2 pb-1">Summary:</strong>
+                  <p class="p-2 pt-0 text-sm">
+                    What's it like? To hit rock bottom and look up at the towering heights from which you feel.
+                    To know that the journey back will be arduous yet you have no choice. Then, how might it feel to know that the rocks from which you
+                    stood are only a placebo of what truly lies below.
+                  </p>
+                  <p class="p-2 pt-0 text-sm">
+                    Ryan never asked for the hand he was dealt, and honestly, he might be overdramatizing just how bad he really has it. After all, he gets to 
+                    eat, has a roof over his head (usually), and got a proper education (mostly). That worldview, however, is scrutinized and flipped
+                    on its head after he comes in contact with something that shouldn't exist. What follows makes him wish he loved his former life more.
+                  </p>
+              </div>
+            </a>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.getElementById("night_button")?.addEventListener("click", () => switchTheme(true));
+      document.getElementById("day_button")?.addEventListener("click", () => switchTheme(false));
+    })
+
+    function switchTheme(isDay: boolean) {
+      const html = document.getElementById("html");
+      const night = document.getElementById("night_button");
+      const day = document.getElementById("day_button");
+
+      if (isDay) {
+        html?.classList.add('dark');
+        night?.classList.add('hidden');
+        day?.classList.remove('hidden');
+      } else {
+        html?.classList.remove('dark');
+        night?.classList.remove('hidden');
+        day?.classList.add('hidden');
+      }
+    }
+  </script>
+</html>
