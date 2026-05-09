@@ -38,7 +38,7 @@ const books = await getCollection('experimentt');
         {
           books.sort((a, b) => a.data.chapNum - b.data.chapNum).map((book) => (
             <section class="flex flex-col self-center justify-center w-full max-w-[800px] p-1">
-              <a href={`./${book.id}`}>
+              <a href={`/profile-website/writing/experimentt/${book.id}`}>
                 <div 
                   class="home-tile bg-gradient-to-r from-blue-300 to-blue-400 dark:from-slate-800 dark:to-slate-900 dark:text-white" >
                   <p class="p-2 text-xl">{book.data.chapNum}. {book.data.title}</p>

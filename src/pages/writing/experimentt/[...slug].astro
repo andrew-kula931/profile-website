@@ -21,9 +21,9 @@ const book = Astro.props;
 const { Content } = await render(book);
 
 const prevBook = allBooks.find((b) => b.data.chapNum == book.data.chapNum - 1) ?? null;
-const prevHref = (prevBook) ? `./${href_name_converter(prevBook?.data.title ?? "")}` : undefined;
+const prevHref = (prevBook) ? `/profile-website/writing/experimentt/${href_name_converter(prevBook?.data.title ?? "")}` : undefined;
 const nextBook = allBooks.find((b) => b.data.chapNum == book.data.chapNum + 1) ?? null;
-const nextHref = (nextBook) ? `./${href_name_converter(nextBook?.data.title ?? "")}` : undefined;
+const nextHref = (nextBook) ? `/profile-website/writing/experimentt/${href_name_converter(nextBook?.data.title ?? "")}` : undefined;
 ---
 
 <html id="html" lang="en" class="dark">
