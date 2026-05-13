@@ -1,6 +1,6 @@
 ---
-book: Experiment T
-title: Facing an Enigma
+book: "Experiment T"
+title: "Facing an Enigma"
 chapNum: 11
 pubDate: 2026/05/11
 ---

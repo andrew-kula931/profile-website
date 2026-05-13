@@ -1,6 +1,6 @@
 ---
-book: Experiment T
-title: Hunting an Enigma
+book: "Experiment T"
+title: "Hunting an Enigma"
 chapNum: 10
 pubDate: 2026/05/11
 ---

@@ -1,6 +1,6 @@
 ---
-book: Experiment T
-title: Ugly Luck
+book: "Experiment T"
+title: "Ugly Luck"
 chapNum: 9
 pubDate: 2026/05/10
 ---

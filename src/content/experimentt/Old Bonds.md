@@ -1,6 +1,6 @@
 ---
-book: Experiment T
-title: Old Bonds
+book: "Experiment T"
+title: "Old Bonds"
 chapNum: 7
 pubDate: 2026/05/09
 ---

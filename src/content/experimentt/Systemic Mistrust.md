@@ -1,6 +1,6 @@
 ---
-book: Experiment T
-title: Systemic Mistrust
+book: "Experiment T"
+title: "Systemic Mistrust"
 chapNum: 8
 pubDate: 2026/05/10
 ---
