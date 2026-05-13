@@ -24,7 +24,7 @@ to any of the following things please consider NOT reading any further:
 - Casual Profanity
 - Physical and implied sexual abuse
 
-Now, I'm not a monster, I don't write for shock value or to intentionally make
+I'd like to note that I don't write for shock value or to intentionally make
 myself squirm as each instance of disturbing content has narrative relevance. 
 I pride myself on writing a story for the sake of the story and not because I
 actually care what anyone thinks of it. If you hate it, you hate it, if you love it,
