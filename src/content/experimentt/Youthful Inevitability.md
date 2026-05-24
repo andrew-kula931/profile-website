@@ -1,6 +1,6 @@
 ---
-book: Experiment T
-title: Youthful Inevitability
+book: "Experiment T"
+title: "Youthful Inevitability"
 chapNum: 17
 pubDate: 2026/05/23
 ---
