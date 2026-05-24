@@ -5,7 +5,7 @@ chapNum: 0
 pubDate: 2026/05/08
 ---
 
-Let me start off by saying, I'm surprised you found this. I publish these books
+Let me start off by saying, I'm surprised you found this. I write these books
 out of pure boredom with no intention of every promoting myself or my work. I
 started writing to blow off steam after long days and it became a hobby of mine;
 a rather enjoyable one. That being said, I kept writing and eventually finished
@@ -26,11 +26,12 @@ to any of the following things please consider NOT reading any further:
 
 I'd like to note that I pride myself on writing a story for the sake of the story and not because I
 actually care what anyone thinks of it. If you hate it, you hate it, if you love it,
-you love it. I wrote these stories for me and myself alone.
+you love it. I never started writing this book with the intention of it being a "balanced" story or
+narratively convenient. I wrote these stories for me and myself alone.
 
 If you are one of the rare people who stumble upon these writings, read them, and actually
 enjoy them. Feel free to let me know, I won't promise anything but attention is motivation
-enough. I fully anticipate that these publications will never be found, but I thought
+enough. I fully anticipate that these drafts will never be found, but I thought
 I'd throw this in while I'm typing in my markdown README.md so to speak. 
 
 Without further ado, enjoy the story and remember, "_Only four characters make it out of_
