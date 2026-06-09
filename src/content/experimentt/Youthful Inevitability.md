@@ -1,6 +1,6 @@
 ---
-book: Experiment T
-title: Youthful Inevitability
+book: "Experiment T"
+title: "Youthful Inevitability"
 chapNum: 17
 pubDate: 2026/05/23
 ---
@@ -140,7 +140,7 @@ Ryan glances back at the dormant base of teenagers and decides to hop over the w
 
 "Who are you guys?" Ryan asks initially as inspects the strangers.
 
-Each of the three men conspicuously wield an AR across their chest with the man in the middle even having a pistol trapped to his thigh. One would think this fact alone insights a bit of militaristic affliction but each of them have distinct, rather casual clothes underneath which contradicts this assumption. The man on the left is about Ryan's height and actually has a slightly smaller build than him. The man on the right is a bit taller with a very easy going demeanor as he leans back on one leg with his hands resting on the gun with no intention of using it. The final man, with a sharp smile and aviators, seems completely unaffected by the situation as if he were just talking to a neighbor on his morning stroll. He's the one with the pistol and tightly fit cargo pants, yet he doesn't seem even remotely concerned about talking to a potentially hostile teenager.
+Each of the three men conspicuously wield an AR across their chest with the man in the middle even having a pistol trapped to his thigh. One would think this fact alone insights a bit of militaristic affliction but each of them have distinct, rather casual clothes underneath which contradicts this assumption. The man on the left is a bit shorter than Ryan with a leaner build. The man on the right is a bit taller with a very easy going demeanor as he leans back on one leg with his hands resting on the gun with no intention of using it. The final man, with a sharp smile and aviators, seems completely unaffected by the situation as if he were just talking to a neighbor on his morning stroll. He's the one with the pistol and tightly fit cargo pants, yet he doesn't seem even remotely concerned about talking to a potentially hostile teenager.
 
 "We're from a camp just outside of town," the guy with aviators starts as he gestures backwards with his thumb, "Freddy here thought he saw something the other day and wanted to investigate it," the guy pushes down his aviators and inspects Ryan before pushing the glasses back up and chuckling, "I'll be darned, he was right."
 
