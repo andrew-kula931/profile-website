@@ -12,7 +12,7 @@ Ryan looks around further and finds Steve sitting with his back against the wall
 
 “So… you feeling all right?” he asks unconfidently. 
 
-Ryan places a hand on his shoulder before dropping his eyes to the floor. He has no room to talk. Bill is dead and now he’s going to die soon. The constant burning in his shoulder is a perpetual reminder of his immanent doom. 
+Ryan places a hand on his shoulder and finds an unfamiliar shirt on. He doesn't question it as he drops his gaze to the floor. He has no room to talk. Bill is dead and now he’s going to die soon. The constant burning in his shoulder is a perpetual reminder of his immanent doom. 
 
 Ryan takes a deep breath, “I’m not a zombie yet… Maybe it’s a good sign.”
 

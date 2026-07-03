@@ -76,17 +76,17 @@ Spontaneously, a middle-aged man screams—not a scream of pain but one of agony
 
 Ryan uses everything he has to sprint deeper into the camp trying to locate the epicenter of the cry. It only takes him but a few seconds to turn a corner around a building and find Steve kneeling on the ground in front of a pile of bodies. Ryan doesn’t even have to ponder a thing as he already knows what happened.
 
-In the front of the pile are two bodies: a boy and a woman. The boy’s right arm is torn apart with strands of flesh and muscles hanging as if being ripped off. Blood drips from both his arm and from his mouth. He is held tightly by a woman with charred skin and a lifeless pulse. Neither one is breathing and probably haven’t for some time.
+In the front of the pile are two bodies: a boy and a woman. The boy’s right arm is torn apart with strands of flesh and muscles hanging as if violently torn apart. A trail of blood drips from both his arm, and the mouth creating a small pool underneath him. He is held tightly by a woman with charred skin and a lifeless pulse. Neither one is breathing and probably hasn’t for some time.
 
 Ryan reaches out, his voice hoarse and his mind swirling. What does he say? What does he do? He's still alive, so there has to be hope somewhere... there has to... 
 
-Steve shakes his head slowly, with no indication of looking back as he slams his fist into the ground. The man breathes slowly as looks back to the scene and runs his finger over a small metal object covered in soot around the woman's finger. He touches the boy's face and manages an agonized smile as if recalling the first time he ever saw that face. His body trembles as he leans forward and tears shatter against the boy's face.
+Steve shakes his head slowly, with no indication of looking back as he slams his fist into the ground. The man breathes slowly as looks back to the scene and runs his finger over a small metal object covered in soot around the woman's finger. He touches the boy's face and manages an agonized smile as if recalling the first time he ever saw that face. His body trembles as he leans forward and tears shatter against the boy's dark visage.
 
 "Steve", Ryan mouths, finding his voice too shy to speak up enough to be heard. He manages a single step forward but is once again met with the same fear that has always held him back. Ryan clenches his fist to himself and thinks of just one thing to say. One thing that will give this man the hope he's always wanted.
 
 As Steve sobs quietly, he leans back and looks down at his pistol. He feels the familiar surface underneath his fingertips and closes his eyes. Not even that wind dare interrupt the subsequent silence.
 
-Ryan takes a deep breath, preparing one final speech—one last thing he can offer this man.
+He hasn't lived long, but eighteen years of torture can amount to at least one small trace of wisdom. Ryan takes a deep breath, preparing one final speech—one last thing he can offer this man. 
 
 Then, before Ryan can process anything, Steve places the barrel to his temple and joins his family. 
 

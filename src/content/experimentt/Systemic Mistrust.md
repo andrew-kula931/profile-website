@@ -284,6 +284,8 @@ The brick building is question is conspicuously a repurposed rest stop with an o
 
 “Have a seat, we’ll call you back individually to get checked,” a soldier commands as they attempt to find a spot.
 
+The soldier in question doesn't seem to be anything special at first glance, save the aviators on his face. His demeanor is strict and rule following, as a soldier should, yet he feels unnaturally relaxed and orders directions with an almost conversational tone. Ryan just shakes his head and looks away, he's probably overthinking it—it is a stressful situation after all. Aviators or not, a soldier is still a soldier.
+
 Steve visibly restrains himself from saying something but complies and finds a seat in the corner next to Karmen. Charlie sits on the other side of him. Ryan and Bill sit across from the family in a separate row. 
 
 “This place is sketchy to say the least,” Bill whispers as he sits down.
