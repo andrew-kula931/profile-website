@@ -3,6 +3,7 @@ book: "Experiment T"
 title: "The Eve of Normality"
 chapNum: 1
 pubDate: 2026/05/08
+editDate: 2026/08/07
 ---
 *Loneliness is like a cancer: small and insignificant at first, but over time it grows into something that can threaten even the most tenacious individuals. Its only remedy: connection.*
 
@@ -16,17 +17,67 @@ The real, current sky radiates in a beautiful blue color with spotted white clou
 
 “When looking at the actions of the Chinese dynasties, one cannot see it from an American perspective…” Mrs. Grail continues in the background of Ryan’s thoughts.
 
-This schedule of school, day in and day out is reassuring, but he longs for something more. It feels like there is something he’s meant to do that has nothing to do with this history classroom. He’s searched multiple activities over the years and nothing ever satisfied him. Now as a senior in high school, he’s stuck being a part of no activities, having no friends, and no plan for college or life after school. His current foster parents gave up on him a few months after he moved in. They’re his seventh foster parents since his mom died eleven years ago. 
+This monotonous schedule of school, day in and day out is often regarded as the bane of a teenager's existence, yet Ryan can't help but find it reassuring. His life has been nothing but a dull chaos for over a decade, and he hasn't even reach adulthood yet. He’s searched multiple activities over the years and nothing ever stuck—just like his family life. Now as a senior in high school, he’s stuck being a part of no activities, having no friends, and no plans past high school. It's not that he wants to be this way, but he's come to terms with the fact that silence is more comfortable than being performative and fake just for appearances. The people around him don't know what it's like to walk into a stranger's house every single day—he can't fault them for that—but it puts an unpleasant taste in his mouth whenever they make a "good-natured" attempt at reaching out. It was tolerable in middle school, but nowadays, the surrounding teens don't even know who they are, so how in the world could they understand who he is.
 
-Things are looking up however, tomorrow is his 18th birthday. He can officially move out and live his own life. No school, no parents, and no one tells him what to do. He can explore and find out what he’s missing in life. He’ll finally be able to leave the people who mistreat him every day. 
+After all, he's on his seventh foster family since his mom died eleven years ago. He likes to tell himself that he's not one of the delinquent kids the blames the world for all his problems and acts out as such. In truth, however, he was that kid... for a long time. It wasn't until he overheard two foster care agents saying that they "have no choice with him", that he finally broke out of that twisted spiral. So, when he finally arrived at his seventh—and potentially last—foster family he decided to stop acting out.
 
-Being unable to fight back against the bullies was never his issue; he was simply scared of those he couldn’t fight back against. The self righteous, athletic kids were beatable if he landed the right blows but the principal had the police behind him so fighting became synonymous with irrationality. He once got in a brawl with a bully in 8th grade which ended in a draw. Both kids were punished even though the bully started it; fighting always ended in lackluster outcomes. There was some point when he just accepted the beatings and put out his anger on objects elsewhere: a tree here and a punching bag there. He didn’t end up in the office so he kept the lifestyle. Eventually, the bullying got scarce once most of the aggressors couldn’t make him cry out in pain anymore. The pain never goes away but at some point, you simply get used to feeling it. His body also grew over the years. He was a smaller kid in elementary and middle school, but by high school, he grew to 5’ 11” with a natural build that put all but athletes at bay. Ryan was known by most people at school as the quiet kid. There has always been a stigma attached to that title, but he didn’t let it phase him. It’ll all be over tomorrow when he can drop out. 
+In truth, some of the behavior issues were instigated by bullying. Being unable to fight back against the bullies was never his issue though; he was simply scared of those he couldn’t fight back against. The self-righteous, athletic kids were beatable if he landed the right blows—which he often did, but the principal had the police behind him so fighting became synonymous with irrationality. He once got in a brawl with a bully in 8th grade which ended in a draw. Both kids were punished even though the bully started it. Fighting always ended in lackluster outcomes. There was some point when he just accepted the beatings and put out his anger on objects elsewhere: a tree here and a punching bag there. He didn’t end up in the office so he kept the lifestyle. Eventually, the bullying got scarce once most of the aggressors couldn’t make him cry out in pain anymore. The pain never goes away but at some point, you simply get used to feeling it. 
 
-Most high school students are pin-point focused on college and friends’ drama, but none of that interested Ryan. He saw drama as pointless: it just caused worthless problems to distract your focus from more important things. He remembers seeing people cry in the past, particularly teenage girls. It was always some sort of trifle like a breakup here or a loss of a loved one there. Every time he felt some anger deep down, not towards them but of a sort of jealousy that they can be so vulnerable. He’s lost loved ones, he knows what it feels like to be alone, so why do they get all the pity when they break down. Meanwhile, he just gets irritated looks whenever he’s down in the dumps—and he doesn’t even cry to show it. They can display their emotions so openly without a vulture preying on them and hurting them. There wasn’t a vulture all the time, but it only takes one wound to prevent you from doing it again. Ryan despised most other people, but he couldn’t show that or they would criticize him and beat him in worse cases. Half the time, his foster father was on the verge of the latter. Foster families saw him as a waste of time while friends lost interest in his quiet behavior and left. Now he’s alone and seeking a better life, one that’s far away from this perpetual prison he’s trapped in. 
+Around his freshman year, his body also grew. He was a smaller kid in elementary and middle school, but by high school, he grew to 5’ 11” with a natural build that put all but athletes at bay. Ryan was known by most people at school as the quiet kid—he preferred it that way for the aforementioned reason. Though, there has always been a stigma attached to that title, but he didn’t let it phase him. 
+
+While he's at it, another gripe his has with his peers is that most high school students are pinpoint focused on college and friends’ drama, but none of that interested Ryan. He saw drama as pointless... though complaining about a boyfriend was probably tantamount to being called a mistake by a foster parent in his world. That being said, he remembers seeing people cry in the past, particularly teenage girls. It was always some sort of trifle like a breakup here or a loss of a loved one there. Every time he felt some anger deep down, not towards them but of a sort of jealousy that they can be so vulnerable. He’s lost loved ones, he knows what it feels like to be alone, so why do they get all the pity when they break down. Meanwhile, he just gets irritated looks whenever he’s down in the dumps—and he doesn’t even cry to show it. They can display their emotions so openly without a vulture preying on them and hurting them. There wasn’t a vulture all the time, but it only takes one wound to prevent you from doing it again. Ryan despised most other people, but he couldn’t show that or they would criticize him and beat him in worse cases. Half the time, his foster father was on the verge of the latter. Foster families saw him as a waste of time while friends lost interest in his quiet behavior and left. 
+
+This leads in to the most important matter of all: tomorrow is his 18th birthday. He's no expert on school policy—he only glossed over the handbook after all, but he's fairly certain he's allowed to drop out of school once he's a legal adult. The predictable structure and escape from his foster family have always been important benefits to going to school, but that isn't enough to warrant him staying. He's always preferred to be alone anyway.
 
 “Your homework will be a single paragraph discussing the prompt on the last page of the chapter. Make sure to really consider all points of view before writing your conclusion.” Mrs. Grail explains as the sweet release of a lunch bell chimes throughout the school. 
 
-The lunch room is the definition of organized chaos. Every group of teens sits around the cafeteria having their bombastic conversations but they each get muffled by the intensity of the whole room. To avoid a counselor trying to “check-in” on him, he tends to sit with a group of boys who don’t talk that much. A few of them break out into a DnD discussion now and then, but usually, they all stare at their phones and barely touch their food. None of them heed Ryan any attention and let him have his peace at the table.
+All the teen makes their hasty exist with bags on their backs and friends at their sides. Ryan would ordinally be out of this dull class just as readily, but right as he goes to put his heavy textbook in his back it slips out of his hand and lands of the floor. 
+
+The girl who sits behind him gives him a one-sided smirk as she stands up and hustles over to her friend waiting by the door. Shrugging it off, Ryan folds the textbook closed and stuffs it into his mostly empty backpack.
+
+He heads to the door as the last student in class but it given pause as he notices Mrs. Grail starring at him from the corner of his eye. When he begrudgingly looks at her, the pompous woman decides to take it as an invitation to talk to him. 
+
+"Hey Ryan, I wanted to talk to you about your last exam," she says patronizingly... though he probably only interprets it that way, her tone is realistically quite friendly, "do you have a sec?"
+
+Ryan shrugs with a sigh hidden under his breath, "Sure."
+
+He steps up to the history teacher's desk with a disingenuous smile. She offers back a much more sincere one, "You missed one question."
+
+"Sorry, I couldn't remember the answer," Ryan answers, in truth he has no idea what he was even tested over. He forgot all the content three days after taking the exam. It'd only come back to him if he were given a familiar prompt on an assignment, then maybe it'd just fall into his lap. That's what generally happened on Mrs. Grail's distinct exams.
+
+"You missed one on the final last semester, and the midterm," she continues, suddenly getting under Ryan's skin a bit. He does a quick facial scan to ensure he's not given his teacher any attitude—that's the last thing he wants to do. 
+
+"That's right," Ryan says trying to divert attention from his exams, "I forgot you were my history teacher last year."
+
+Mrs. Grail shakes her head, "I don't think you understand. You missed one. One. You may not have the highest grade, but you clearly have a knack for history."
+
+Ryan takes a deep breath. This is not at all what he wants to discuss right now. All he wants to do go get some food in his stomach.
+
+"Have you ever thought about being my teaching assistant. You'd just grade papers and such, you don't actually have to teach. I know the counselors here really well so I can talk to them and swap it out with your study hall. Don't worry, I'll still let you work on your own assignments too... when there are no assignments to grade."
+
+There it is. They always want something, "I don't know... I don't think I can be a teaching assistant for a class I'm in."
+
+Mrs. Grail quickly waves her hands in front of herself to elaborate on a clear instance of miscommunication, "Oh no, you'd be grading papers for the underclassmen classes I teach. Besides, I won't be your history teach next semester."
+
+Well, now he has to pivot from irritated but polite to declining an honest request respectfully. If all things go according to plan, he won't be going to school next semester so it would be foolish to access this offer.
+
+"I don't know..." he trails off.
+
+Mrs. Grail smiles as she shakes her head, "I get it, I'm putting you on the spot. Just think about it and tell me what you decide tomorrow."
+
+Ryan purses his lips as he contemplates how to take that. In the corner of his eye, he notices several stacks of papers on the corner of her desk. The top paper has a fat A+ and -0 in red ink written on the top. His own name is not the one filling that blank.
+
+"Sure," he says slowly while looking away from the stack of papers, "I'll... I'll think about it."
+
+"Of course," Mrs. Grail says quickly.
+
+He adjusts his backpack strap a bit before heading for the door. 
+
+"Oh, and Ryan," Mrs. Grail calls out right as he gets one foot out the door, "I won't be here tomorrow, so happy early birthday."
+
+Words don't come to him so he settles for a respectful nod before departing. Her words echo in his mind as he walks down the mostly empty hall headed for the noisy cafeteria.
+
+The lunchroom is the definition of organized chaos. Every group of teens sits around the cafeteria having their bombastic conversations but they each get muffled by the intensity of the whole room. To avoid a counselor trying to “check-in” on him, he tends to sit with a group of boys who don’t talk that much. A few of them break out into a DnD discussion now and then, but usually, they all stare at their phones and barely touch their food. None of them heed Ryan any attention and let him have his peace at the table.
 
 He’s finishing his bag of chips when he overhears a conversation of girls at a nearby table.
 
@@ -42,27 +93,29 @@ A girl about his age stands holding her hands on her hips. Ryan recognizes the f
 
 “Ryan, right?” she says with a smile.
 
-For a moment, Ryan mistook the girl as someone trying to tease him, but that quickly changes when he looks into her eyes. She had a very playful demeanor, almost trying not to laugh, but he could tell it wasn’t as simple as a joke.
+For a moment, Ryan mistakes the girl as someone trying to tease him, but that quickly changes when he looks into her eyes. She has a very playful demeanor, almost trying not to laugh, but he can tell it isn’t as simple as a joke.
 
 “Yeah, why?” he says.
 
-The girl leans in whispering right into his ear, “My friend Chloe over there,” she points to a girl a few tables away, “Has a crush on you but is too timid to ask you out.”
+The girl promptly looks back at a table across the room. Following her line of sight, Ryan identifies a particular group of girls who he vaguely remembers seeing her with. He expects them all to be watching this scene unfold, maybe even with a phone out, but none of them seem to even know this girl is talking to him at the moment. 
+
+The girl then leans in whispering right into his ear, "Could you go to the gym after school?" 
 
 Ryan leans away and tries to study the face of the girl looking for any indication of a prank. Pranks were hardly ever directed towards him these days, but he’s been ignorant before and he doesn’t plan on being that way again. The sincerity in her eyes informs him of the message’s truthful nature, but that still isn’t enough for him to take the bait—especially since he’s dropping out of high school tomorrow.
 
 “This has to be some kind of joke?” Ryan defaults to.
 
-The girl rolls her eyes, “I wish I was. I still don’t get it, but she’s been crushing on you for far too long and it’s starting to piss me off. I’m going to convince her to go to the gym after school. I want you to show up and give her a chance or lay her down lightly.”
+The girl rolls her eyes and crosses her arms, "I wish I was, but my best friend has pushed my last button, and I'm taking my revenge."
 
 “...Why?”
 
-The audacity that radiated from this girl made Ryan a little uneasy. Not only is she willing to talk to someone she’s never met before so casually, but she’s willing to command him to do bombastic things. He honestly doesn't care about this chick anymore. 
+The audacity that radiated from this girl make Ryan a little uneasy. Not only is she willing to talk to someone she’s never met before so casually, but she’s willing to command him to do bombastic things. Going to the gym after school probably isn't considered "bombastic" but to him that's a hefty inconvenience. Perhaps any normal boy would think she's going to ask him out or something, but that doesn't happen these days. Besides this chick doesn't seem like the type to go after a loner like him. Brushed hair, perfect skin, and an extroverted personality, he'd put the odds ten-to-one that this is a prank despite her previous claims.
 
 “I’ll think about it,” Ryan finally says in an attempt to get her off of him.
 
-The girl's fading smile quickly regrows into a large grin and she takes her leave to return to the table of girls. Ryan watches the girl in the corner of his eye as she returns. 
+The girl's fading smile quickly regrows into a large grin as she points at him with a stern look in her eyes, "Alright, and do me a favor and just hear her out," she then takes her leave to return to the table of girls. Ryan watches the girl in the corner of his eye as she returns. 
 
-She sits down and the group doesn’t break out laughing. She acts as if nothing happened; the validity of her statement seems more convincing now. Ryan takes notice of the girl named Chloe. She’s also a senior—from his math class actually. She has the complexion of a timid beauty: soft, innocent eyes, a warm yet careful smile, and a natural complexion that’d make makeup jealous. Her features easily put her in the “look pretty but don’t overdo it” category inside Ryan’s people catalog. Overall, she’s a very attractive girl, but it’s written all over her posture and her body language that she isn’t the most extroverted person. The story the first girl gave now seems completely believable, but it doesn’t change the fact that he is going to quit school together tomorrow. 
+She sits down and the group doesn’t break out laughing. She acts as if nothing happened; the validity of her statement seems more convincing now. Ryan takes notice of one other girl in particular. She’s also a senior—from his math class, actually... C... Chloe is her name. She has the complexion of a timid beauty: soft, innocent eyes, a warm yet careful smile, and a natural complexion that’d make makeup jealous. Her features easily put her in the “look pretty but don’t overdo it” category inside Ryan’s people catalog. Overall, she’s a very attractive girl, but it’s written all over her posture and her body language that she isn’t the most extroverted person. It's only after he's overstayed his welcome in this headspace that he snaps out of it. He's dropping out, girls are the least of his priority.
 
 By the end of lunch, he’s all but forgotten about the events that transpired. 
 
@@ -72,19 +125,19 @@ Later, Ryan finds himself walking in the hallway going to his last class and thi
 
 The next class goes by the same as the last before the final bell rings relieves the tired students from their captivity. The doors of the school open and a flood of students exits on the bright Wednesday afternoon.
 
-As Ryan heads to leave school for the day, he passes by the gym hallway. The girl from lunch flashes through his mind and irritates him more than it should. He tries to disregard it and keep going but a certain level of curiosity sweeps over him and refuses to let him continue with the flow of students. Someone actually liking him is preposterous, yet deep down he almost wishes it were true—even on his last day. The curiosity grows until Ryan finds himself at the doors of the gym. He reaches for the handle and somehow convinces himself to touch the cold metal before recoiling his hand as if the metal was scolding hot.
+As Ryan heads to leave school for the day, he passes by the gym hallway. The girl from lunch flashes through his mind and irritates him more than it should. He tries to disregard it and keep going but a certain level of curiosity sweeps over him and refuses to let him continue with the flow of students. What could she want? It has to be a prank, right? The curiosity grows until Ryan finds himself at the doors of the gym. He reaches for the handle and somehow convinces himself to touch the cold metal before recoiling his hand as if the metal was scolding hot.
 
-What in the world is he doing? It’s so out of character for him to consider the thoughts of the people around him. Even if this were all real and there actually is a girl that likes him, he’s the furthest thing from boyfriend material. This is a doomed idea and he’s been operating on the premise that he actually thinks before he acts. Walking into that gym would be sealing his fate as someone who listens to others and does what they say—he thought he was finally breaking free of that mentality. The mental gymnastics proceed for a good thirty seconds before something impulsive instinct overrides his cognitive function and he proceeds into the meeting spot.
+What in the world is he doing? It’s so out of character for him to consider the thoughts of the people around him. This is a doomed idea, and he’s been operating on the premise that he actually thinks before he acts. A girl like her would absolutely be setting him up for a prank. Sure he's never been pranked by a girl before, but that doesn't change the reality of the situation. The mental gymnastics proceed for a good thirty seconds before something impulsive instinct overrides his cognitive function, and he proceeds into the meeting spot.
 
 The large physical education classroom is barren without running, sweating teens. The waxed floor reflects the overhead lights well enough to illuminate an additional room which isn’t as noticeable with so many people. The low roar of the crowd passing in the nearby hallway muffles any generator noises of the gym, but one set of voices stands out. 
 
-“Come on now, don’t be like that,” says the low, cocky voice of a star athlete. He stands with one hand on the wall right next to Chloe’s head. She looks conspicuously uncomfortable being in that situation but the jock has a more playful demeanor than a hostile one.
+“Come on now, don’t be like that,” says the low, cocky voice of a star athlete. He stands with one hand on the wall right next to a girl's head. She looks conspicuously uncomfortable being in that situation, but the jock has a more playful demeanor than a hostile one. He's about to take his leave silently before he introduces, but that's when he recognizes the girl—the same timid beauty he saw at lunch, not the one who talked to him, but the girl next to her.
 
 “I’m sorry, did Beth tell me to come here to meet you?” Chloe asks.
 
 “Who’s Beth?” the guy questions with mild irritation.
 
-The situation is pretty cliche but it’s none of Ryan’s concern so he turns to leave. His curiosity has been satisfied and he mentally hits himself for having any expectation for an interesting outcome. 
+Deciding his curiosity is satisfied, he takes a deep breath and looks around at the empty gymnasium. There's clearly nothing or no one else waiting for him. He mentally hits himself for having any expectation for an interesting outcome. 
 
 He gets one foot out the gym doors before he’s stopped by the voice of Chloe.
 
@@ -106,7 +159,7 @@ He studies Chloe once more before making a decision. She isn’t scared of the g
 
 Ryan sighs, he really is losing the will to keep going, “Take a hint man, she is not interested.”
 
-“What do you know? You’re an outcast.” the guy argues trying not to act too aggressive in the face of Chloe.
+“What do you know? You’re a nobody.” the guy argues trying not to act too aggressive in the face of Chloe.
 
 Ryan has to give it to him, he’s not the nicest person but the restraint he’s practicing is quite impressive. He has some level of intelligence to not become violent like a lot of his friends would. 
 

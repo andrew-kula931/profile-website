@@ -48,7 +48,7 @@ Ryan quickly raises his shotgun and points it at Heimes.
 
 “What are you doing to him!” Steve screams at Heimes—fiery burning in his eyes that the rain isn’t able to extinguish.
 
-Heimes turns slightly and glances over to Ryan revealing the extent of his inhumanity. The once strong, level-headed principal is now beginning to resemble that which truly laid in deep within his heart—a demon. His arms have grown longer and larger with enough mass to rival a powerlifter's bar. His head is elongating like a stubby giraffe with two black eyes and menacing horns sprouting from the top. Lastly, his hands and feet have morphed into talons with claws that make the original zombie lady's look like butter knives.
+Heimes turns slightly and glances over to Ryan revealing the extent of his inhumanity. The once strong, level-headed principal is now beginning to resemble that which truly laid in deep within his heart—a demon. His arms have grown longer and larger with enough mass to rival a powerlifter's. His head is elongating like a stubby giraffe with two black eyes and menacing horns sprouting from the top. Lastly, his hands and feet have morphed into talons with claws that make the original zombie lady's look like butter knives.
 
 “You’re controlling everything that’s going on! Aren’t you!?” Ryan shouts over the pounding rain and Bill’s tormented groans.
 

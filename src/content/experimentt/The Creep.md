@@ -138,7 +138,7 @@ Taking an additional step forward, the creep flicks the side of the syringe with
 
 Given the situation, Ryan doesn't trust that his knife will be long enough so he instead draws his pistol and points it at the monster before him.
 
-The creep stops in its tracks, "Oh, it seems I have forgone the formality of offering you something in return," it turns around briefly to swipe a key off the table and holds it up for Ryan to see, "I am more than happy to exchange all of my future subjects for the opportunity to see this deal to fruition. It's very rare that I ask for consent, but that was one of two of the Director's demands."
+The creep stops in its tracks, "Oh, it seems I have forgone the formality of offering you something in return," it turns around briefly to swipe a key ring off the table and holds it up for Ryan to see, "I am more than happy to exchange all of my future subjects for the opportunity to see this deal to fruition. It's very rare that I ask for consent, but that was one of two of the Director's demands."
 
 Unable to make a clear thought, Ryan grits his teeth and tightens his finger on the trigger. This isn't a deal, it's a death sentence, and he's not about to... he'll just have to... he can't take it anymore! 
 
@@ -202,7 +202,7 @@ He sits up and looks around finding everything to be exactly as he left it. A cu
 
 Taking a deep breath, he rises to his feet for real. His body feels unsettlingly jittery yet he can only sense it intellectually—nothing more. Even the grotesque organs splattered across the tables seem to be nothing more than a hard-on-the-eyes sight and nauseating smell. He glances over at the cloth wall one more time knowing exactly what's behind it. He recalls all the memories so vividly yet... his brain doesn't stutter like it did before, he just thinks. 
 
-Then his eyes land on the keys and suddenly his body starts moving. He grabs the keys and heads for the door. Stepping past experiment after experiment and chemical spill after chemical spill requires great care and coordination. Ordinarily it would be a trivial matter, but for some reason his legs feel heavy and his knees weak. He manages to circumvent any accidental slip but he doesn't remember having to try so hard for something so simple. It just feels... foreign.
+Then his eyes land on the keys and suddenly his body starts moving. He grabs the small key ring and heads for the door. Stepping past experiment after experiment and chemical spill after chemical spill requires great care and coordination. Ordinarily it would be a trivial matter, but for some reason his legs feel heavy and his knees weak. He manages to circumvent any accidental slip but he doesn't remember having to try so hard for something so simple. It just feels... foreign.
 
 Eventually he reaches the door he came in and promptly outstretches his hand for the knob—it misses. Instead of grabbing the handle, his hand winds up a few inches to the side, shaking profusely. He uses his other hand to stabilize the first, but finds the second shaking just as much. Completely confused, he forces both hands onto the handle and proceeds to swing the door open. Beyond the trembling, he still seems to maintain full control over his body... at least there's a silver lining. 
 

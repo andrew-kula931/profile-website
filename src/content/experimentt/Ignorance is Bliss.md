@@ -4,7 +4,7 @@ title: "Ignorance is Bliss"
 chapNum: 4
 pubDate: 2026/05/08
 ---
-The class finishes off, but the bell never rings. An uncomfortable chaos allowly creeps through the room as the tardy bell becomes more apparent throughout the class. The teacher is about to let the class leave, but is interrupted by the intercom. 
+The class finishes off, but the bell never rings. An uncomfortable chaos slowly creeps through the room as the tardy bell becomes more apparent throughout the class. The teacher is about to let the class leave, but is interrupted by the intercom. 
 
 “Teachers, please keep your students inside their classrooms for the time being. We are in a soft lockdown mode. This is not a drill.”
 
