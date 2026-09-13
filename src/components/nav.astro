@@ -1,10 +1,9 @@
 ---
-import "../styles/global.css";
 import Github from "../assets/github.astro";
 import LinkedIn from "../assets/linkedIn.astro";
 ---
 
-<nav class="flex flex-row justify-between items-center p-2 bg-gradient-to-t from-blue-300 to-blue-700 
+<nav class="flex flex-row justify-between items-center p-2 bg-gradient-to-t from-stone-200 to-stone-50 
 dark:from-slate-900 dark:to-stone-950 dark:text-gray-300 border-b border-slate-700">
     <a href="/profile-website/" class="desktop text-2xl font-semibold hover:text-gray-700 dark:hover:text-gray-400">Andrew Kula</a>
     <a href="/profile-website/" class="mobile text-xl font-semibold hover:text-gray-700 dark:hover:text-gray-400">Andrew Kula</a>
@@ -26,7 +25,7 @@ dark:from-slate-900 dark:to-stone-950 dark:text-gray-300 border-b border-slate-7
                 <path stroke-width="2" d="M12 1v2m0 18v2m11-11h-2M3 12H1m16.95-6.95l-1.414 1.414M6.464 17.536l-1.414 1.414m0-13.657l1.414 1.414M18.364 18.364l1.414 1.414"/>
                 </svg>
             </div>
-            <div id="night_button" class="bg-blue-500 w-[32px] rounded p-1 cursor-pointer hover:bg-blue-400 hidden">
+            <div id="night_button" class="bg-stone-300 w-[32px] rounded p-1 cursor-pointer hover:bg-stone-400 hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/>
                 </svg>
@@ -40,7 +39,10 @@ dark:from-slate-900 dark:to-stone-950 dark:text-gray-300 border-b border-slate-7
         const dayButton = document.getElementById('day_button');
         const nightButton = document.getElementById('night_button');
 
-        // Toggle button click event listener
+        const isDark = document.documentElement.classList.contains('dark');
+        dayButton?.classList.toggle('hidden', !isDark);
+        nightButton?.classList.toggle('hidden', isDark);
+
         dayButton?.addEventListener('click', () => {
             setTheme('light');
             dayButton.classList.add('hidden');
@@ -54,7 +56,6 @@ dark:from-slate-900 dark:to-stone-950 dark:text-gray-300 border-b border-slate-7
         });
     });
 
-    // Function to set the theme
     const setTheme = (theme: string) => {
         if (theme === 'dark') {
             document.documentElement.classList.add('dark');

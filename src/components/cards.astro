@@ -5,12 +5,12 @@
     <div class="relative w-full h-full flex items-center justify-center">
         <!-- Buttons -->
         <button onclick="changeSlide(-1)"
-        class="absolute left-4 top-1/2 transform -translate-y-1/2 text-4xl w-12 h-12 bg-blue-300 bg-opacity-50 rounded-full hover:opacity-80 z-20 hover:bg-blue-200">
+        class="absolute left-4 top-1/2 transform -translate-y-1/2 text-4xl w-12 h-12 bg-stone-300 bg-opacity-50 rounded-full hover:opacity-80 z-20 hover:bg-stone-200">
         &lt;
         </button>
 
         <button onclick="changeSlide(1)" 
-        class="absolute right-4 top-1/2 transform -translate-y-1/2 text-4xl w-12 h-12 bg-blue-300 bg-opacity-50 rounded-full hover:opacity-80 z-20 hover:bg-blue-200">
+        class="absolute right-4 top-1/2 transform -translate-y-1/2 text-4xl w-12 h-12 bg-stone-300 bg-opacity-50 rounded-full hover:opacity-80 z-20 hover:bg-stone-200">
         &gt;
         </button>
 
@@ -37,7 +37,7 @@
                 ${index === current ? 'z-10 opacity-100 left-1/2 transform -translate-x-1/2' :
                     index < current ? 'z-0 opacity-50 left-[10%] transform scale-90' :
                     'z-0 opacity-50 right-[10%] transform scale-90'}
-                bg-gray-100 border-4 border-blue-500 rounded shadow-lg
+                bg-stone-100 border-4 border-stone-400 rounded shadow-lg
                 `;
 
                 cardDiv.innerHTML = `

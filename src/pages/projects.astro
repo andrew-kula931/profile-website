@@ -1,73 +1,154 @@
 ---
+import Layout from '../layout/layout.astro';
 import Nav from '../components/nav.astro';
 import Footer from '../components/footer.astro';
-import '../styles/global.css';
+import ProjectCarousel from '../components/project_carousel.astro';
 ---
 
-<html id="html" lang="en" class="dark">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Andrew Kula</title>
-  </head>
-  <body>
+<Layout>
     <div class="overlay" id="overlay" onclick="closeFullscreen()">
       <img class="fullscreen-img" id="fullscreen-img" src="/profile-website/PurchaseOrder.png" alt="Purchase Order Tracking Application">
     </div>  
 
-    <div class="flex flex-col h-full bg-gradient-to-b from-blue-200 to-blue-400 dark:from-slate-900 dark:via-gray-800 dark:to-black">
+    <div class="flex flex-col h-full bg-gradient-to-b from-stone-100 to-stone-200 dark:from-slate-900 dark:via-gray-800 dark:to-black">
       <Nav />
       <div class="flex items-center justify-center">
         <div class="flex flex-col p-2 space-y-2 w-max max-w-[970px] justify-center items-center">
+          <div id="lotrecords" class="home-tile w-full bg-gradient-to-r from-stone-200 to-stone-50 dark:from-slate-900 
+          dark:to-slate-800 dark:text-white opacity-0 translate-y-10 transition-all delay-0 duration-700">
+            <section class="flex flex-row justify-between items-center border-b-2 border-stone-400 dark:border-blue-800">
+              <div class="flex flex-col">
+                <p class="pl-2 pt-2 text-xl">Client Data Records</p>
+              </div>
+              <img class="h-[75px] w-[100px] p-2" src="/profile-website/2mation.png" alt="2Mation Logo">
+            </section>
+            <ul class="list-disc pl-8 pb-4 pt-4">
+              <li>Data Focused Record Keeping</li>
+                <ul class="list-disc pl-8 space-y-1">
+                    <li>Complex, client focused record keeping application which gives a spreadsheet-like feel while also keeping the user experience simple, streamlined, and largely automated.</li>
+                    <li>Features a data efficent version control system, basic document and chart editors, change tracking, keyboard shortcuts, and much more.</li>
+                    <li>Modularized for custom fit for client usage so that data can adhere to any client's needs.</li>
+                  </ul>
+            </ul>
+            <ProjectCarousel
+              aspectRatio="16 / 10"
+              slides={[
+                { src: "/profile-website/lot_lwcf.png", alt: "Record data page" },
+                { src: "/profile-website/lot_charts.png", alt: "Record chart editor page" },
+                { src: "/profile-website/lot_document_editor.png", alt: "Record document editor page" },
+                { src: "/profile-website/lot_export_all.png", alt: "Record export all modal" },
+              ]}
+            />
+          </div>
+
           <div 
             id="poSystem" 
-            class="home-tile bg-gradient-to-r from-blue-400 to-blue-300 dark:from-slate-900 
-            dark:to-slate-800 dark:text-white opacity-0 translate-y-10 transition-all duration-700"
+            class="home-tile bg-gradient-to-r from-stone-200 to-stone-50 dark:from-slate-900 
+            dark:to-slate-800 dark:text-white opacity-0 translate-y-10 transition-all delay-200 duration-700"
           >
-            <section class="flex flex-row justify-between items-center border-b-2 border-blue-800">
+            <section class="flex flex-row justify-between items-center border-b-2 border-stone-400 dark:border-blue-800">
               <div class="flex flex-col">
                 <p class="pl-2 pt-2 text-xl">Inventory Management System</p>
               </div>
               <img class="h-[75px] w-[100px] p-2" src="/profile-website/2mation.png" alt="2Mation Logo">
             </section>
             <ul class="list-disc pl-8 pb-4 pt-1 space-y-1">
-              <li>Inventory Management Software</li>
+              <li>Network of Inventory Software</li>
                 <ul class="list-disc pl-8">
-                  <li>A series of multiple apps segmenting financial documentation and operation respectively.</li>
-                  <li>Purchase Orders, Receipts, Staff Requests, Textbook Inventories</li>
+                  <li>A series of multiple applications segmenting financial documentation and operations into focused subapplications.</li>
+                  <li>Provides users with a streamlined experience to handle tedious, mundane tasks.</li>
+                  <li>Invoices, Order Receipts, Staff Requests, Inventories</li>
                 </ul>
             </ul>
-            <div class="flex justify-center items-center pb-4">
-              <img id="poImage" class="thumbnail" src="/profile-website/PurchaseOrder.png" alt="Purchase Order Tracking Application"/>
-            </div>
-
+            <ProjectCarousel
+              aspectRatio="16 / 10"
+              slides={[
+                { src: "/profile-website/PurchaseOrder.png", alt: "Purchase Order Details Page" },
+                { src: "/profile-website/po_main_list.png", alt: "Purchase Order Main List Page" },
+                { src: "/profile-website/po_add_ticket.png", alt: "Purchase Order Add Ticket Page" },
+              ]}
+            />
           </div>
 
-          <div id="liftup" class="home-tile w-full bg-gradient-to-r from-blue-400 to-blue-300 dark:from-slate-900 
-          dark:to-slate-800 dark:text-white opacity-0 translate-y-10 transition-all delay-200 duration-700">
-            <section class="flex flex-row justify-between items-center border-b-2 border-blue-800">
+          <div id="admin" class="home-tile w-full bg-gradient-to-r from-stone-200 to-stone-50 dark:from-slate-900 
+          dark:to-slate-800 dark:text-white opacity-0 translate-y-10 transition-all delay-400 duration-700">
+            <section class="flex flex-row justify-between items-center border-b-2 border-stone-400 dark:border-blue-800">
               <div class="flex flex-col">
-                <p class="pl-2 pt-2 text-xl">Social Media Application</p>
+                <p class="pl-2 pt-2 text-xl">Administration Application</p>
+              </div>
+              <img class="h-[75px] w-[100px] p-2" src="/profile-website/2mation.png" alt="2Mation Logo">
+            </section>
+            <ul class="list-disc pl-8 pb-4 pt-4">
+              <li>Organizaiton Facilitation App</li>
+                <ul class="list-disc pl-8 space-y-1">
+                    <li>Facilitates organization level configurations such as user accessing, organization settings, and automated backend services.</li>
+                    <li>Involves a wide breadth of options across all applications an organization is subscribed to.</li>
+                  </ul>
+            </ul>
+            <ProjectCarousel
+              aspectRatio="16 / 10"
+              slides={[
+                { src: "/profile-website/admin_team.png", alt: "Administration team management page" },
+                { src: "/profile-website/admin_cron_job.png", alt: "Administration cron job management page" },
+                { src: "/profile-website/admin_line_items.png", alt: "Administration line item maintanence page" },
+              ]}
+            />
+          </div>
+
+          <div id="liftup" class="home-tile w-full bg-gradient-to-r from-stone-200 to-stone-50 dark:from-slate-900 
+          dark:to-slate-800 dark:text-white opacity-0 translate-y-10 transition-all delay-600 duration-700">
+            <section class="flex flex-row justify-between items-center border-b-2 border-stone-400 dark:border-blue-800">
+              <div class="flex flex-col">
+                <p class="pl-2 pt-2 text-xl">Lift Up</p>
               </div>
               <img class="h-[75px] w-[100px] p-2" src="/profile-website/2mation.png" alt="2Mation Logo">
             </section>
             <ul class="list-disc pl-8 pb-4 pt-4">
               <li>Social Media Application</li>
                 <ul class="list-disc pl-8 space-y-1">
-                    <li>A social platform for individuals of a community to help one another.</li>
+                    <li>A mobile-first social platform for individuals of a community to help one another.</li>
                     <li>Realtime features, image editor, team/group/individual based messaging architecture.</li>
                   </ul>
             </ul>
-            <div class="flex justify-center items-center pb-4">
-              <img id="LiftUpImage" class="thumbnail" src="/profile-website/LiftUp.png" alt="Lift Up Social Media Platform"/>
-            </div>
+            <ProjectCarousel
+              aspectRatio="12 / 10"
+              slides={[
+                { src: "/profile-website/lift_up_home.png", alt: "Lift Up Home page" },
+                { src: "/profile-website/LiftUp.png", alt: "Lift Up messaging page" },
+                { src: "/profile-website/lift_up_teams.png", alt: "Lift Up teams menu" },
+                { src: "/profile-website/lift_up_image_editor.png", alt: "Lift Up image editor" },
+              ]}
+            />
+          </div>
+
+          <div id="webVis" class="home-tile w-full bg-gradient-to-r from-stone-200 to-stone-50 dark:from-slate-900 
+          dark:to-slate-800 dark:text-white opacity-0 translate-y-10 transition-all delay-800 duration-700">
+            <section class="flex flex-row justify-between items-center border-b-2 border-stone-400 dark:border-blue-800">
+              <div class="flex flex-col">
+                <p class="pl-2 pt-4 pb-4 text-xl">Algorithm Visualization</p>
+              </div>
+            </section>
+            <ul class="list-disc pl-8 pb-4 pt-4">
+              <li>Visualize Runtime Results of Cutting Edge Algorithms</li>
+                <ul class="list-disc pl-8 space-y-1">
+                    <li>Internal algorithm visualization for UNL Constraint Processing Lab.</li>
+                    <li>Realtime visualizations of output data of custom satisfiability solver.</li>
+                  </ul>
+            </ul>
+            <ProjectCarousel
+              aspectRatio="12 / 10"
+              slides={[
+                { src: "/profile-website/webVis_bpd.png", alt: "Algorithm Visualization Backtracks Per Depth Editor Page" },
+                { src: "/profile-website/webVis_ipd.png", alt: "Algorithm Visualization Instantiations Per Depth Editor Page" },
+                { src: "/profile-website/webVis_multi_page.png", alt: "Algorithm Visualization editor with a grid of charts" },
+              ]}
+            />
           </div>
 
         </div>
       </div>
       <Footer />
       </div>
-    </body>
     <script>
       window.addEventListener('DOMContentLoaded', () => {
         const content2 = document.getElementById('poSystem');
@@ -78,11 +159,22 @@ import '../styles/global.css';
         content3?.classList.remove('opacity-0', 'translate-y-10');
         content3?.classList.add('opacity-100', 'translate-y-0');
 
-        const poImage = document.getElementById('poImage') as HTMLImageElement;
-        const liftUpImage = document.getElementById('LiftUpImage') as HTMLImageElement;
+        const content4 = document.getElementById('admin');
+        content4?.classList.remove('opacity-0', 'translate-y-10');
+        content4?.classList.add('opacity-100', 'translate-y-0');
+
+        const content5 = document.getElementById('lotrecords');
+        content5?.classList.remove('opacity-0', 'translate-y-10');
+        content5?.classList.add('opacity-100', 'translate-y-0');
+
+        const content6 = document.getElementById('webVis');
+        content6?.classList.remove('opacity-0', 'translate-y-10');
+        content6?.classList.add('opacity-100', 'translate-y-0');
+
         const overlay = document.getElementById('overlay');
-        poImage.addEventListener("click", () => openFullscreen(poImage));
-        liftUpImage.addEventListener("click", () => openFullscreen(liftUpImage));
+        document.querySelectorAll<HTMLImageElement>('[data-carousel-slide] img').forEach((image) => {
+          image.parentElement?.addEventListener("click", () => openFullscreen(image));
+        });
         overlay?.addEventListener("click", closeFullscreen);
       })
 
@@ -98,4 +190,4 @@ import '../styles/global.css';
         document.getElementById("overlay")!.style.display = 'none';
       }
   </script>
-</html>
+</Layout>

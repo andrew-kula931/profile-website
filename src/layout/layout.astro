@@ -1,0 +1,25 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  pageClass?: string;
+}
+
+const { title = "Andrew Kula", pageClass = "" } = Astro.props;
+---
+
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <script is:inline>
+      const savedTheme = localStorage.getItem("theme");
+      document.documentElement.classList.toggle("dark", savedTheme !== "light");
+    </script>
+  </head>
+  <body class={pageClass}>
+    <slot />
+  </body>
+</html>

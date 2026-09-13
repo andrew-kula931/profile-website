@@ -4,16 +4,37 @@ import LinkedIn from "../assets/linkedIn.astro";
 ---
 
 
-<div class="flex flex-row items-evenly justify-center w-full bg-blue-500 text-white p-3 border-t border-slate-700
-    dark:bg-slate-950">
-    <div class="flex flex-row justify-evenly h-full w-full">
-        <div class="flex flex-col space-y-2">
-            <a href="mailto:arkula931@gmail.com?subject=Hello" class="cursor-pointer hover:text-gray-300">arkula931@gmail.com</a>
-            <a href="mailto:akula5@huskers.unl.edu?subject=Hello" class="cursor-pointer hover:text-gray-300">akula5@huskers.unl.edu</a>
-        </div>
-        <div class="flex flex-row space-x-4 items-center">
-            <Github />
-            <LinkedIn />
-        </div>
+<footer class="w-full border-t border-stone-300 bg-stone-200 px-4 py-6 text-stone-800 dark:border-slate-700 dark:bg-slate-950 dark:text-white">
+    <div class="mx-auto grid w-full max-w-[970px] grid-cols-1 gap-6 sm:grid-cols-3 sm:items-start">
+        <section aria-labelledby="footer-contact-title" class="min-w-0">
+            <h2 id="footer-contact-title" class="mb-2 text-sm font-semibold uppercase tracking-wide text-stone-500 dark:text-blue-100">Contact</h2>
+            <address class="flex flex-col gap-2 not-italic text-sm">
+                <a href="mailto:arkula931@gmail.com?subject=Hello" class="break-words hover:text-gray-300">arkula931@gmail.com</a>
+                <a href="mailto:akula5@huskers.unl.edu?subject=Hello" class="break-words hover:text-gray-300">akula5@huskers.unl.edu</a>
+            </address>
+        </section>
+
+        <section aria-labelledby="footer-resume-title" class="min-w-0 sm:text-center">
+            <h2 id="footer-resume-title" class="mb-2 text-sm font-semibold uppercase tracking-wide text-stone-500 dark:text-blue-100">Resume</h2>
+            <a
+                href="/profile-website/andrewkula20260826.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1 font-medium underline underline-offset-4 decoration-2 hover:text-stone-500 dark:hover:text-gray-300"
+            >
+                View resume
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
+            </a>
+        </section>
+
+        <nav aria-labelledby="footer-social-title" class="sm:text-right">
+            <h2 id="footer-social-title" class="mb-2 text-sm font-semibold uppercase tracking-wide text-stone-500 dark:text-blue-100">Social</h2>
+            <div class="flex items-center gap-4 sm:justify-end">
+                <Github />
+                <LinkedIn />
+            </div>
+        </nav>
     </div>
-</div>
+</footer>

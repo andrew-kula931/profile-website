@@ -1,22 +1,16 @@
 ---
+import Layout from '../../layout/layout.astro';
 import Nav from '../../components/nav.astro';
-import '../../styles/global.css';
 ---
 
-<html id="html" lang="en" class="dark">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Novel Directory</title>
-  </head>
-  <body>
-    <div class="flex flex-col h-screen bg-gradient-to-b from-blue-200 to-blue-400 dark:from-slate-900 dark:via-gray-800 dark:to-black">
+<Layout title="Novel Directory">
+    <div class="flex flex-col h-screen bg-gradient-to-b from-stone-100 to-stone-200 dark:from-slate-900 dark:via-gray-800 dark:to-black">
         <Nav />
       <section class="flex justify-center">
         <div class="flex flex-col p-2 space-y-2 w-full max-w-[800px] self-center">
             <a href="/profile-website/writing/experimentt/toc" class="hover:text-gray-700 dark:hover:text-gray-400">
               <div 
-                  class="home-tile bg-gradient-to-r from-blue-300 to-blue-400 dark:from-slate-800 dark:to-slate-900 dark:text-white" >
+                  class="home-tile bg-gradient-to-r from-stone-50 to-stone-200 dark:from-slate-800 dark:to-slate-900 dark:text-white" >
                   <p class="p-2 pb-1 text-xl"><strong>Experiment T</strong></p>
                   <strong class="pl-2 pb-1">Summary:</strong>
                   <p class="p-2 pt-0 text-sm">
@@ -34,5 +28,4 @@ import '../../styles/global.css';
         </div>
       </section>
     </div>
-  </body>
-</html>
+</Layout>
