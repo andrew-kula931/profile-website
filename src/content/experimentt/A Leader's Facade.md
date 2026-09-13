@@ -130,7 +130,7 @@ The hand-made wall is hardly pleasing to look at, but the haphazardly placed two
 
 Ryan glances at her and finds himself drawn to a particular object on her face. On the lobe of her ear is a small red circle with black polka dots, it's a signature of a certain bug that offers a certain allure to it. Ryan can't help but stare at it until Chloe looks over.
 
-"I like your earing," Ryan covers as he looks away, not wanting to be awkward.
+"I like your earring," Ryan covers as he looks away, not wanting to be awkward.
 
 Chloe touches her ear and smiles, "Thank you. Red's not my preferred color, but it's all I've got."
 
