@@ -220,7 +220,7 @@ Ryan tries to calm his shaking arms, but the scene is unapologetically a clear c
 
 Ryan freezes. He turns back to Heimes and sees that his face looks disappointed, but it's not directed towards Ryan, it's towards himself. It's as if the the man felt... pity? The stoic man then reaches into his suit coat jacket and pulls out a small cylindrical object with a curved top and bottom. He then flicks out a menacing blade. Ryan studies the weapon and begins to slowly back away from the man who he once believed was supposed to protect students.
 
-Heimes holds the blade out to him, “Do yourself a favor… end your suffering before it begins.”
+Heimes holds the blade out to him, "Do yourself a favor… end your suffering before it begins."
 
 Ryan’s blood runs cold. Any expectation he might have at the moment doesn’t do justice to what might actually happen. The irony is that Heimes retains his stoic position like a statue waiting for Ryan to make the next move.
 
@@ -234,7 +234,7 @@ Heimes pulls out a key from his pocket and tosses it onto the floor near the cor
 
 Ryan’s breath, now frantic, slows to one controlled inhale and exhale as he searches for the words he needs, “What is going on?”
 
-Heimes shakes his head with a slight chuckle, "That’s the second time you’ve asked me that", he smirks briefly, indulging in a moment of flat humor, "Have you finally reconsidered your position on dropping out… none the matter," he returns to an authoritative demeanor, "You are going to die... but if you take that key, you'll simply die a little bit later... the choice is yours."
+Heimes shakes his head with a slight chuckle, "That’s the second time you’ve asked me that", he smirks briefly, indulging in a moment of flat humor, "Have you finally reconsidered your position on dropping out… none the matter," he returns to an authoritative demeanor, "You are going to suffer... but if you take that key, it might be a little bit more bearable... the choice is yours."
 
 Ryan shallows the heavy words that fall upon him like cinder blocks. His knees start to buckle but he prevents them from giving way as he takes another deep breath and concentrates on what is before him.
 

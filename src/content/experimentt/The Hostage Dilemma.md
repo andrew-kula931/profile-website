@@ -332,9 +332,9 @@ At some point, Caid gave up on resisting the pain and slowly grabbed on to Ryan'
 
 "No!" Ryan asserts, "I'm not going to let you die."
 
-Suddenly growing a bit frustrated, Caid shoves Ryan's arm off of him with enough force to make Ryan step back. Afterward, he just takes a deep breath, "The bastard poisoned me, this is probably the end of the line."
+Suddenly growing a bit frustrated, Caid shoves Ryan's arm off of him with enough force to make Ryan step back. Afterward, he just takes a deep breath, "I hate to admit it, but I don't think I'm making it out of this one."
 
-Both Ryan and Drew's eyes widen.
+Ryan's eyes widen; Drew's narrow.
 
 "What are you saying?!" Ryan demands, his forehead sweating despite it being ice cold outside.
 
@@ -352,20 +352,20 @@ Caid shakes his head, "That monster was going to take Max to do... well this. At
 
 With a light laugh, Caid coughs, "Yeah, Max's jokes weren't funny either... I guess he rubbed off on me."
 
-"Then... then you'll have to see him again."
+Ryan searches his friend again but finds nothing to give him hope or otherwise, "Then... then you'll have to see him again."
 
-"Get them back for me, won't you?" Caid asks rather upbeat despite the fact the blood is beginning to seep out the corners of his mouth.
+"Get them back for me, won't you?" Caid asks rather upbeat despite the fact the blood is beginning to seep out the corners of his mouth. A coughs into his arm leaving behind a pocket of mucus, phlegm, and blood.
 
-"Y–yeah..." Ryan stammers, "Of course, you can count on me."
+"Y–yeah..." Ryan stammers, his voice wavering as he finds himself blinking faster than he usually does, "Of course, you can count on me."
 
-Caid smiles, "Oh and Ryan," Ryan leans in closely, "Tell Beth that she's good enough... and that I love her."
+Caid smiles, "Oh and Ryan," Ryan leans in closely, "Tell Beth that she's good enough... she forgets that sometimes."
 
-"No!" Ryan says quickly, his cheeks growing hot, "Y–you can tell her yourself. You just need to get up and then we... we can... we can go back to the way things used to be. It can be in the farmhouse, or maybe we can go back to high school. I don't even care if none of you remember me, as long as you're alive an safe, that's all I care about."
+"No!" Ryan says quickly, his cheeks growing hot, "Y–you can tell her yourself. You just need to get up and then we... we can... we can go back to the way things used to be. It can be in the farmhouse, or maybe—we can go back to high school. I don't—I don't even care if none of you remember me, as long as you're alive and safe, that's all I care about."
 
-Caid's movements grow as minimal as possible, "You know Ryan," he says with a shallow, drifting tone, "You've always cared a little too much about the people around you... never change."
+Caid's movements grow as minimal as possible, "You know Ryan," he says with a shallow, drifting tone, "You've always cared a little too much about the people around you... I never understood why... but thank you... I needed that."
 
-"No. no no no no no," Ryan repeats in disbelief, "We'll get out of here. I promised I'd protect you. You've just got to hold on. Hold on damn it! Just hold on! I promised I'd protect all of you. Please don't leave me too."
+"No. no no no no no," Ryan repeats in disbelief, "We'll get out of here. I promised I'd protect you. You've just got to hold on. Hold on damn it! Just hold on! Please... Please just hold one," his vision grows blurry, "Please don't leave me. Not you too."
 
-Drew grabs on to his shoulder with a empathetic look.
+With the last of his strength, Caid offers him a smile. Not a smile of comfort, of false sorrow, or anything like that. His smile is genuine. As his eyes begin to gloss over, he looks up to the sky.
 
-One hundred restarts later, Ryan would crawl out of the restaurant only to find Caid as dead as he is now.
+One hundred restarts come and go: one hundred desperate attempts to change Caid's fate. By the very last one, Ryan crawls out of the restaurant. He finds Caid dead each and every time.
