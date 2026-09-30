@@ -1,7 +1,7 @@
 ---
-book: "Experiment T"
-title: "Grief"
-chapNum: 49
+book: Experiment T
+title: Grief
+chapNum: 50
 pubDate: 2026/08/28
 ---
 The clouds were utterly boring that day. Half the sky was smothered in a dull gray pillow while the pockets of blue were no more interesting than the monochrome clouds. He honestly tried to look up at them for a time, maybe because he didn't want to look down, or maybe because it reminded him of a time where life wasn't like this. Either way, his attempts at escape collapse before they begin.

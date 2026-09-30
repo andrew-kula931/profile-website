@@ -8,7 +8,7 @@ The class finishes off, but the bell never rings. An uncomfortable chaos slowly 
 
 “Teachers, please keep your students inside their classrooms for the time being. We are in a soft lockdown mode. This is not a drill.”
 
-Chatter breaks out between each student on what could possibly be happening. Ryan leans back in his chair, the unease he feels is echoes instinctively by the rest of the class despite them all being ignorant. He presses his palms together as he imagines what might happen. The heavy burden placed upon him in that bathroom makes him briefly reflect on the past eighteen years of his life and wish he didn’t hate it so much. His arms tremble as he imagines what could possible be about to happen.
+Chatter breaks out between each student on what could possibly be happening. Ryan leans back in his chair, the unease he feels is echoed instinctively by the rest of the class despite them all being ignorant. He presses his palms together as he imagines what might happen. The heavy burden placed upon him in that bathroom makes him briefly reflect on the past eighteen years of his life and wish he didn’t hate it so much. His arms tremble as he imagines what could possible be about to happen.
 
 A boy next to him leans over and whispers softly under the dull roar of chatter in the classroom, “You were the last person to leave, was something happening outside?” 
 
@@ -92,7 +92,7 @@ She nods with a slight, “Yes.”
 
 Lieutenant Roger finishes up the order and quickly exits the room, probably intending to repeat the same thing to the next class. With his departure, the room is left with an eerie silence, one so thick not even a knife could cut through.
 
-While most of the students are probably thinking about what to say to the nearest working ear, Ryan focuses on a single word uttered out of the soldier’s mouth: library. What Heimes told him echoes through his mind as he debates what is going on. The library is for the sick, but the sick turn into zombies. Why doesn’t he need to go there to get answers? None of it makes sense which only adds to his growing headache.
+While most of the students are probably thinking about what to say to the nearest working ear, Ryan focuses on a single word uttered out of the soldier’s mouth: library. What Heimes told him echoes through his mind as he debates what is going on. The library is for the sick, but the sick turn into zombies. Why does he need to go there to get answers? None of it makes sense which only adds to his growing headache.
 
 Suddenly, a girl still seated at her desk begins to cough uncontrollably. All eyes point to her and the teacher is put on the spot. Will she follow instructions and send her to the library or what? It’s the question on everyone’s mind.
 
@@ -220,16 +220,16 @@ The creep steps back and shakes its head. “Calm yourself lieutenant, the organ
 
 The lieutenant paces in place, “How could you be the best of the best?”
 
-The creep lets out a little chuck, “You grunts don’t know anything about science. To put it into words you would understand, in my field, only novelty leads to progress. Every new and unique result leads to a new discover, and in turn, real, unadulterated progress. That process takes time and many, many trials to sufficiently complete. No fact left behind.”
+The creep lets out a little chuck, “You grunts don’t know anything about science. To put it into words you would understand, in my field, only novelty leads to progress. Reinforcement has a place here and there, but not for the results I'm seeking. Every new and unique result leads to a new discover, and in turn, real, unadulterated progress. That process takes time and many, many trials to sufficiently complete. No fact can be left behind.”
 
-“This is the eighth student so far, the other seven have died. You might be blind, so I’ll explain this to you: these are KIDS!”
+“This is the eighth student so far, the other seven have died. You don't seem to get it, so let me spell it out to you: these are KIDS!”
 
-The creep picks up an instrument from the table and hobbles over to the girl picking her sagging head up so it is looking right at her. 
+The creep picks up an instrument from the table and hobbles over to the girl, picking her sagging head up so that they face another. The sadistic scientist glances back at the soldier, "Calm yourself, I've worked on younger."
 
 The girl's face is bright red with tears streaming down her face. He thought she was unconscious before but now he realizes that she heard the whole thing.
 
 “Ha…ppy… Bir...th…day” she sobs quietly, “To…you…”
 
-The creep brings the instrument closer to the girl's face, “As you said yourself, she’s already a goner, with her sacrifice we could save so many more. Something you humans just don’t understand.”
+The creep brings the instrument closer to the girl's face, “As you said yourself, she’s already a goner, with her sacrifice we get one step closer to saving countless. Believe me, this is a case where the ends justify the means—not that any of us will get to see the ends.”
 
 Ryan closes the door right before the blood curdling scream of the girl rings out.

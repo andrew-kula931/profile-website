@@ -1,7 +1,7 @@
 ---
-book: "Experiment T"
-title: "Same Old Challenges"
-chapNum: 42
+book: Experiment T
+title: Same Old Challenges
+chapNum: 43
 pubDate: 2026/08/12
 ---
 The following day starts like any other. Blake and Ryan wake up at the rising sun with only Beth awake before them. The three of them converse briefly while they eat left overs for breakfast and then the two men prepare to set off for the day. Beth warns them about some wolf tracks that Caid found the day before, but they don’t worry too much about it. Ryan continues to carry his knife and pistol while Blake carries a pistol of his own, but that was just basic security these days. Before long, they are out the door and heading towards the town ready to try out this plan of Blake’s.

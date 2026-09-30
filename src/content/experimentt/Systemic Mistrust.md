@@ -4,61 +4,61 @@ title: "Systemic Mistrust"
 chapNum: 8
 pubDate: 2026/05/10
 ---
-_Ryan’s mom stands at the kitchen sink, the soft glow of the morning sun casting a warm embrace over the room. Birds sing melodious songs outside the window, and the gentle hum of their refrigerator fills the air. Ryan, a four-year-old bundle of innocence and curiosity, sits at the kitchen table, engrossed in coloring a beautiful picture of a serene elephant. He carefully selects bright, cheerful colors, hoping to make the perfect gift for his mother.
+_Ryan’s mom stands at the kitchen sink, the soft glow of the morning sun casting a warm embrace over the room. Birds sing melodious songs outside the window, and the gentle hum of their refrigerator fills the air. Ryan, a four-year-old bundle of innocence and curiosity, sits at the kitchen table, engrossed in coloring a beautiful picture of a serene elephant. He carefully selects bright, cheerful colors, hoping to make the perfect gift for his mother._
 
-_His mother hums a gentle tune as she washes the dishes, her voice a soothing backdrop to the peaceful scene. Her humming is her signature, a comforting melody that defines her presence in Ryan’s young mind. He knows that she’s happy when she hums that tune, and today, he wants to make her especially happy. Not just because it read's "MOM'S B-DAY" on the calendar but also because he recognizes, at his young age, that he loves his mother very much.
+_His mother hums a gentle tune as she washes the dishes, her voice a soothing backdrop to the peaceful scene. Her humming is her signature, a comforting melody that defines her presence in Ryan’s young mind. He knows that she’s happy when she hums that tune, and today, he wants to make her especially happy. Not just because it reads "MOM'S B-DAY" on the calendar, but also because he recognizes, at his young age, that he loves his mother very much._
 
-_Suddenly, the phone rings causing Ryan’s mom to eagerly rush over to it. She lifts it with a rushed grace as a smile grows wide on her lips and the phone touches her hear.
+_Suddenly, the phone rings, causing Ryan’s mom to eagerly rush over to it. She lifts it with a rushed grace as a smile grows wide on her lips and the phone touches her ear._
 
-_“Are you almost home?”
+_“Are you almost home?”_
 
-_Ryan continues to color and heeds the call no mind. He is determined to finish this grand elephant if it’s the last thing he does. As his mother’s conversation continues, the still, comforting silence begins to waver into darker ambient noise. The refrigerator's hum descends into a distant rumble but it's easily misinterpreted as a plane passing overhead. His fingers shake but he assumes its due to his vigorous scribbling of wide color gradients. 
+_Ryan continues to color and heeds the call no mind. He is determined to finish this grand elephant if it’s the last thing he does. As his mother’s conversation continues, the still, comforting silence begins to waver into darker ambient noise. The refrigerator's hum descends into a distant rumble, but it's easily misinterpreted as a plane passing overhead. His fingers shake, but he assumes its due to his vigorous scribbling of wide color gradients. _
 
-_“Oh really! That’s fantastic.”
+_“Oh really! That’s fantastic.”_
 
-_Ryan looks up to view the delight on his dear mother’s face. He simply gives a confused look to indicate his lack of knowledge, though he has a faint clue as to why she would smile.
+_Ryan looks up to view the delight on his dear mother’s face. He simply gives a confused look to indicate his lack of knowledge, though he has a faint clue as to why she would smile._
 
-_His mom turns to him and holds out the phone saying, “Your father wants to talk to you. He's coming home soon.”
+_His mom turns to him and holds out the phone saying, “Your father wants to talk to you. He's coming home soon.”_
 
-_Ryan takes the phone with a frown, he doesn’t like his father. Every time he comes home he tries to buy Ryan’s affection. Unfortunately, it works most of the time, but then he leaves and it doesn’t feel good anymore.
+_Ryan takes the phone with a frown, he doesn’t like his father. Every time he comes home he tries to buy Ryan’s affection. Unfortunately, it works most of the time, but then he leaves, and it doesn’t feel good anymore._
 
-_“Hey… uh… sport. How are you doing?” his father says, attempting to sound like he cares.
+_“Hey… uh… sport. How are you doing?” his father says, attempting to sound like he cares._
 
-_“Fine.”
+_“Fine.”_
 
-_“You know, I’ve been thinking a lot about you recently. Works been really hard lately, but every time I go to sleep I imagine you and your mother smiling back at me. Can you keep doing that for me?”
+_“You know, I’ve been thinking a lot about you recently. Work's been really hard lately, but every time I go to sleep, I imagine you and your mother smiling back at me. Can you keep doing that for me?”_
 
-_Ryan dodges the question entirely, “So come home if you don’t like it?”
+_Ryan dodges the question entirely, “So come home if you don’t like it?”_
 
-_His father’s voice chuckles at the idea but behind it is a small amount of pain and regret, “I wish it was that easy.”
+_His father’s voice chuckles at the idea but behind it is a small amount of pain and regret, “I wish it was that easy.”_
 
-_“But…” Ryan tries suddenly, feeling the impulsive desire want things to be straightforward despite his previous inclination.
+_“But…” Ryan tries suddenly, feeling the impulsive desire to want things to be straightforward despite his previous inclination._
 
-_As a dim, gray fog begins to cloud the kitchen, his father’s voice becomes more serious and stern, “The Jacobsons did nothing to deserve the fate you ensured them.”
+_As a dim, gray fog begins to cloud the kitchen, his father’s voice becomes more serious and stern, “The Jacobsons did nothing to deserve the fate you ensured them.”_
 
-_“What?!” Ryan gasps, realizing that he’s back to his normal 18 year old self. He search around frantically as he reaches out for his mother but finds himself alone in the fading kitchen. Eerie whispers and echoes resonate all around him with no clear point of origin as each one seems to target him with some malicious, unintelligible insult.
+_“What?!” Ryan gasps, realizing that he’s back to his normal 18-year-old self. He searches around frantically as he reaches out for his mother but finds himself alone in the fading kitchen. Eerie whispers and echoes resonate all around him with no clear point of origin, as each one seems to target him with some malicious, unintelligible insult._
 
-_“You don’t care about others, you only look out for yourself.”
+_“You don’t care about others, you only look out for yourself.”_
 
-_Ryan grows defensive as he looks around at the thick, encompassing void surrounding him, “So what, I have a right to care. No one else will.”
+_Ryan grows defensive as he looks around at the thick, encompassing void surrounding him, “So what, I have a right to care. No one else will.”_
 
-_The phone he was holding is now gone and the voice of his father’s grows into one much more sinister and foreboding. The voice speaks at a booming volume seemingly coming from every direction simultaneously as the gray fog collapses into pure blackness.
+_The phone he was holding is now gone, and his father’s voice grows much more sinister and foreboding. The voice speaks at a booming volume, seemingly coming from every direction simultaneously, as the gray fog collapses into pure blackness._
 
-_“HYPOCRITE!”
+_“HYPOCRITE!”_
 
-_Ryan tries to move, but there is nowhere to go in the void he finds himself in. The echoes grow in volume but the demonic voice booms overtop it all.
+_Ryan tries to move, but there is nowhere to go in the void he finds himself in. The echoes grow in volume, but the demonic voice booms over it all._
 
-_“NO!” he yells back.
+_“NO!” he yells back._
 
-_“You are no better than Steve. You are no better than those that pushed you down. You have become what you sought to destroy.”
+_“You are no better than Steve. You are no better than those that pushed you down. You have become what you sought to destroy.”_
 
-_Ryan searches around the empty, hollow voice he’s entrapped in, “No! I’m nothing like them.”
+_Ryan searches the empty, hollow void he’s entrapped in. “No! I’m nothing like them.”_
 
-_“You’ve only ever cared about yourself and because of that people now lay dead. People who trust and care for you are pushed down by your selfish actions.”
+_“You’ve only ever cared about yourself and because of that people now lay dead. People who trust and care for you are pushed down by your selfish actions.”_
 
-_Ryan collapses and begins to fall deeper and deeper down into the void. Inky appendages ensnare his arms, waist, and legs before tugging him down even faster. The voice's words ring out as he continues to descend.
+_Ryan collapses and begins to fall deeper and deeper down into the void. Inky appendages ensnare his arms, waist, and legs before tugging him down even faster. The voice's words ring out as he continues to descend._
 
-_“You let the zombies out of the school and caused all the death and destruction! No one will forgive you.”
+_“You let the zombies out of the school and caused all the death and destruction! No one will forgive you.”_
 
 ---
 
@@ -68,7 +68,7 @@ Ryan wakes with a start only to meet the eyes of Bill across the room. An early 
 
 Ryan forces himself into a seated position and lets his head rest in his hands. It shocks him to find his palms sweaty, not hot, but cold.
 
-What was that dream about? He couldn’t be that bad of a person to think things like that. Was he a hypocrite? No, he couldn’t be. He did his best. He's always done his best. He was a survivor and gave his class a fighting chance. The apocalypse was already beginning outside of the school, it just happened to get inside. He isn’t to blame for anything.
+What was that dream about? He couldn’t be that bad of a person to think things like that. Was he a hypocrite? No, he couldn’t be. He did his best. He's always done his best. He was a survivor and gave his class a fighting chance. The apocalypse was already beginning outside of the school; it just happened to get inside. He isn’t to blame for anything.
 
 Charlie walks into the room and stares blankly at Ryan.
 
@@ -76,7 +76,7 @@ Charlie walks into the room and stares blankly at Ryan.
 
 “Dad said we’re leaving,” Charlie responds with a rather emotionless tone for his usual self.
 
-Ryan sighs. This kid always seems to get under his skin just by being around. He didn’t even say anything bad beyond an unnaturally, unreadable face, he simply never stopped to think about anything beyond himself. The kid lived in his own little world and Ryan had to put up with it. Honestly... like father like son.
+Ryan sighs. This kid always seems to get under his skin just by being around. He didn’t even say anything bad; beyond an unnaturally unreadable face, he simply never stopped to think about anything beyond himself. The kid lived in his own little world, and Ryan had to put up with it. Honestly... like father, like son.
 
 “I know,” Ryan finally responds, trying not to look frustrated.
 
@@ -96,23 +96,23 @@ Steve shoots him a glance but Bill is the one who responds, “You’re? You mak
 
 Karmen’s attention turns to their conversation as she advances closer with her arms slowly beginning to tremble. 
 
-“Oh course he’s coming with us,” Steve says while closing the trunk of the car, “It was just a slip of the tongue.”
+“Of course he’s coming with us,” Steve says while closing the trunk of the car. “It was just a slip of the tongue.”
 
 “Oh good,” Karmen sighs, “You worried me there for a moment.”
 
 Ryan lowers his head in a sort of shame. He was indeed planning on leaving, but what would become of this family without him. Now with Bill, they’d survive, but what about Karmen. Ryan’s fist clenches and he tenses his entire arm while simultaneously trying to conceal it from anyone’s view. Living on a secluded farm with this sorry replacement for a family is not on his priority list. Maybe he just woke up on the wrong side of the bed, but something about the current situation just rubs him the wrong way. 
 
-Ryan looks down at his messy t-shirt and dirty pants. He really should have changed before they planned on leaving, but there isn’t much he can do since he woke up late.
+Ryan looks down at his messy T-shirt and dirty pants. He really should have changed before they planned on leaving, but there isn’t much he can do since he woke up late.
 
 “Alright! That wraps things up,” Bill announces, “I’ve got one more thing to do inside and then we can leave. Go ahead and get in the car everyone, it's gonna be a long drive.”
 
 ---
 
-Within ten minutes, Ryan finds himself in the same old car riding down a neighborhood street seeing people packing up and leaving just as they did. Some people carry large suitcases full of clothes like they’re going on an extended vacation while others frantically shove a few unorderly sets of clothes into the passenger’s seat while simultaneously jumping into the driver’s seat.
+Within ten minutes, Ryan finds himself in the same old car, riding down a neighborhood street and seeing people packing up and leaving just as they did. Some people carry large suitcases full of clothes like they’re going on an extended vacation, while others frantically shove a few disordered sets of clothes into the passenger’s seat while simultaneously jumping into the driver’s seat.
 
 “Isn’t traffic going to be a huge issue like yesterday?” Ryan asks, studying the street ahead to see multiple cars already forming a line to get onto the freeway.
 
-“Yes, but I plan to take the backroads,” Steve replies, turning off down a sidestreet.
+“Yes, but I plan to take the backroads,” Steve replies, turning off down a side street.
 
 “I didn’t know there were backroads out of town,” Karmen says as she looks around at the nearby streets, all of which have cars in them, “Wouldn’t other people have the same idea.”
 
@@ -124,9 +124,9 @@ The constant bumps don’t bother Ryan too much, but Charlie takes a turn for th
 
 “Mom… the bumpiness makes me feel sick,” he complains, letting his head bob up and down with every bump.
 
-Karmen, who is sitting between Ryan and Charlie, tries to comfort him with a hug, even though there is nothing she can do for him. The motion sickness isn’t a pressing issue so he’ll just have to deal with it for the time being. Once they get back to a paved road, everything will be fine.
+Karmen, who is sitting between Ryan and Charlie, tries to comfort him with a hug, even though there is nothing she can do for him. The motion sickness isn’t a pressing issue, so he’ll just have to deal with it for the time being. Once they get back to a paved road, everything will be fine.
 
-Suddenly, the car pulls to a grinding halt right behind a line of cars reaching off through the thick, tree covered path. Steve immediately gets out of the car and looks around.
+Suddenly, the car pulls to a grinding halt right behind a line of cars reaching off through the thick, tree-covered path. Steve immediately gets out of the car and looks around.
 
 “What is going on?” he says to himself.
 
@@ -134,13 +134,13 @@ Suddenly, the car pulls to a grinding halt right behind a line of cars reaching 
 
 Steve nods in agreement and checks his gun holstered to his hip. It makes Ryan once again check that he still has his own pistol, though not in a convenient holster.
 
-Bill gestures to Ryan to begin moving on, while Steve gets back in the car. As they begin walking down the line of cars, he notices another car behind theirs pulling up.
+Bill gestures to Ryan to begin moving on while Steve gets back in the car. As they begin walking down the line of cars, Ryan notices another car behind theirs pulling up.
 
 “You got your pistol handy?” Bill asks.
 
 Ryan does a double take, “How did you—”
 
-“Steve told me. Don’t worry, Karmen doesn’t know,” Bill explains briefly and assuredly, "I was going to give you a holster, but of all the things I have to worry about right now, that one just slipped my noggin."
+“Steve told me. Don’t worry, Karmen doesn’t know,” Bill explains briefly and assuredly. “I was going to give you a holster, but of all the things I have to worry about right now, that one just slipped my noggin.”
 
 Ryan crosses in front of a parked car to get on the same side as Bill. They continue to walk down the line of cars together.
 
@@ -150,7 +150,7 @@ Ryan shoots him a glance, “Is this really the time to talk—”
 
 He’s cut off by the jovial laugh that emanates from Bill’s mouth. His restrained bellows of joy don’t last long but they reset the tense mood for sure.
 
-“I’m only messing with you Ryan,” Bill says, patting him on the back, “Sometimes you just have to keep things… err… light! Getting too stressed will only cause you to make ill advised decisions.”
+“I’m only messing with you, Ryan,” Bill says, patting him on the back. “Sometimes you just have to keep things… err… light! Getting too stressed will only cause you to make ill-advised decisions.”
 
 Ryan shakes his head and speeds up just slightly in which Bill returns the pace. It’s good advice to say the least, but it just rubs him the wrong way at the moment.
 
@@ -158,33 +158,33 @@ Ryan shakes his head and speeds up just slightly in which Bill returns the pace.
 
 They continue on for another few paces in silence, something Ryan gratefully accepts. They pass by a plethora of cars which all seem to be void of people. Every now and then he’ll notice a gaze through the tainted glass of a sedan but it’s never menacing enough for him to fixate on it.
 
-Bill is not a rude or difficult person to get along with but he’s definitely an extrovert which is something that bothers Ryan quite a bit—his personality is too active. This is only accentuated by the fact that Bill begins to hum an obnoxious tune as they walk. It starts off as some kind of sailor’s song, but then slowly fades into something sadder, but ends with another joyful melody. The slight breeze through the forest waves the tall grass and shrubs nearby to the pulse of the song. The song goes on and on through multiple verses each maintaining the joyful ups and sorrowful downs of the tune. Every time it repeats, it almost feels like it slows down a bit, but maybe that’s because he wasn’t paying much attention. Eventually the song comes to an end and Bill changes his hum to words.
+Bill is not a rude or difficult person to get along with, but he’s definitely an extrovert, which is something that bothers Ryan quite a bit—his personality is too active. This is only accentuated by the fact that Bill begins to hum an obnoxious tune as they walk. It starts off as some kind of sailor’s song, then slowly fades into something sadder, and ends with another joyful melody. The slight breeze through the forest waves the tall grass and shrubs nearby to the pulse of the song. The song goes on and on through multiple verses, each maintaining the joyful ups and sorrowful downs of the tune. Every time it repeats, it almost feels like it slows down a bit, but maybe that’s because he wasn’t paying much attention. Eventually, the song comes to an end and Bill changes his hum to words.
 
 “You wanna know where that song comes from?” he asks, nudging Ryan on the elbow.
 
 “Not really,” he says irritatedly, seeing as the peaceful ambience of the forest is now a figment of the past.
 
-“Oh, don’t be like that,” Bill complains while taking a larger step to catch back up to pace with Ryan.
+“Oh, don’t be like that,” Bill complains while taking a larger step to catch back up with Ryan.
 
 “I’m more concerned about what’s up ahead than some song,” Ryan explains without so much as batting an eye.
 
 “The song is the tune of an old hymn we used to sing while fishing. By ‘we’ I mean me and my father and my uncle… and my cousins… an—”
 
-“Alright, I think I get it,” Ryan interrupts, trying not to be too rude, but tired of listening to this guy's merry rant—it’s just so off putting given the current situation.
+“Alright, I think I get it,” Ryan interrupts, trying not to be too rude, but tired of listening to this guy's merry rant—it’s just so off-putting given the current situation.
 
 Bill rolls his eyes as he slumps his shoulders, “Every time I wanna talk, you just shoot me down, Justin.”
 
 Justin?
 
-Bill realizes his slip up and attempts to react but is cut off by sight of people up ahead. Within an instant, Bill goes from the happy-go-lucky guy to a completely serious army captain. He puts a finger to his mouth and whispers something as quietly as he can.
+Bill realizes his slipup and attempts to react but is cut off by the sight of people up ahead. Within an instant, Bill goes from the happy-go-lucky guy to a completely serious army captain. He puts a finger to his mouth and whispers as quietly as he can.
 
 He says, “Go join the group, I’ll watch from the trees,” before running off into the tall grass and trees around them. 
 
-With no other option left, Ryan advances the last few car lengths to join the mob of people standing in front of something. As he gets close enough to see through the gaps in the crowd he realizes that a military jeep is sitting perpendicular to the road blocking off access across. 
+With no other option left, Ryan advances the last few car lengths to join the mob of people standing in front of something. As he gets close enough to see through the gaps in the crowd, he realizes that a military jeep is sitting perpendicular to the road, blocking access across it. 
 
 “Everyone attempting to take this route must follow me to a military checkpoint. The entire city is under quarantine," a soldier orders from the jeep.
 
-Ryan instinctively studies the soldier to get a read on whether it's a soldier he saw back in the school but can’t extract much. As far as he can tell, this soldier is just as real as the one back at school—the fact that he can’t tell a distinction is the concerning point.
+Ryan instinctively studies the soldier to get a read on whether he's one of the soldiers he saw back in the school, but he can’t extract much. As far as he can tell, this soldier is just as real as the one back at school—the fact that he can’t tell the difference is the concerning point.
 
 “What do you mean we have to?!” someone yells.
 
@@ -192,9 +192,9 @@ The soldier continues, “Everyone must go through the checkpoint if you want to
 
 Ryan turns and starts heading back instinctively.
 
-Unless they go back the way they came, they will have to go through the checkpoint. He would prefer to avoid that, but he’ll need to get input from the rest of the group before making a decision like that. Though maybe, if they make it to the checkpoint, he’ll get the go ahead to leave and Steve’ll give him the supplies he’s earned by sticking around.
+Unless they go back the way they came, they will have to go through the checkpoint. He would prefer to avoid that, but he’ll need to get input from the rest of the group before making a decision like that. Though maybe, if they make it to the checkpoint, he’ll get the go-ahead to leave and Steve’ll give him the supplies he’s earned by sticking around.
 
-By the time he makes it back to the car, Bill is already standing there talking to Steve through the driver’s side window. Karmen looks concerned in the back seat while the two men discuss something very important. A line of cars has constructed itself behind their stationary vehicle amassing to ten or so cars long. As far as they are concerned, there is no turning back. Tall grass and a densely knitted scatterplot of trees will hinder any attempt at turning around.
+By the time he makes it back to the car, Bill is already standing there talking to Steve through the driver’s-side window. Karmen looks concerned in the back seat while the two men discuss something very important. A line of cars has constructed itself behind their stationary vehicle, amassing to ten or so cars long. As far as they are concerned, there is no turning back. Tall grass and a densely knit scatter of trees will hinder any attempt at turning around.
 
 Bill notices Ryan approaching and he waves for him to get closer.
 
@@ -202,7 +202,7 @@ Bill notices Ryan approaching and he waves for him to get closer.
 
 “It’s always the damn military,” Steve joins, “Didn’t they have the audacity to lock down the high school? I doubt they did anything trustworthy.”
 
-Trust. That was quite the word to describe anything right now. The only thing Ryan really trusts is himself, but alas he needs to answer the question. Then the thoughts of that creep in the back of the library comes to mind and how the schools was boarded up from the outside.
+Trust. That was quite the word to describe anything right now. The only thing Ryan really trusts is himself, but alas, he needs to answer the question. Then the thought of that creep in the back of the library comes to mind, and so does the fact that the school was boarded up from the outside.
 
 “No, they are not trustworthy at all… um…” he looks at Charlie, “they had many of the people at the school,” he slides his finger across his throat.
 
@@ -216,7 +216,7 @@ Bill and Steve exchange glances, for the first time, Steve actually looks concer
 
 “How’d you get out then?” Steve asks with some sort of well administered attempt at concern for the boy.
 
-Ryan freezes. How is he supposed to explain that Heimes tipped him off and gave him a key to escape? His story about the ninja janitor probably wouldn't have much credibility either. As far as he knows, every event that occurred in the high school is nothing more than a fever dream what has no more barring to reality than the current situation. 
+Ryan freezes. How is he supposed to explain that Heimes tipped him off and gave him a key to escape? His story about the ninja janitor probably wouldn't have much credibility either. As far as he knows, every event that occurred in the high school is nothing more than a fever dream that has no more bearing on reality than the current situation. 
 
 He takes a deep breath. He's starting to get inside his own head.
 
@@ -232,7 +232,7 @@ The important conversation quickly fades away as Steve focuses on navigating thr
 
 “What is going on?” Charlie asks, looking out the window at the passing trees.
 
-“We have to make a pitstop at a military checkpoint before we can leave,” Steve explains, keeping his tone light and less serious than before.
+“We have to make a pit stop at a military checkpoint before we can leave,” Steve explains, keeping his tone light and less serious than before.
 
 “Will we see a massive tank or maybe a jet?!” Charlie asks enthusiastically.
 
@@ -240,7 +240,7 @@ The important conversation quickly fades away as Steve focuses on navigating thr
 
 The line of cars takes a turn onto the main road, the same place they were hoping to get to uncontested. They take a right, but far off to the south a blockade sits with a mob of people standing on the other side. Either they were lucky to take the right path or extremely unlucky to now be under the control of the military. 
 
-It only takes another five or so minutes to arrive at the camp. Barbed wire fences surround the perimeter of the camp with only one gate in the front to enter. Two officers stood fully equipped at the gate checking each person in. Sniper towers sit in each corner of the camp with at least two people watching over the slow moving crowds. This camp is no small operation, the whole place is at least the size of a football stadium with no less than two platoons of soldiers. The camp itself lies on the edge of the forest so one side is covered with trees while the other is open grassland. The sniper towers must have a hard time seeing through the thick branches, but it is also something to note in case he needs to escape.
+It only takes another five or so minutes to arrive at the camp. Barbed-wire fences surround the perimeter of the camp, with only one gate in the front to enter. Two officers stand fully equipped at the gate, checking each person in. Sniper towers sit in each corner of the camp, with at least two people watching over the slow-moving crowds. This camp is no small operation; the whole place is at least the size of a football stadium, with no less than two platoons of soldiers. The camp itself lies on the edge of the forest, so one side is covered with trees while the other is open grassland. The sniper towers must have a hard time seeing through the thick branches, but it is also something to note in case he needs to escape.
 
 Steve pulls up to the officers at the gate and rolls down the window. Bill glances at the glove compartment to make sure it’s closed before looking out at the officers as well. Karmen freezes and begins shaking next to Ryan. 
 
@@ -248,7 +248,7 @@ Steve pulls up to the officers at the gate and rolls down the window. Bill glanc
 
 “This city is under quarantine. We need to check all civilians before they exit the city. Please park your car there” one of the officers explains pointing to a makeshift parking lot atop an open plot of grass, “and head to the red brick building right next to it to be checked. If everyone is clear, you will be able to leave soon.”
 
-Steve nods and the officers step back while giving the go ahead to drive inside.
+Steve nods, and the officers step back while giving the go-ahead to drive inside.
 
 “What’s the plan?” Steve asks as they pull past the gate guards. His polite front fades rather quickly and is replaced with one of disgust and frustration. The whole situation clearly is rubbing him in a manner Ryan would not like to witness.
 
@@ -264,13 +264,13 @@ Steve nods and the officers step back while giving the go ahead to drive inside.
 
 Steve and Bill exchange glances but neither man responds.
 
-“Right?!” Karmen says worry raising in her voice.
+“Right?!” Karmen says, worry rising in her voice.
 
 “We’ll explain everything later, alright,” Steve asserts, pulling the car to a halt and looking back at his wife, "I promise nothing will happen to you or Charlie... I promise."
 
 Karmen’s expression changes to worry and her body shivers even more. Not only was she going to have to interact with a bunch of strange and potentially hostile soldiers, but she is also miles away from home and never planning on going back. Her passive nature is a stark contrast to the chaos of their current predicament. If things go south, she'll become a huge liability by breaking down. Panic attacks are something Steve has mentioned in the past, but Ryan hasn’t ever seen one first hand.
 
-Bill exits the car first and opens the passengers side door to let Charlie out. Karmen follows. As soon as Ryan rises out of the car, he is greeted by an uncomfortably close Steve whispering in his ear.
+Bill exits the car first and opens the passenger-side door to let Charlie out. Karmen follows. As soon as Ryan rises out of the car, he is greeted by an uncomfortably close Steve whispering in his ear.
 
 “Do you still have the gun under your shirt?” Steve whispers trying not to be too conspicuous. 
 

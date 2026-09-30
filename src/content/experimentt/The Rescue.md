@@ -1,7 +1,7 @@
 ---
-book: "Experiment T"
-title: "The Rescue"
-chapNum: 33
+book: Experiment T
+title: The Rescue
+chapNum: 34
 pubDate: 2026/07/13
 ---
 The only door to the next warehouse is locked shut with three locks and a wooden board across it. A subtle convex indent in the door protrudes out right around shoulder level. Beyond that, nothing out of the ordinary can be spotted along the creaky metal building. He's about to try the key out, but then he hears something, something soft and brief. If he's not mistaken, it sounds like a whisper coming from the other side of the door. 

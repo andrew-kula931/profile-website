@@ -1,7 +1,7 @@
 ---
-book: "Experiment T"
-title: "Fragile Dynamics"
-chapNum: 47
+book: Experiment T
+title: Fragile Dynamics
+chapNum: 48
 pubDate: 2026/08/23
 ---
 Blake and Ryan barely make it back to the farmhouse. By the time they do arrive, Ryan actually feels substantially better than before, but by no means does he feel like he can take another step. 

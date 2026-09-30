@@ -1,7 +1,7 @@
 ---
-book: "Experiment T"
-title: "Another Adventure"
-chapNum: 27
+book: Experiment T
+title: Another Adventure
+chapNum: 28
 pubDate: 2026/06/16
 ---
 Three weeks pass and quite a lot happens in that amount of time. Foremost, Drew didn't give him much an option but he started taking him out into the city to "track down Heimes". While this certainly true, it felt like a cover for Drew to take an uncomfortable stance as an unwanted mentor figure for Ryan. He would constantly challenge him to do dangerous and difficult tasks and proceed to critique him for every inefficiency he made. As time went by Drew began stepping back more and more from the little "adventures" and started making Ryan do all the work. Granted, none of them were particularly difficult, especially in the latter part of the three weeks, but it did feel like Drew was just using him. This probably would have pissed former Ryan off quite a bit, but he noticed himself actually taking to the lessens and developing a tactically inclined quick wit amidst chaos. 

@@ -1,7 +1,7 @@
 ---
 book: Experiment T
 title: Killing an Enigma
-chapNum: 39
+chapNum: 40
 pubDate: 2026/07/27
 ---
 They end up taking a lengthy break in the convenience store two blocks down the road. This serves as both a safe, cleared shelter and a location without enough miscellaneous supplies to help them treat Ryan's wounds. It takes all the effort between himself, Chloe, and Blake to get him there, but he manages to fight through the pain and haziness without passing out.

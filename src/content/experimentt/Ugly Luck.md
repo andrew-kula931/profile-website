@@ -24,7 +24,7 @@ Steve pinches the bridge of his nose as he leans forward, “That’s not social
 
 “Trauma?” Ryan repeats.
 
-Steve lets out a long deep sigh and contemplates saying something. He shakes his head a bit in thought before readjusting to face Ryan head on.
+Steve lets out a long, deep sigh and contemplates saying something. He shakes his head a bit in thought before readjusting to face Ryan head-on.
 
 “When she was a little girl, she had abusive parents. Parents, like mine, who only had a kid by mistake. Between the two of us, her upbringing was far worse. Like..." he struggles to connect the whole narrative, or more specifically, struggles to digest that he's actually articulating it, "When she was 14 years old she was sent to the hospital with multiple STDs. The worse part was that the hospital wasn’t a good one. They practiced… whatever it’s fucking called… malpractice? At the end of the day, they treated her terribly, and she developed a phobia for doctors and all medical personnel. I thought she would just go in like the rest of us, and then we could move on, but that was just a short-sighted farce. I should have known!”
 
@@ -38,7 +38,7 @@ Steve nods, “They were just a few punks, by that point I had already left the 
 
 Military. Ryan repeats the word multiple times inside his head. Steve was in the military. Yet another thing he just didn’t know about him.
 
-Steve continues, “There were only three or four of them, so I knocked a few on their asses and broke an arm. Easy enough to say they scattered after that… I didn’t know what to do with a sickly girl who had been through shit. I guess… I had a soft spot for people who have the world beating them down. So, I invited to take her somewhere safer and just drop her off. Simple enough. I drove her out of that part of town and we got talking. One thing led to the next, and we were dating soon after that. Married after that. I promised her that I would never let people take advantage of her again. I would protect her…”
+Steve continues, “There were only three or four of them, so I knocked a few on their asses and broke an arm. Easy enough to say they scattered after that… I didn’t know what to do with a sickly girl who had been through shit. I guess… I had a soft spot for people who have the world beating them down. So, I offered to take her somewhere safer and just drop her off. Simple enough. I drove her out of that part of town and we got talking. One thing led to the next, and we were dating soon after that. Married after that. I promised her that I would never let people take advantage of her again. I would protect her…”
 
 Steve trails off.
 
@@ -52,17 +52,17 @@ Steve returns to focus and shifts to a more comfortable position.
 
 “Not. Once.” Steve interjects, “I felt horrible when I pushed her the other day. I wasn’t thinking straight… yeah there were other reasons, but I was never angry with Karmen in any way. I just slipped up. And now I’ve slipped up again and Karmen is on the other side of that fucking gate… I failed to protect her. I might as well be a failure outright.”
 
-So he admits to being a failure. Ryan had always believed that those words would be so satisfying to hear, but after that story, Ryan can’t bring himself to be happy about it in the slightest. Honestly, he feels bad for both Steve and Karmen. Ryan swears to himself that he’ll be nicer to Karmen from now on. Never in his entire life has Ryan felt this bad for someone other than himself. To think all it took was to have someone else's struggles laid out before him. He's discussed by the world and by the things it does to people.
+So he admits to being a failure. Ryan had always believed that those words would be so satisfying to hear, but after that story, Ryan can’t bring himself to be happy about it in the slightest. Honestly, he feels bad for both Steve and Karmen. Ryan swears to himself that he’ll be nicer to Karmen from now on. Never in his entire life has Ryan felt this bad for someone other than himself. To think all it took was to have someone else's struggles laid out before him. He's disgusted by the world and by the things it does to people.
 
 Suddenly, Bill enters the tent and looks around the room before locking eyes with Steve. The two men exchange a few words silently, but it is clearly not quite enough. 
 
-“So they’re not letting her out?” Steve says clenching her fists. 
+“So they’re not letting her out?” Steve says, clenching his fists. 
 
-Bill shakes his head, “Apparently, the estimated wait time until they are healthy again is a week if not longer. The only thing that doesn’t make sense, is that she wasn’t showing signs of symptoms.”
+Bill shakes his head. “Apparently, the estimated wait time until they are healthy again is a week, if not longer. The only thing that doesn’t make sense is that she wasn’t showing symptoms.”
 
 Charlie sits up on the cot and looks over with his eyes half closed, “Is mom going to be stuck here for that long?”
 
-Steve hops over to his knee right next to Charlie’s cot, “Don’t worry, we’ll get mom back safe and sound and be right out of here.”
+Steve drops to one knee right next to Charlie’s cot. “Don’t worry, we’ll get Mom back safe and sound and be right out of here.”
 
 “What is going on?” Charlie asks, “We have to leave home for a long time and now the army men have us stuck in these tents.”
 
@@ -72,13 +72,13 @@ Charlie shakes his head as Bill continues, “You’re not hurting anywhere, rig
 
 Charlie nods his head again with childish skepticism while Steve gives him a hug. 
 
-Ryan picks his hand up and looks down on it. He closes it slightly a few times before relaxing it. He wonders what a hug must feel like. Ever since his mom died, he’s never felt the soothing touch of another. It sounds really edgy to say that in his head, but that’s just how he views it—nobody ever touches him. Perhaps its the inverse of what Karmen must feel about touching. A deep somber, sentimental feeling rises in his heart, but that disappears as a military officer opens the flap of the tent.
+Ryan picks his hand up and looks down at it. He closes it slightly a few times before relaxing it. He wonders what a hug must feel like. Ever since his mom died, he’s never felt the soothing touch of another. It sounds really edgy to say that in his head, but that’s just how he views it—nobody ever touches him. Perhaps it's the inverse of what Karmen must feel about touching. A deep somber, sentimental feeling rises in his heart, but that disappears as a military officer opens the flap of the tent.
 
-“Steve Hughes, Willian Becker, you two please come with me.” The officer doesn’t wait for a response, he just turns around and walks off. With no other option, Bill and Steve follow behind. Ryan and Charlie remain staring at each other in the dead silence that follows.
+“Steve Hughes, William Becker, you two please come with me.” The officer doesn’t wait for a response, he just turns around and walks off. With no other option, Bill and Steve follow behind. Ryan and Charlie remain staring at each other in the dead silence that follows.
 
 ---
 
-Nearly an hour passes before the two men return and by that time Ryan and Charlie had already gone and got lunch from a nice lady distributing rations. They arrived back at the tent to find Steve and Bill discussing something in the tent.
+Nearly an hour passes before the two men return, and by that time Ryan and Charlie have already gone and gotten lunch from a nice lady distributing rations. They arrive back at the tent to find Steve and Bill discussing something.
 
 “Dad, you’re back!” Charlie exclaims running into the tent.
 

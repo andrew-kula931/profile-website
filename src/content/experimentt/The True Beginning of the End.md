@@ -4,15 +4,15 @@ title: "The True Beginning of the End"
 chapNum: 5
 pubDate: 2026/05/08
 ---
-The hatch to the maintenance shaft closes sealing in any last remnants of the screams. Ryan promptly falls to his knees and slams his fist into the concrete floor. Despite the immediately feedback of concrete and bone not messing together, he decides to punch in one more time just for good measure.
+The hatch to the maintenance shaft closes, sealing in any last remnants of the screams. Ryan promptly falls to his knees and slams his fist into the concrete floor. Despite the immediate feedback of concrete and bone not meshing together, he decides to punch in one more time just for good measure.
 
-What the hell is going on!? The government is resorting to such extreme, brutish measures just for some ‘cure’ they don’t even know about. Why do people always look for a cure in the zombie apocalypse and not just try and save as many as they can. He saw those things, he fought them. They can’t be saved, now is the time to protect those that are still alive. What kind of dystopia is this?
+What the hell is going on!? The government is resorting to such extreme, brutish measures just for some ‘cure’ they don’t even know about. Why do people always look for a cure in the zombie apocalypse and not just try to save as many as they can? He saw those things. He fought them. They can’t be saved, now is the time to protect those who are still alive. What kind of dystopia is this?
 
-The girl pops into his mind. She was just an ordinary girl who sat two rows in front of him and didn’t say too much. She was decently smart and open to meeting new people—going so far as to greet Ryan occasionally when he was the second person to class. Why does a fate as terrible as that befit her. That creep was going to… Ryan gags but holds back any vomit, knowing now is not the time. He’s seen disturbing sights before, but this one hit too close to home. It's ironic given the last graphic sight was across the street from his foster parent's house, but he was used to dangerous situations back there—this is a school. That girl came here thinking she would be safe, protected, and education. She wouldn't have come if she knew that... this bullshit was going to occur. All she wanted was to celebrate her birthday with her mom.
+The girl pops into his mind. She was just an ordinary girl who sat two rows in front of him and didn’t say too much. She was decently smart and open to meeting new people—going so far as to greet Ryan occasionally when he was the second person to class. Why does a fate as terrible as that befit her? That creep was going to… Ryan gags but holds back any vomit, knowing now is not the time. He’s seen disturbing sights before, but this one hit too close to home. It's ironic given the last graphic sight was across the street from his foster parents' house, but he was used to dangerous situations back there—this is a school. That girl came here thinking she would be safe, protected, and educated. She wouldn't have come if she knew that... this bullshit was going to occur. All she wanted was to celebrate her birthday with her mom.
 
 Birthday.
 
-It’s his birthday today. He’s finally 18 and an adult. Things have gotten so crazy he almost forgot about all of that again. His entire life he’s wanted to escape from it all, but now knowing that a fate like that awaits him makes him want it all back. 
+It’s his birthday today. He’s finally 18. Things have gotten so crazy he almost forgot about all of that again. His entire life he’s wanted to escape from it all, but now knowing that a fate like that awaits him makes him want it all back. 
 
 He clenches his fist and punches the ground again, the pistol on his hip rubs against him. Now is not the time to give up. Being noble isn’t his strong suit so verifying his actions based on that won’t work. His goal now is to protect himself and live on.
 
@@ -26,17 +26,17 @@ The soldier stares him down looking for some reason to call his bluff.
 
 “Fine then, go straight there and don’t wander,” the soldier gestures for him to continue down the hall.
 
-Ryan gladly complies as he keeps his head down and proceeds forward. He notices, however, that as he walks by, the soldier pulling out a phone and making a call. It could be about him, but that would be too presumptuous, as far as everyone knows he’s just a high schooler who doesn’t want to sit in the same room all day.
+Ryan gladly complies as he keeps his head down and proceeds forward. He notices, however, that as he walks by, the soldier pulls out a phone and makes a call. It could be about him, but that would be too presumptuous, as far as everyone knows he’s just a high schooler who doesn’t want to sit in the same room all day.
 
-As he's walking back, he happens to pass through the cafeteria and see the front doors of the school. A few military vehicles are stationed outside with a plethora of soldiers carrying large sheets of metal towards the school. He hasn't the faintest clue what they could need those for but he's smarter than to be caught peeking at something he probably shouldn't see. As such, he hustles back to class before anyone can catch sight of him.
+As he's walking back, he happens to pass through the cafeteria and sees the front doors of the school. A few military vehicles are stationed outside with a plethora of soldiers carrying large sheets of metal towards the school. He hasn't the faintest clue what they could need those for, but he's smarter than to be caught peeking at something he probably shouldn't see. As such, he hustles back to class before anyone can catch sight of him.
 
 The still air of the classroom remains just how he left it only a few minutes before. As far as he could tell, no one moved from the time he left until now. 
 
 The teacher is the first one to come and greet him. “What happened in the library?” she asks.
 
-“The military is just quarantining anyone who is sick,” he responds, getting flashbacks from what he saw. 
+“The military is quarantining anyone who is sick,” he responds, getting flashbacks from what he saw. 
 
-“Are you not sick then?” he wonder is genuine and ignorant. It's understandable and expected, but it still makes his skin crawl to think that she's supposed to be the adult here.
+“Are you not sick then?” Her question seems genuine yet so very ignorant. It's understandable and expected, but it still makes his skin crawl to think that she's supposed to be the adult here.
 
 Ryan shakes his head, “I’m fine, it was just some allergies but they had an antihistamine to help.”
 
@@ -66,7 +66,7 @@ The tension in the room grows as the soldier walks to the middle of the room. 
 
 “If you know who has the gun, tell me now. They could hurt anyone; we just want to make sure everyone is safe.”
 
-Suddenly, the walkie-talkie strapped to the soldier’s shoulder goes off. Everyone can hear it broadcasts the panicked voice of another soldier. 
+Suddenly, the walkie-talkie strapped to the soldier’s shoulder goes off. Everyone can hear it broadcast the panicked voice of another soldier. 
 
 “Code red! All personnel report to the containment zone, there has been a breach.”
 
@@ -82,7 +82,7 @@ Ryan falls to the ground and leans back against the wall. Chloe leans in to whis
 
 Ryan shakes his head recalling recent events, “If you get sick… don’t go to the library.”
 
-Chloe's restraint is as clear as day but her sincerity makes Ryan to talk, “Why not?”
+Chloe's restraint is as clear as day, but her sincerity makes Ryan talk, “Why not?”
 
 “I’m pretty sure the zombie apocalypse is starting,” Ryan realizes after he says it that his words are a little bit too loud. 
 
@@ -102,19 +102,19 @@ Max scoots in a bit closer, “I just think that there’s no way zombies are re
 
 Max and Chloe both look at him as he slumps over trying to think of a plan to get out. If only he knew where Heimes was right now. There is no way he’s going to be able to survive days of staying in this room with the government hunting him down. What was he thinking when he took that pistol? It’s so much easier to stay undercover when he’s unarmed, with a pistol at his hip it's only a matter of time before someone notices an odd bump on his pant line. 
 
-Another bullet fires off far down the hallway in the direction of the library. Another follows and before an entire magazine is fired off at something down there. As quickly as it started, the bullets abruptly come to an end. Instead of silence ensuing, distant screams begin to cry out from further down the hallway. The teacher immediately gets to her feet and steps outside to inspect what’s going on. She disappears into a crowd of students that begin to fill the hallway. 
+Another bullet fires off far down the hallway in the direction of the library. Another follows and before long an entire magazine is fired off at something down there. As quickly as it started, the bullets abruptly come to an end. Instead of silence ensuing, distant screams begin to cry out from further down the hallway. The teacher immediately gets to her feet and steps outside to inspect what’s going on. She disappears into a crowd of students that begin to fill the hallway. 
 
-A few of Ryan's classmates also join into the case and opt to take their chances in the hallway rather than staying put, but Ryan is not one of those people. Chloe begins to rise and looks to the door convincingly but Ryan grabs onto her hand to stop her. They exchange glances and Ryan just shakes his head. This seems to be enough of a reinforcement for her to let her curiosity and fear go before taking another seat beside him. Max, a more impulsive person, was already halfway across the room when he notices Ryan's action and stops in his tracks. Within seconds the room has emptied itself to just a handful of students that were, for the most part, too afraid to leave than curious about what's going on.
+A few of Ryan's classmates also join into the chaos and opt to take their chances in the hallway rather than staying put, but Ryan is not one of those people. Chloe begins to rise and looks to the door convincingly, but Ryan grabs onto her hand to stop her. They exchange glances and Ryan just shakes his head. This seems to be enough of a reinforcement for her to let her curiosity and fear go before taking another seat beside him. Max, a more impulsive person, was already halfway across the room when he notices Ryan's action and stops in his tracks. Within seconds the room has emptied itself to just a handful of students who were, for the most part, more afraid to leave than curious about what was going on.
 
-Screams and shouting continues to echo through the hallway as everyone just stares at the door and watches teens and students alike sprint both directions in the hallway. Multiple collisions occur and people end up being trampled on the floor but the classroom just watches—in utter silence. 
+Screams and shouting continue to echo through the hallway as everyone just stares at the door and watches teens and students alike sprint in both directions in the hallway. Multiple collisions occur and people end up being trampled on the floor, but the classroom just watches—in utter silence. 
 
-This would be the ideal time to escape, with the commotion and all, but something tells him that nothing good is going to come from going out there. People are in chaos, the soldiers are trigger happy, and he's still trying to sort through the recent events to understand what the hell is happening. It's not that he doesn't want to act, but rather he knows acting prematurely will cause more harm than good. Besides, despite his insistence on independence, he can't help but want to help Chloe escape even if it inconveniences him a bit. He can't comprehend why feels that way, but it's just enough motivation to get him to slow his roll.
+This would be the ideal time to escape, with the commotion and all, but something tells him that nothing good is going to come from going out there. People are in chaos, the soldiers are trigger-happy, and he's still trying to sort through the recent events to understand what the hell is happening. It's not that he doesn't want to act, but rather he knows acting prematurely will cause more harm than good. Besides, despite his insistence on independence, he can't help but want to help Chloe escape even if it inconveniences him a bit. He can't comprehend why he feels that way, but it's just enough motivation to get him to slow his roll.
 
 After a few moments of screaming, bullets flying, and stomping of feet, some of the students in the stampede enter into the classroom with panicked, horrified faces. Only seven or eight students make it in before the two last boys lock the door and pull a table in front of it. 
 
 “What’s happening!?” one of the girls in the front of the room exclaims frantically.
 
-“There are fucking monsters out there! The soldiers were shooting them down. I knew one of those guys, I mean shit,” the whole group share a similar distressing view. 
+“There are fucking monsters out there! The soldiers were shooting them down. I knew one of those guys, I mean shit,” the whole group shares a similar distressing view. 
 
 Another boy begins picking up chairs and moving them to the door, “Help me out here, we need to barricade the door in case those things try to get in.”
 
@@ -122,11 +122,11 @@ Another boy begins picking up chairs and moving them to the door, “Help me out
 
 One of the boys actively barricading the door answers swiftly, “The two of em in the hall both got bitten. If these things are zombies, then it’s all over for them.”
 
-The previous girl's eyes widened at the thought. A few of the more ballsy boys in class all stand up and begin helping move all the furniture in the room to the door. Despite the lack of coordination, the barricade is constructed in just a few seconds. It is then put to the test as someone… or rather, something begins banging on the door. 
+The previous girl's eyes widen at the thought. A few of the more ballsy boys in class all stand up and begin helping move all the furniture in the room to the door. Despite the lack of coordination, the barricade is constructed in just a few seconds. It is then put to the test as someone… or rather, something begins banging on the door. 
 
-The barricade rocks and shifts but remains firm in its position. The class simply watches as the banging slows and eventually halts allowing for the noises in the hallway to be heard. Screams of both student and teacher alike radiate from the hallway. A few bullets fly every once in a while, but they never last long before it ceases. 
+The barricade rocks and shifts but remains firm in its position. The class simply watches as the banging slows and eventually halts, allowing for the noises in the hallway to be heard. Screams of both student and teacher alike radiate from the hallway. A few bullets fly every once in a while, but they never last long before they cease. 
 
-From across the room two girls notice Chloe and rush over. Ryan recognizes one of them, now knowing her name to be Beth. Chloe lifts herself to greet them expecting a friendly, “How are you?” but receive a full on group hug between the three of them.
+From across the room two girls notice Chloe and rush over. Ryan recognizes one of them, now knowing her name to be Beth. Chloe lifts herself to greet them expecting a friendly, “How are you?” but receives a full-on group hug between the three of them.
 
 “We almost died out there…” Beth says amidst the hug.
 
@@ -134,7 +134,7 @@ From across the room two girls notice Chloe and rush over. Ryan recognizes one o
 
 Both of the girls heave their breaths due to a mix of frantic running and hyperventilation.
 
-“We were in class doing what were supposed to when soldiers began boarding up the windows. Then a boy starting throwing up and then... then he started attacking people.” the girl named Alison says, shaking at the thought of recent events.
+“We were in class doing what we were supposed to when soldiers began boarding up the windows. Then a boy started throwing up and then... then he started attacking people,” the girl named Alison says, shaking at the thought of recent events.
 
 “Yeah, that student started to attack everyone. They were like a zombie, biting, scratching, all sorts of things. We barely made it out of the room and in the hall where even more students were doing the same thing. The door to this room was open so we came in to get out of the hallway.” 
 
@@ -142,11 +142,11 @@ Ryan and Max exchange glances. 
 
 One of the boys from the group that just entered takes to the center of the room and looks around at the classroom.
 
-“Is anyone feeling sick?” he yells trying to gain everyone’s attention. “People are turning into those things left and right and it only takes a few minutes.”
+“Is anyone feeling sick?” he yells trying to gain everyone’s attention. “People are turning into those things left and right, and it only takes a few minutes.”
 
 One of the girls from the original class stands up, “Ryan went to the library and saw all the other sick people.”
 
-All of the eyes in the class turn to him. The pistol at his hip starts to burn its presence into his mind but he refuses to jump to such conclusions. No one has even done anything yet.
+All the eyes in the class turn to him. The pistol at his hip starts to burn its presence into his mind, but he refuses to jump to such conclusions. No one has even done anything yet.
 
 The guy in the middle of the room, who Ryan vaguely recalls being named Blake, makes the first move. “How’d you get out?”
 
@@ -154,11 +154,11 @@ The guy in the middle of the room, who Ryan vaguely recalls being named Blake, m
 
 Blake waves a hand in the air to gesture for people to remain quiet, “Come on guys, we can’t just start a witch hunt in the middle of this. If he got out it means they deemed him healthy,” he turns his attention to Ryan, “Isn’t that right?”
 
-It’s clear that he’s going to have to say something now even though it's unpreferable. The best course of action would be to remain calm and explain everything.
+It’s clear that he’s going to have to say something now even though it's the last thing he wants to do. The best course of action would be to remain calm and explain everything.
 
 “They looked me over and said I was clear. Everyone else in there is probably a zombie by now.”
 
-Judging by the facial expressions, a few people bought his explanation but not everyone was willing to go with it so easily. The hysteria in the room allowed for a few individuals to believe whatever they wanted and it's clear they were going to gun for power.
+Judging by the facial expressions, a few people bought his explanation but not everyone was willing to go with it so easily. The hysteria in the room allowed for a few individuals to believe whatever they wanted, and it's clear they were going to gun for power.
 
 “I don’t believe him!” one of the boys from the new group yells.
 
@@ -180,7 +180,7 @@ With no windows and tiny ceiling pans, this room’s sole exit is the very one t
 
 “We don’t know how many are out there and causing a commotion would just draw the entire school to us,” Blake explains.
 
-“What if we just make a brake for it? One at a time,” Max says.
+“What if we just make a break for it? One at a time,” Max says.
 
 Blake takes a brief pause to consider the idea, “Maybe, but splitting up could be just as dangerous as fighting.”
 
@@ -188,19 +188,19 @@ Blake takes a brief pause to consider the idea, “Maybe, but splitting up could
 
 Blake sighs and puts his hand on his head, “I don’t know what we’re supposed to do, but we have to work together or we’re all going to die. Those zombies are fucking fast and not everyone here is going to be able to outrun them.”
 
-Ryan rests his hand on his hip right next to the pistol. An idea pops into his head, but is he really in a position where he can save anyone? He’s never used a gun and, to be frank, none of these people are anyone he cares enough about to risk his life for—even this pseudo-friendship with Chloe would be pushing it. But wait, he could be a distraction and then break off from the group once he’s out. It’s dangerous to fire his gun off in the halls with so much chaos but maybe he could give everyone here a fighting chance. It should be enough for him to save his own skin without looking like a monster. Ryan wouldn’t consider himself a selfless person, but dooming this group to a slaughter would just be too far. Then again, to be a distraction he might not even have to use a gun and then could acquire military support once he escaped the school.
+Ryan rests his hand on his hip right next to the pistol. An idea pops into his head, but is he really in a position where he can save anyone? He’s never used a gun and, to be frank, none of these people are anyone he cares enough about to risk his life for—even this pseudo-friendship with Chloe would be pushing it. But wait, he could be a distraction and then break off from the group once he’s out. It’s dangerous to fire his gun off in the halls with so much chaos, but maybe he could give everyone here a fighting chance. It should be enough for him to save his own skin without looking like a monster. Ryan wouldn’t consider himself a selfless person, but dooming this group to a slaughter would just be too far. Then again, to be a distraction he might not even have to use a gun and then could acquire military support once he escaped the school.
 
 The class continues to attempt to come up with ideas, but it is fairly evident that no one is having much success under the stress of the situation. Eventually they all agree to wait for a moment for things to blow over, partially because there are still screams in the hallway, and partially because everyone wants some time to process things.
 
-Chloe's back hits the wall and she slides downwards with her two friends following suit beside her. They exchange looks that feel nothing short of sheer terror but they, along with the rest of the class, just opt to go silent. In the meantime, Blake and one other guy pace across the room trying to think.
+Chloe's back hits the wall, and she slides downwards with her two friends following suit beside her. They exchange looks that feel nothing short of sheer terror but they, along with the rest of the class, just opt to go silent. In the meantime, Blake and one other guy pace across the room trying to think.
 
 "What are we supposed to do?" Chloe mutters to herself.
 
 Beth rubs a hand on her friend's back as she silently offers all the sympathy she can.
 
-Ryan rests his hand against his pocket and feels the metal key stowed away. The key goes to a maintenance shaft in the cafeteria but why did Heimes seem to make such a big deal out of it. Sure he got warning of what's to come a few minutes earlier than everyone else, but surely there has to be something deeper to it. Pair that with the mysterious janitor—whom he's never seen before—and it makes him wonder what he's really supposed to do here. The military was carrying in sheets of metal the last he saw and someone mentioned that the windows were being boarded up. Given that people were using the halls and it didn't sound like glass was being shattered, there's no guarantee he'll be able to get out by a conventional means. This responsibility feels like the most inconvenient thing he's ever experienced, but too much has happened to think he can use normal logic to solve this problem. It just doesn't make any sense to say that this key doesn't have a deeper meaning. Perhaps there's another door somewhere that takes a key, some out of the way exit that only he would know about... that's it. There's still one more way to get out and his freedom hinges on it. It's a gamble for sure as he's not certain the key fits the lock, but they had the same logo so surely there's a correlation. The only problem is that the exit is adjacent to where the source of the infection is—on the other side of the building. He could bring people with him but the crawl space would limit them to going one at a time and if they get caught, they won't have time to take turns. He could sneak over silently but then everyone here would be in just as precarious a situation as before. There's really one one thing he can do to both gain his freedom and avoid being a selfish scumbag. He hates that this seems to be the only viable option, but if he can make it out, he might as well help... oh who cares, he'll just use the chasing zombies as fodder in case the military outside doesn't want anyone escaping.
+Ryan rests his hand against his pocket and feels the metal key stowed away. The key goes to a maintenance shaft in the cafeteria, but why did Heimes seem to make such a big deal out of it? Sure, he got a warning of what was to come a few minutes earlier than everyone else, but surely there has to be something deeper to it. Pair that with the mysterious janitor—whom he's never seen before—and it makes him wonder what he's really supposed to do here. The military was carrying in sheets of metal the last he saw and someone mentioned that the windows were being boarded up. Given that people were using the halls, and it didn't sound like glass was being shattered, there's no guarantee he'll be able to get out by conventional means. This responsibility feels like the most inconvenient thing he's ever experienced, but too much has happened to think he can use normal logic to solve this problem. It just doesn't make any sense to say that this key doesn't have a deeper meaning. Perhaps there's another door somewhere that takes a key, some out-of-the-way exit that only he would know about... that's it. There's still one more way to get out and his freedom hinges on it. It's a gamble for sure, as he's not certain the key fits the lock, but they had the same logo, so surely there's a correlation. The only problem is that the exit is adjacent to where the source of the infection is—on the other side of the building. He could bring people with him, but the crawl space would limit them to going one at a time, and if they get caught, they won't have time to take turns. He could sneak over silently, but then everyone here would be in just as precarious a situation as before. There's really only one thing he can do to both gain his freedom and avoid being a selfish scumbag. He hates that this seems to be the only viable option, but if he can make it out, he might as well help... oh who cares, he'll just use the chasing zombies as fodder in case the military outside doesn't want anyone escaping.
 
-By this point the hallway had been reduced to the ambient echoes of the building. Save the nervous chatter of his classmates, no one dares make a noise that would draw attention to their room. Chloe glances at Ryan—he assumes for reassurance—in which she receives just that.
+By this point the hallway had been reduced to the ambient echoes of the building. Save for the nervous chatter of his classmates, no one dares make a noise that would draw attention to their room. Chloe glances at Ryan—he assumes for reassurance—and receives just that.
 
 Ryan nods confidently before taking a deep breath and preparing for the proposition of a way out. No matter how the class responds, this is the only way he can think to survive as fighting them all head on is a death sentence—he knows that from experience. He takes a step forward to make sure everyone could see him and he raises his hand just up to his shoulder height.
 
@@ -240,10 +240,10 @@ Ryan prepares himself to run but is halted by Blake blocking his path.
 
 The boy’s demeanor is still confident and composed yet it seems genuine–a trait you don’t see very often in teenagers, “Thanks for doing this. Next time we meet, all of us will owe you.”
 
-Wait, was that gratitude? Is someone actually giving him some sort of recognition? This can’t be right… Wait, he needs to focus so he can't be distracted by other thoughts.
+Wait, was that gratitude? Is someone actually giving him some sort of recognition? This can’t be right… Wait, he needs to focus. He can't be distracted by other thoughts.
 
 “Ready?” the boy at the door asks glancing out the door’s window to check for the all clear.
 
-Ryan looks around the room at all the eyes starring directly towards him. He doesn't care much for the attention of most, but a few faces make him hesitate. The primary culprit is none other than Chloe who seems terrified at the situation but hasn't mustered the courage to oppose the plan. 
+Ryan looks around the room at all the eyes staring directly towards him. He doesn't care much for the attention of most, but a few faces make him hesitate. The primary culprit is none other than Chloe, who seems terrified at the situation but hasn't mustered the courage to oppose the plan. 
 
-Ryan nods his head and watches as the wooden door with a narrow rectangular window swings open to reveal what once was a school hallway. Now it's the meatlocker of dead and undead people alike. He takes one last deep breath before dashing out of the room and into hell itself.
+Ryan nods his head and watches as the wooden door with a narrow rectangular window swings open to reveal what once was a school hallway. Now it's the meat locker of dead and undead people alike. He takes one last deep breath before dashing out of the room and into hell itself.

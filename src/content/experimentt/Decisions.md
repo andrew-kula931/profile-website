@@ -1,7 +1,7 @@
 ---
-book: "Experiment T"
-title: "Decisions"
-chapNum: 44
+book: Experiment T
+title: Decisions
+chapNum: 45
 pubDate: 2026/08/16
 ---
 The walk back to their farmhouse is understandably quiet. They finally made it out of a horrible situation and now it seems like they're being dragged back in. Whether they run or investigate is still up for debate, but either way, this is not a position he ever wanted to be back in.

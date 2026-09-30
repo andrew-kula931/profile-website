@@ -1,7 +1,7 @@
 ---
-book: "Experiment T"
-title: "Two Pronged Attack"
-chapNum: 29
+book: Experiment T
+title: Two Pronged Attack
+chapNum: 30
 pubDate: 2026/06/23
 ---
 When they return to the thrift store, Ryan hangs back by the door while Stephanie and her two friends promptly dive into the rustic furniture and miscellaneous home pieces. He expects to keep watch in case Jimmy decides he's not actually done with them, but that plan gets partially altered when both Chloe and Jeremy hang back as well. Jeremy preoccupies himself with some odd shelf of books in the first aisle of the shop while Chloe stands directly next to him, hands folded in front of her.

@@ -1,7 +1,7 @@
 ---
-book: "Experiment T"
-title: "Return of a Devil"
-chapNum: 46
+book: Experiment T
+title: Return of a Devil
+chapNum: 47
 pubDate: 2026/08/22
 ---
 The following day brings with it a bright sun that melts enough snow for them to walk down the road with ease. The temperature is still quite chilly but the diminished snow drifts starts them off with high spirits. A line of clouds on the horizon, however, threatens their joy.

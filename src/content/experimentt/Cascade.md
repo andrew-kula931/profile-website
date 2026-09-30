@@ -1,7 +1,7 @@
 ---
-book: "Experiment T"
-title: "Cascade"
-chapNum: 48
+book: Experiment T
+title: Cascade
+chapNum: 49
 pubDate: 2026/08/26
 ---
 The farmstead is hardly visible on the horizon by the time Ryan stops walking. He never had a particular destination in mind when he left, but one particular windbreak down the road feels like as adequate a place as any. The barren, snow topped trees hang over a small ditch with a miniscule amount of frozen water at the bottom.

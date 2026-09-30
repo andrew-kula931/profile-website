@@ -1,7 +1,7 @@
 ---
-book: "Experiment T"
-title: "Disaster Plan"
-chapNum: 30
+book: Experiment T
+title: Disaster Plan
+chapNum: 31
 pubDate: 2026/06/30
 ---
 “How could you let this happen!?” Michael demands as he slams his hands onto the table of the meeting room.

@@ -1,7 +1,7 @@
 ---
-book: "Experiment T"
-title: "Experiment Genesis"
-chapNum: 51
+book: Experiment T
+title: Experiment Genesis
+chapNum: 52
 pubDate: 2026/09/12
 ---
 As S-019 said, a bandit camp sits a few miles north of town. Distinguished from the surroundings by multiple buildings with smoke coming out of the chimneys, Ryan and Drew have no issues finding it. The journey there is actually quite silent as neither he nor Drew engages in any meaningless conversation. They both understand the mission: one out of desperation and the other with a begrudging attitude. 

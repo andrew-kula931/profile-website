@@ -1,7 +1,7 @@
 ---
-book: "Experiment T"
-title: "The Creep"
-chapNum: 32
+book: Experiment T
+title: The Creep
+chapNum: 33
 pubDate: 2026/07/09
 ---
 After a rather short, silent drive, he pulls up to the location in question, or rather, one of three. Three blocky, dark gray buildings sit behind a chain link fence and a single sliding gate. Of course, it has to be another chain link fence, he's beginning to grow sick at the sight of them. Luckily there are no zombies loitering outside both in front of, and behind the fence.

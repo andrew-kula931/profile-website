@@ -4,9 +4,9 @@ title: "No Going Back"
 chapNum: 3
 pubDate: 2026/05/08
 ---
-Once he wakes up the next morning, he immediately checks his temperature and runs a few basic physical tests. His vast knowledge of health, learned entirely from a sophomore biology class, tells him that everything is normal. The disease could have a slow burn effect, but the first day after exposure is critical. After everything checks out, his mind calms and the day sinks in. It’s Thursday, October 11th. He’s officially 18.
+Once he wakes up the next morning, he immediately checks his temperature and runs a few basic physical tests. His vast knowledge of health—learned entirely from a sophomore biology class—tells him that everything is normal. The disease could have a slow-burn effect, but the first day after exposure is critical. After everything checks out, his mind calms and the day sinks in. It’s Thursday, October 11th. He’s officially 18.
 
-For some peculiar reason, he anticipated himself to be more excited about this moment yet the bland green walls and trickle of light through the curtains is the same as yesterday. His life is about to change yet nothing inside him is racing or even moving at that. It’s just yesterday but this social construct called legal rights have been altered.
+For some peculiar reason, he expected himself to be more excited about this moment, yet the bland green walls and trickle of light through the curtains is the same as yesterday. His life is about to change yet nothing inside him is racing or even moving at that. It’s just yesterday but this social construct called legal rights have been altered.
 
 Alas, he heads downstairs to grab breakfast before leaving. His current plan is to officially drop out of school and prepare for the apocalypse. If the problem truly gets contained then he’ll find a job and look for what’s next, but after yesterday, he needs to be better prepared.
 
@@ -14,19 +14,19 @@ Karmen is in the kitchen cooking something, thankfully with no smoke coming off,
 
 “Good morning Ryan, I’m making pancakes,” Karmen says after noticing him, she quickly follows with, “And happy birthday.”
 
-Steve catches wind and glances over and releases an annoyingly pleasureful smile, “I heard the police came by last night. What did you do this time?”
+Steve catches wind, glances over, and offers an annoyingly pleasureful smile, “I heard the police came by last night. What did you do this time?”
 
 Karmen shoots Steve a dirty glance but doesn’t say anything. 
 
-“The neighbor did something illegal. I wasn’t a part of it,” Ryan responds, trying not to act too moody or else Steve would pounce on it.
+“The neighbor did something illegal. I wasn’t a part of it,” Ryan responds, trying not to act too moody or else Steve will pounce on it.
 
-Steve rolls his eyes as he leans back on the and clicks through a few channels, “Let me guess, you told the cops you didn’t do anything and didn’t know anything. You were probably a part of it, though.”
+Steve rolls his eyes as he leans back on the couch and clicks through a few channels, “Let me guess, you told the cops you didn’t do anything and didn’t know anything. You probably do know something, don't you?”
 
 “Steve!” Karmen scolds timidly.
 
 “I didn’t do anything this time,” Ryan says, fighting the urge to insult him or defend himself anymore.
 
-“Fine, but you better not do anything else. You hear. I’m sick of lazy fucks not participating in society while actively sabotaging it.” Steve continues after no one responds, “I work eighty hours a week to provide for this family and myself. When I was in high school I worked a minimum of forty hours on top of school. You kids these days don’t know what real work is. Do you even have a job Ryan?”
+“Fine, but you better not do anything else. You hear. I’m sick of lazy fucks not participating in society while actively sabotaging it.” Steve continues after no one responds, “I work eighty hours a week to provide for this family. When I was in high school I worked a minimum of forty hours on top of school. You kids these days don’t know what real work is. Do you even have a job, Ryan?”
 
 Ryan sits himself down in the dining room and prepares to eat the pancakes Karmen made. He doesn’t give a response and just hopes that Steve doesn’t take it as an excuse to become provoked. Within a few seconds, Steve is standing at the end of the table staring down at him.
 
@@ -46,7 +46,7 @@ Ryan returns a scowl.
 
 Karmen leaves the wall and runs to Steve pushing him back slightly, “You can’t be serious about this. Ryan is a goo–”
 
-Her words are cut off by a backhanded slap from Steve. Ryan is hardly shocked by how careless the man is. This personality trait of his is what Ryan hates the most. The sight of it isn’t enough to prevent him from reacting.
+Her words are cut off by a backhanded slap from Steve. Ryan is hardly shocked by how careless the man is. This personality trait of his is what Ryan hates the most. The sight of it enrages him enough that his reaction can't be moderated any longer.
 
 With one swift motion, he stands up causing the chair to flip on its back. His fist swings from under the table into Steve’s sorry, ugly, completely deserving face. All the pain this family suffers because of him was put into that punch. Ryan had punched a tree so many times that Steve’s face feels surprisingly soft. Being a fighter has never been a thought in his head before, but after the clean blow, the prospect enters his radar, if only for a moment.
 

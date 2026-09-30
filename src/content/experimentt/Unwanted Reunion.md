@@ -1,7 +1,7 @@
 ---
-book: "Experiment T"
-title: "Unwanted Reunion"
-chapNum: 28
+book: Experiment T
+title: Unwanted Reunion
+chapNum: 29
 pubDate: 2026/06/19
 ---
 About two minutes down the road, Ryan finds himself staring out the window with his head leaned up against it. Jeremy, who had greedily taken the shotgun seat of the car puts earbuds into his ears and start playing some downloaded music off his phone. The sight of the technical relic startles Ryan at first as he realizes he's completely forgotten that staple of society. He notices plenty of people pulling them out over the last three weeks, but with the cellular towers down, there wasn't nearly as much to do with them.

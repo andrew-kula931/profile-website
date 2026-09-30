@@ -1,7 +1,7 @@
 ---
-book: "Experiment T"
-title: "Futile Decision"
-chapNum: 34
+book: Experiment T
+title: Futile Decision
+chapNum: 35
 pubDate: 2026/07/18
 ---
 Arriving back at the prison nearly gets him shot as the guards spare no time in their distant interrogation. Eventually, one of them does recognize his face after a bright flashlight blinds his vision. With that, he and the two vans are allowed to enter into the prison. 

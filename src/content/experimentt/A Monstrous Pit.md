@@ -1,7 +1,7 @@
 ---
-book: "Experiment T"
-title: "A Monstrous Pit"
-chapNum: 37
+book: Experiment T
+title: A Monstrous Pit
+chapNum: 38
 pubDate: 2026/07/25
 ---
 When they depart that afternoon, they're met with a rather chilly wind. The Fall had been so prominent in recent memory that the dawning Winter takes Ryan completely by surprised. The icy air that makes his lung dry, the slow rolling of gray clouds, and a subtle pickup of the wind all paint a picture of a coming storm. He just hopes that the storm remains exclusively a weather-related one and nothing more. 

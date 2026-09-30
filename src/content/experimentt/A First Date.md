@@ -1,7 +1,7 @@
 ---
-book: "Experiment T"
-title: "A First Date"
-chapNum: 45
+book: Experiment T
+title: A First Date
+chapNum: 46
 pubDate: 2026/08/20
 ---
 Chloe never lets go of his hand as they walk. Maybe this would have been uncomfortable in any other situation, but it doesn't feel that way now. It's partially affected by Beth who's actively clinging to Caid's arm a few feet ahead, but he tries his best not to stare.

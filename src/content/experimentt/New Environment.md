@@ -1,7 +1,7 @@
 ---
-book: "Experiment T"
-title: "New Environment"
-chapNum: 41
+book: Experiment T
+title: New Environment
+chapNum: 42
 pubDate: 2026/08/11
 ---
 The creaky, old cellar door, covered in snow and undisturbed for months, suddenly shifts quickly and flies open, throwing the thin layer of powdered snow off creating a small cloud of icy particles. Ryan steps up the stairs from the cellar and looks around at the frigid January afternoon. The leafless trees around the farmhouse retain a small layer of snow on each branch outlining the beautiful design of each dormant plant. Snow covers the landscape all the way to the horizon creating a tranquil environment without so much as a shallow breeze to disturb it. The icy air causes Ryan’s breath to puff out in a small white cloud as he slowly exhales. His winter coat, scarf, and hat all keep him warm for the moment but Jack Frost still nips at his nose as cold air fills his lungs. 

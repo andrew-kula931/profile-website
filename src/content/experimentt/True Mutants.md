@@ -1,7 +1,7 @@
 ---
-book: "Experiment T"
-title: "True Mutants"
-chapNum: 38
+book: Experiment T
+title: True Mutants
+chapNum: 39
 pubDate: 2026/07/27
 ---
 The blue five gallon bucket sloshes to and fro in Ryan's hand as he overlooks the stadium once more. Beside him stand Blake, Max, and Caid all holding similar containers with similar fluids inside.

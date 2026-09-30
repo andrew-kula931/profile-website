@@ -1,7 +1,7 @@
 ---
-book: "Experiment T"
-title: "The End of the Prologue"
-chapNum: 51
+book: Experiment T
+title: The End of the Prologue
+chapNum: 53
 pubDate: 2026/09/13
 ---
 The truck pulls up to the farmhouse quietly as the sun hangs low in the sky. Blake's truck remains parked beside the barn. Inside that distant structure is Ryan's motorcycle and Max's Corvette. Maybe one day they'll be able to ride them again.
@@ -216,7 +216,7 @@ He falls to his knees in the new timeline with his sanity and conscientiousness 
 
 “So you understand then,” S-019 says, a dark gray smile forming on its face.
 
-Ryan’s shaking head raises slowly to look at the cruel adversary, though cruel doesn’t even begin to describe it. He can’t even calm himself as he stares into the eyes of a being that enjoys his suffering.
+Ryan’s shaking head raises slowly to look at the cruel adversary, though cruel doesn’t even begin to describe it. He can’t even calm himself as he stares into the eyes of a being that enjoys his suffering. The sadistic entity lowers its head as its entire arm begins to take the form of a blade. A razor sharp edge reaches out to the level of Max's neck.
 
 Kill three. He only has three friends left.
 
@@ -226,7 +226,6 @@ With that, his remaining friends leave him behind.
 
 --- 
 
-Ryan trudged down the street of the town stepping over countless bodies and bloody remains. The golden sun slowly raises itself over the horizon as he pushes himself straight towards it. As he walks out of that small town on the far reaches of a major metropolis he brings nothing with him. No hope, no despair, no purpose, not even his sanity. Nothing lies ahead for him, not even death.
-
+Ryan trudges down the street away from town, his arms hanging to his sides. The golden sun hangs over the horizon as he wanders towards it. As he walks away from that little farm house, he brings nothing with him. No sadness, no despair, no hatred, not even resentment. The light dies from his eyes as he realizes that nothing lies ahead for him—not even death.
 
 _No one can tell what goes on between the person you were and the person you become. No one can chart that blue and lonely section of hell. There are no maps of the change. You just come out the other side.”_ -Stephen King, The Stand

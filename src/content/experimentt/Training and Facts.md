@@ -1,7 +1,7 @@
 ---
-book: "Experiment T"
-title: "Training and Facts"
-chapNum: 26
+book: Experiment T
+title: Training and Facts
+chapNum: 27
 pubDate: 2026/06/11
 ---
 Ryan follows the aviator wearing man down the desolate street on foot despite having ample vehicles to speed up their operation. As Michael said, he ended up confiscating the pistol from him but allocated it back to him the following morning with a full magazine. Naturally this whole ordeal drew a lot of attention to him both from the other teens and some adults that witnessed the events. Most of them presented their questions in a reserved manner, warded off mostly due to the "personal matters" line that was dropped. Alas, Ryan was forced to politely explain that he didn't really know what was going on. That being said, in order to preserve Drew's honor, he kept his responses vague enough that most people wouldn't think either of them a fool. 

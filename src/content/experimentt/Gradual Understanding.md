@@ -1,7 +1,7 @@
 ---
-book: "Experiment T"
-title: "Gradual Understanding"
-chapNum: 35
+book: Experiment T
+title: Gradual Understanding
+chapNum: 36
 pubDate: 2026/07/21
 ---
 When the sun finally rises on the following Thursdays... no, Friday morning, Ryan sits up in his bed with exactly zero hours of rest. Vincenzo's words, the events of the previous day, and everything else made any potential nightmares feel like dreams by comparison. Alas, when the sun rose, he decides it better to just get up and start his day. 

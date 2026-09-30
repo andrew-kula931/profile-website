@@ -1,7 +1,7 @@
 ---
-book: "Experiment T"
-title: "One More Mission"
-chapNum: 36
+book: Experiment T
+title: One More Mission
+chapNum: 37
 pubDate: 2026/07/23
 ---
 Ryan stays in bed until around lunchtime. He catches a few winks of sleep here and there but nothing substantial. Unfortunately, sleep deprivation has always been a commonplace in his life, so pulling an all-nighter doesn't really throw him off much. Having snuck out of his foster homes, almost nightly, for years really conditioned him to a lack of sleep. That being said, the strange fatigue he feels when walking around the prison is nothing like he's ever experienced before. It's not a physical kind of fatigue—he would have noticed when he worked out—instead it's almost a mental fatigue that makes him strangely irritable. Noticing this trend, he makes the conscious decision to not appear grumpy, but he knows his limits will be reduced until he gets some proper rest. 

@@ -1,22 +1,22 @@
 ---
-book: "Experiment T"
-title: "Youthful Inevitability"
-chapNum: 17
+book: Experiment T
+title: Youthful Inevitability
+chapNum: 18
 pubDate: 2026/05/23
 ---
-Bringing back five boxes of unused luxury items, complements of Caid carrying two, was nothing short of a spectacle for the camp of teens. The food pantry provided the necessary nourishment to sustain a growing demographic, but nothing said "high class apocalypse" like sugary cereal and candy bars. In one of the boxes, Max even snuck in three boxes of ice cream bars which was almost immediately emptied as everyone grabbed one or two at a time and stuffed their faces. Naturally, Ryan noticed Blake nearly tear his hair out at the gluttonous behavior, but he probably came to the same conclusion Ryan did: the camp needed a pick-me-up. 
+Bringing back five boxes of unused luxury items, compliments of Caid carrying two, was nothing short of a spectacle for the camp of teens. The food pantry provided the necessary nourishment to sustain a growing demographic, but nothing said "high-class apocalypse" like sugary cereal and candy bars. In one of the boxes, Max even snuck in three boxes of ice cream bars, which were almost immediately emptied as everyone grabbed one or two at a time and stuffed their faces. Naturally, Ryan noticed Blake nearly tear his hair out at the gluttonous behavior, but he probably came to the same conclusion Ryan did: the camp needed a pick-me-up.
 
-As the sun goes down and the ice cream supply diminishes, Ryan notices a gradual switch from ice cream bars to multi-colored solo cups. At first he thinks there's some sort of soda being passed around without anyone noticing, but then he spots a bottle of rum toppled on it's side. Before too long that bottle becomes two.
+As the sun goes down and the ice cream supply diminishes, Ryan notices a gradual switch from ice cream bars to multicolored solo cups. At first he thinks there's some sort of soda being passed around without anyone noticing, but then he spots a bottle of rum toppled on its side. Before too long that bottle becomes two.
 
-Blake, of course, comes to the reality of the situation before anyone else and opposes its continuity with a plethora of reasons, but people stopped asking permission long before he found out. Seeing as no one was going to listen to him, Blake jumps to damage mitigation efforts by clearly reminding the teens not to get too loud, he also quietly mandated that Ryan and Caid not drink. Ryan already planned on remaining sober—courtesy of his bad interactions with Steve—but Caid was already two shots in by the time Blake could get to him. Before too long, teens are tossing a ping-pong ball across the hood of the corvette, sitting on the roof of the building, or just casually talking inside one of the many buildings. As Ryan notices significantly more smiles than he's ever seen before, that alone isn't enough to conceal a few teens who only seem to be holding a cup to get other people off their back. Incidentally, Jeremy seems to be the prime example of this, though Ryan quickly notices that his cup is a bit heavier than most others.
+Blake, of course, comes to the reality of the situation before anyone else and opposes its continuity with a plethora of reasons, but people stopped asking permission long before he found out. Seeing as no one was going to listen to him, Blake jumps to damage mitigation efforts by clearly reminding the teens not to get too loud; he also quietly mandated that Ryan and Caid not drink. Ryan already planned on remaining sober—courtesy of his bad interactions with Steve—but Caid was already two shots in by the time Blake could get to him. Before too long, teens are tossing a ping-pong ball across the hood of the Corvette, sitting on the roof of the building, or just casually talking inside one of the many buildings. As Ryan notices significantly more smiles than he's ever seen before, that alone isn't enough to conceal a few teens who only seem to be holding a cup to get other people off their back. Incidentally, Jeremy seems to be the prime example of this, though Ryan quickly notices that his cup is a bit heavier than most others.
 
 With the party started, that left Ryan sitting on the wall, as he suspected he'd be the best person to do that, and Blake frantically trying to balance his bad cop routine while preventing division within the group. Despite his principled nature, he wasn't fooling anyone when he left the kids on the roof alone and only told the ping-pong game to quiet down when they got a bit too rowdy. Ryan doesn't get a good look, but at one point he even believes he sees Blake taking a sip—but only one. Beth, the only other person Ryan expects to remain sober, quickly finds herself downing a full cup as Caid insistently leans against a wall next to her.
 
 Of course security became a primary concern as many of the teens let loose, which can be seen a bit too clearly in Blake, but Ryan isn't so worried. If things really did go south on a normal day, he only anticipated himself, Blake, Caid, and maybe Beth and Max to actually help fight back. Under the current circumstances, that list just shortened by two or three people. Perhaps that may be concerning, but they survived for three days by themselves, and if things truly do become dire... there's always that option.
 
-"Why are you all by yourself again?" Chloe ask as she climbs onto the van, trying her best to avoid spilling the two drinks in her hands. As she gets to the top, she offers one to Ryan, "Here, Blake's the DD for tonight, so you don't have to be."
+"Why are you all by yourself again?" Chloe asks as she climbs onto the van, trying her best to avoid spilling the two drinks in her hands. As she gets to the top, she offers one to Ryan, "Here, Blake's the DD for tonight, so you don't have to be."
 
-The single sip makes Ryan want to beg to differ, but he doesn't want to seem that detail oriented. But Chloe keeps holding the cup out expectantly, like refusing it would mean more than just refusing a drink, and of all people it could possibly be, he hates that it's Chloe. Wanting to preserve her feelings, he reaches for the cup and quickly tips it to his mouth. He tips the cup to sell the gesture before lowering it untouched, Chloe's shoulders relax and she helps herself to a seat beside him.
+The single sip makes Ryan want to beg to differ, but he doesn't want to seem that detail oriented. But Chloe keeps holding the cup out expectantly, like refusing it would mean more than just refusing a drink, and of all people it could possibly be, he hates that it's Chloe. Wanting to preserve her feelings, he reaches for the cup and quickly tips it to his mouth. He tips the cup to sell the gesture before lowering it untouched. Chloe's shoulders relax and she helps herself to a seat beside him.
 
 "Where's Alison?" Ryan asks finding it to be the only relevant question he can think of.
 
@@ -26,7 +26,7 @@ Ryan glances over at Beth who tries to hide a conspicuous amount of blushing as 
 
 "And you wanted to avoid that," Ryan gestures to the scene.
 
-Chloe looks over at him a playful smile, "And you would want to be in the middle of that? I don't know if you've noticed, but serious Beth and happy Beth are completely different people."
+Chloe looks over at him with a playful smile, "And you would want to be in the middle of that? I don't know if you've noticed, but serious Beth and happy Beth are completely different people."
 
 "Is that so," Ryan comments as he watches Chloe down another shot worth of vodka in her cup. He hates that the drink's stench is familiar to him.
 
@@ -36,7 +36,7 @@ Perhaps this is where the conversation is supposed to pick up into a new subject
 
 "Uh..." Chloe stutters before quickly turning away, "The three of us were planning on going for another scouting run, a bit deeper into town this time... did you... um..." she quickly downs the rest of her liquid courage, "Did you wanna come with us?"
 
-Ryan sighs with a smile as Chloe's gaze feels exceedingly hopeful and raw—something he wasn't emotionally prepared for. He looks out into the distance and remembers everything he's seen the past few days, everything that could come back at any moment. Heimes could still be out there, zombies lurk around every corner, and worse than zombies, there could be... maybe it's best if he tags along, it's be safer that way.
+Ryan sighs with a smile as Chloe's gaze feels exceedingly hopeful and raw—something he wasn't emotionally prepared for. He looks out into the distance and remembers everything he's seen the past few days, everything that could come back at any moment. Heimes could still be out there, zombies lurk around every corner, and worse than zombies, there could be... maybe it's best if he tags along, it'd be safer that way.
 
 "Sure," he finally says, "I'll come."
 
@@ -44,9 +44,9 @@ Chloe smiles as she shakes her fists excitedly. Ryan suspects she didn't mean to
 
 Ryan brushes a developing tear out of his eyes as he settles himself down. He looks at his untouched cup and hits a crossroad on what he wants to do. He could... but then... but why... he sighs exasperatedly which draws Chloe's attention.
 
-"What's wrong?" she asks setting her empty cup down on the corner of the van room before looking at him with a moderate amount of curiosity and a hint of concern.
+"What's wrong?" she asks, setting her empty cup down on the corner of the van roof before looking at him with a moderate amount of curiosity and a hint of concern.
 
-"It's nothing," Ryan deflects as picks up his cup and leans back against the metal wall.
+"It's nothing," Ryan deflects as he picks up his cup and leans back against the metal wall.
 
 He lowers the cup behind the wall as if he were relaxing a bit and quietly dumps the liquid out without looking back. He then readjusts and brings the cup to his lip and downs the remainder of the phantom liquid. As his lips and the cup part ways, he wipes his mouth off and sets the cup down on the other corner of the van. 
 
@@ -86,49 +86,49 @@ Ryan thinks about it briefly, "Both."
 
 With so many people, he half expects a vague answer or at least a considerable moment of hesitation to think. Then again, if he were asked the same question he'd probably need a minute or so just to remember the names of the people he did know. Chloe, however, does not have this dilemma and produces an answer faster than Ryan can complete his own thought.
 
-"I'd say I know the name of everyone here, though that's mostly because I know Jennifer and she knows everyone. She doesn't push my buttons sometimes, you know. Like what she did with Jeremy earlier today. I hurt me to think that she'd do something like that," Chloe notices that she's getting off track after she meets eye contact with Ryan and promptly switches gears, "Right, and as for who I'm friends with... I'd say I'm friends with Beth and Alison, of course, and then Jennifer, Olea, Blake, I guess..." she looks straight at Ryan, "And you."
+"I'd say I know the name of everyone here, though that's mostly because I know Jennifer and she knows everyone. She pushes my buttons sometimes, you know. Like what she did with Jeremy earlier today. It hurt me to think that she'd do something like that," Chloe notices that she's getting off track after she makes eye contact with Ryan and promptly switches gears, "Right, and as for who I'm friends with... I'd say I'm friends with Beth and Alison, of course, and then Jennifer, Olea, Blake, I guess..." she looks straight at Ryan, "And you."
 
 Something about that comment hits Ryan hard enough that he freezes solid. His thoughts even grind to a halt as he makes a futile attempt at wrapping his head around the connotation of that statement. If it's not the word then... why does it make him so confused—and scared. He shifts uncomfortably but by then Chloe has already noticed his hesitation.
 
-"Oh... I didn't mean..." she recedes backwards on the van.
+"Oh... I didn't mean..." she moves backwards on the van.
 
 Ryan shakes his head, "No, you're fine. I've just... got a lot on my mind. I'm sorry I'm acting weird."
 
-It's at that very moment that something catches his eye. He turns his head towards the dark unknown outside the base and his eyes land on directly on it. Hidden amongst the shadows and faint moon light, two eyes penetrate through the darkness—he reaches for his weapon instinctively. He can't see what it looks like, he has no idea how long it's been there, but those eyes stare directly at him, and he, reluctantly, stares back.
+It's at that very moment that something catches his eye. He turns his head towards the dark unknown outside the base and his eyes land directly on it. Hidden amongst the shadows and faint moonlight, two eyes penetrate through the darkness—he reaches for his weapon instinctively. He can't see what it looks like, he has no idea how long it's been there, but those eyes stare directly at him, and he, reluctantly, stares back.
 
-Chloe notices his attention shift and looks out into the dark, but by then the eyes have already receded behind something. She looks around from something out of the ordinary but locates nothing unusual, "Did you see something?"
+Chloe notices his attention shift and looks out into the dark, but by then the eyes have already receded behind something. She looks around for something out of the ordinary but locates nothing unusual, "Did you see something?"
 
 Ryan takes a deep breath and rests his hand against his forehead as he leans against the wall, "I'm probably just seeing things."
 
 She studies him for a moment with concern before taking another look out into the dark. Once again her search runs dry and she reaches over for her cup with a long face.
 
-"It's getting let, I think we should probably call it a night," she starts inching her way off the van.
+"It's getting late, I think we should probably call it a night," she starts inching her way off the van.
 
 Ryan debates ending the night with something hopeful for a change. Something like 'see you tomorrow' or 'sweet dreams' but those ideas remain ideas as Chloe slides all the way off the van without him even so much as moving. She eventually looks up to him with a warm smile, her cheeks the faintest bit blushed, "See you tomorrow."
 
-Ryan nods as he's handed back over to silence and solitude. 
+Ryan nods as he returns to silence and solitude. 
 
 Similarly to Chloe, many of the teens were reaching a similar conclusion and starting to wrap things up for the night. A few flashlights get shut off for good, the lights in the upper floors start flickering off, and the last remnants of booze are being discarded into the trash. Beth and Caid have completely disappeared to who knows where. Blake is also gone, but Ryan guesses he's probably checking in on somebody in one of the buildings. Max... Ryan spots Max passed out on the ground beside the corvette with a dazed look and a conveniently placed trash can right next to his unconscious body. A few miscellaneous, hushed conversations remain here and there but even those begin to go out one by one. Before too long, the entire camp goes dark and Ryan is left under the moon—all alone.
 
 ---
 
-Nothing strikes that night, despite any potential worry. Ryan doesn't leave the wall, he's the last the sleep, and the first to awaken. Multiple times throughout the night he wakes up in a cold sweat, looks around, spots a raccoon or owl, and struggles to get back to sleep. It's honestly strange, how normal it feels to sleep on a hard surface. He's slept on a bed his entire life, yet after the last two days, sleeping on a bed feels like a foreign pipe dream—one he can't allow himself to get comfortable with. 
+Nothing strikes that night, despite any potential worry. Ryan doesn't leave the wall, he's the last to sleep, and the first to awaken. Multiple times throughout the night he wakes up in a cold sweat, looks around, spots a raccoon or owl, and struggles to get back to sleep. It's honestly strange, how normal it feels to sleep on a hard surface. He's slept on a bed his entire life, yet after the last two days, sleeping on a bed feels like a foreign pipe dream—one he can't allow himself to get comfortable with. 
 
 To think it's only been two days since... since then... or at least he thinks it's been two days. Time itself seems to have lost a bit of meaning as there's no Friday closure to the school week anymore and the weekend presents the same problems as the weekdays. Heck, he's all but forgotten that his birthday was just four days ago. To think he told Karmen that he wasn't having a birthday party back then, that he didn't have any friends to invite. Karmen...
 
-Ryan grits his teeth as he covers his eyes with his arm. He resists a breath as air forcefully leaks out of his mouth. He then pulls his hand away and stares up into the glowing moon above. A colorless cloud drowns out the slight of half the moon which draws his attention more than the moon. The halfway invisible cloud in the black sky hides any definable shape, but Ryan can still spot the ridged lines crossing over the moon. It almost looks like parallel lines, drawn in the rough graphite of a pencil, that he'd comfortably find in his freshman geometry class. He closes his eyes, telling himself that he just needs to go to sleep, but in actuality, he couldn't stand the sight of it any longer. 
+Ryan grits his teeth as he covers his eyes with his arm. He resists a breath as air forcefully leaks out of his mouth. He then pulls his hand away and stares up into the glowing moon above. A colorless cloud drowns out the sight of half the moon which draws his attention more than the moon. The halfway invisible cloud in the black sky hides any definable shape, but Ryan can still spot the ridged lines crossing over the moon. It almost looks like parallel lines, drawn in the rough graphite of a pencil, that he'd comfortably find in his freshman geometry class. He closes his eyes, telling himself that he just needs to go to sleep, but in actuality, he couldn't stand the sight of it any longer. 
 
-Sleep keeps it's distance, but eventually it comes and with it, so too does his mother.
+Sleep keeps its distance, but eventually it comes and with it, so too does his mother.
 
-_Young Ryan slaps a poorly drawn picture of a fish, or maybe a dolphin, onto the refrigerator. He then spins around and waves his hands at it dramatically to show it off to his mother. His mother, seated at the kitchen table claps her hands and smiles, that warm, safe smile, and praises him just like she always did._
+_Young Ryan slaps a poorly drawn picture of a fish, or maybe a dolphin, onto the refrigerator. He then spins around and waves his hands at it dramatically to show it off to his mother. His mother, seated at the kitchen table, claps her hands and smiles, that warm, safe smile, and praises him just like she always did._
 
-_Ryan races around the kitchen island with his hands pressed together. He envisions himself as a speedy sea creature racing through the waters of his kitchen with unparalleled finesse and poise. His mother laughs each time he rounds the corner and passes by the kitchen table. She cheers him on as if a fan watching her favorite horse on the track. This motivation only causes Ryan to swim faster through his imaginary sea._
+_Ryan races around the kitchen island with his hands pressed together. He envisions himself as a speedy sea creature racing through the waters of his kitchen with unparalleled finesse and poise. His mother laughs each time he rounds the corner and passes by the kitchen table. She cheers him on as if a fan were watching her favorite horse on the track. This motivation only causes Ryan to swim faster through his imaginary sea._
 
 _He rounds the corner determined to cross the finish line in the most extravagant way possible, but finds no one waiting for him. He slows, and his hands fall to his sides as he looks around at the empty kitchen table. Thinking his mother may have moved, he quickly searches the entirety of the kitchen to find her before she pops out with a surprise, but she's nowhere to be found. He calls to her but no one responds. His house has collapsed into silence, and he finds himself standing, waiting, though no one is coming back to him._
 
-Ryan awakens to find the sun just barely peaking its head over the horizon. The morning air makes his shiver as he slowly sits up and looks around. Max is no longer on the ground and with him went the trashcan. The rest of the base is unusually quiet as not even a peep leaks out of the twenty plus teenagers hidden inside. He wonders if he should go find a spot to sleep, somewhere less hypothermia prone, but his concentration is quickly taken over by a group of men approaching from down the street.
+Ryan awakens to find the sun just barely peeking its head over the horizon. The morning air makes him shiver as he slowly sits up and looks around. Max is no longer on the ground and with him went the trashcan. The rest of the base is unusually quiet as not even a peep leaks out of the twenty plus teenagers hidden inside. He wonders if he should go find a spot to sleep, somewhere less hypothermia prone, but his concentration is quickly taken over by a group of men approaching from down the street.
 
-He draws his gun but finds the three men to already have far more firepower than his measly pistol. To prevent any unnecessary communication, he elects to keep his gun concealed for now.
+He draws his gun but finds the three men already have far more firepower than his measly pistol. To prevent any unnecessary communication, he elects to keep his gun concealed for now.
 
 "Hey, I told you I saw people here," one of the men comments as he points to Ryan standing up on the wall.
 
@@ -138,9 +138,9 @@ Ryan glances back at the dormant base of teenagers and decides to hop over the w
 
 "Woah, don't hurt yourself," one of the men laughs as he keeps the AR strapped to his chest at ease. 
 
-"Who are you guys?" Ryan asks initially as inspects the strangers.
+"Who are you guys?" Ryan asks initially as he inspects the strangers.
 
-Each of the three men conspicuously wield an AR across their chest with the man in the middle even having a pistol trapped to his thigh. One would think this fact alone insights a bit of militaristic affliction but each of them have distinct, rather casual clothes underneath which contradicts this assumption. The man on the left is a bit shorter than Ryan with a leaner build. The man on the right is a bit taller with a very easy going demeanor as he leans back on one leg with his hands resting on the gun with no intention of using it. The final man, with a sharp smile and aviators, seems completely unaffected by the situation as if he were just talking to a neighbor on his morning stroll. He's the one with the pistol and tightly fit cargo pants, yet he doesn't seem even remotely concerned about talking to a potentially hostile teenager.
+Each of the three men conspicuously wields an AR across their chest with the man in the middle even having a pistol trapped to his thigh. One would think this fact alone incites a bit of militaristic affiliation but each of them has distinct, rather casual clothes underneath which contradicts this assumption. The man on the left is a bit shorter than Ryan with a leaner build. The man on the right is a bit taller with a very easygoing demeanor as he leans back on one leg with his hands resting on the gun with no intention of using it. The final man, with a sharp smile and aviators, seems completely unaffected by the situation as if he were just talking to a neighbor on his morning stroll. He's the one with the pistol and tightly fit cargo pants, yet he doesn't seem even remotely concerned about talking to a potentially hostile teenager.
 
 "We're from a camp just outside of town," the guy with aviators starts as he gestures backwards with his thumb, "Freddy here thought he saw something the other day and wanted to investigate it," the guy pushes down his aviators and inspects Ryan before pushing the glasses back up and chuckling, "I'll be darned, he was right."
 
@@ -148,7 +148,7 @@ The guy Ryan's size, Freddy he believes, laughs aloud, "I didn't believe my eyes
 
 "So what do you want?" Ryan asserts, trying his best to maintain his own dignity without seeming hostile.
 
-The aviators guy leans his head back with a casual smile, "You can relax kid, we're all in this together."
+The aviators guy leans his head back with a casual smile, "You can relax, kid, we're all in this together."
 
 "Right," Ryan admits quickly.
 
@@ -170,13 +170,13 @@ Despite what could have been, the strangers seem oddly welcoming to an additiona
 
 Blake averts his eyes which tells the men all they need to know. 
 
-The aviators guy nods his head in thought for a few moments before speaking up with an easy going tone, "How about we come to a compromise? A few of you can come with us to check out our camp and, if you like it, you can come back and tell everyone else to pack up their things. If you don't, then you can pretend we don't even exist—and we'll respect that."
+The aviators guy nods his head in thought for a few moments before speaking up with an easygoing tone, "How about we come to a compromise? A few of you can come with us to check out our camp and, if you like it, you can come back and tell everyone else to pack up their things. If you don't, then you can pretend we don't even exist—and we'll respect that."
 
 Blake glances over to Ryan, "I don't know, it seems too good to be true."
 
 The man shrugs, "We could leave you alone if you want, but those mutants won't lay dormant forever."
 
-As Ryan watches the scene unfold, he notices a few pairs of additional eyes appearing from inside the base. Those conspicuous ease droppers try to keep their distance, but they become easy to spot for both him and Blake as they verge on the finality of a decision.
+As Ryan watches the scene unfold, he notices a few pairs of additional eyes appearing from inside the base. Those conspicuous eavesdroppers try to keep their distance, but they become easy to spot for both him and Blake as they verge on the finality of a decision.
 
 Maybe Blake is considering something deeper, but Ryan feels pretty okay with this plan. He'll be the first to admit that he's not comfortable behind those walls in the slightest, they're short and easily climbable, they wouldn't last a second against a large mutant, and they have no viable escape route if a horde appears. Finding a new location seems like the obvious solution to all of their problems. Not only that, but these guys don't seem to be as malicious as Blake might be hypothesizing. Call it intuition if you will, but Ryan gets the feeling that the aviators guy was right: they are all in this together.
 

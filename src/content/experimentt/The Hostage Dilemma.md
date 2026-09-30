@@ -1,7 +1,7 @@
 ---
-book: "Experiment T"
-title: "The Hostage Dilemma"
-chapNum: 50
+book: Experiment T
+title: The Hostage Dilemma
+chapNum: 51
 pubDate: 2026/09/04
 ---
 _Something about Ryan's first home feels bitterly nostalgic and warmly foreboding. The poorly drawn parrot on the fridge, the sharp island in the center of the kitchen, and the looming door at the end of the hall. All of these features pain a picture of home that he's begun to intellectually despise. The only part of this place he ever wants to remember again is his mother, but she seems to be increasingly sparse with each subsequent nightmare.

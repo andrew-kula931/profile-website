@@ -1,7 +1,7 @@
 ---
-book: "Experiment T"
-title: "Local Atrocities"
-chapNum: 43
+book: Experiment T
+title: Local Atrocities
+chapNum: 44
 pubDate: 2026/08/14
 ---
 When Ryan eventually gets himself off the pile of miscellaneous clothes, he finds the subsequent ruefully awakening. His little bit of warmth developed underneath the blanket and beside the clothes is instead placed with an icy draft that makes him shiver. The soreness in his back only the makes the transition worse.

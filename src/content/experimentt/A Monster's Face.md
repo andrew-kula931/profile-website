@@ -1,7 +1,7 @@
 ---
-book: "Experiment T"
-title: "A Monster's Face"
-chapNum: 31
+book: Experiment T
+title: A Monster's Face
+chapNum: 32
 pubDate: 2026/07/01
 ---
 The baseball stadium is a bit further away than Ryan anticipated which leads to a rather annoying game of cat and mouse between him and the lunatic driver behind him. His motorcycle is unmatched at accelerating really fast which allows him to lightly shake Jeremy off after every turn seeing as the van can hardly keep up. That being said, Jeremy is anything but afraid of slamming on the gas given the opportunity and takes turns that would make a lesser driver queasy.  This recklessness, paired with the fact that Ryan isn't comfortable taking fast turns, allows Jeremy to keep up with him for the most part. After a few minutes of this dangerous game of chase, they arrive at the stadium, exactly where Ryan remembered it... to think Steve's house is just around the corner.

@@ -1,7 +1,7 @@
 ---
-book: "Experiment T"
-title: "Aftermath"
-chapNum: 40
+book: Experiment T
+title: Aftermath
+chapNum: 41
 pubDate: 2026/08/10
 ---
 There were so many bodies cluttering the prison that they knew they were never going to be able to bury them all. Time or man power wasn't the problem, it was the raging storm and the looming threat that additional zombies could be lurking inside the building. After all, twenty-ish people is far from the total capacity of the prison, which means over half of the survivors were still somewhere inside the complex. That risk was far more than they could handle at present. As such, they made the difficult decision to pack up and rendezvous a little ways down the road at a motel.
