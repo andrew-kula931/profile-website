@@ -26,7 +26,7 @@ As the plan stands, if even a single monster appears—one that Ryan can't dispa
 
 "So Ryan..." Max starts looking up at the powered off lights, "Did this happen before or after you were ordered to come here?"
 
-Ryan glances over suddenly not wanting to answer the question, "What do you mean?"
+Ryan glances over, suddenly not wanting to answer the question, "What do you mean?"
 
 Max shrugs his shoulders, "Never mind, I guess it doesn't matter."
 
@@ -176,7 +176,7 @@ Just... for... a moment.
 
 No... No? No. No! NO!! 
 
-His eyes burst open, his heart speeds up a bit, and he forces himself to a seated position. Beside him Beth wraps the shredded remains of what looks like a shirt around his arm. Behind her, Blake paces back and forth with a worried look until he notices Ryan sitting up. Caid, Max, and Allison all sit around him with a similar expression which transforms to shock as Ryan matches eye contact with each of them. Lastly, Chloe—sitting behind him—supports his back to prevent him from falling backwards. Her face is the only one that doesn't look worried as tears occupy too much to call it simple worrying.
+His eyes burst open, his heart speeds up a bit, and he forces himself to a seated position. Beside him Beth wraps the shredded remains of what looks like a shirt around his arm. Behind her, Blake paces back and forth with a worried look until he notices Ryan sitting up. Caid, Max, and Alison all sit around him with a similar expression which transforms to shock as Ryan matches eye contact with each of them. Lastly, Chloe—sitting behind him—supports his back to prevent him from falling backwards. Her face is the only one that doesn't look worried as tears occupy too much to call it simple worrying.
 
 "Ryan!" Blake exclaims dropping to a knee beside him, "Are you alright?"
 

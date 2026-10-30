@@ -14,33 +14,33 @@ Ryan struggles to keep his eyes open, but continues to listen. There's no risk o
 
 "I don't know," Blake tries to explain, "We met this guy who broke my knife with his bare hands. Then Ryan was invited into some sketchy basement and this is how he ended up."
 
-Ryan feels a soft and comforting hand rest on his forehead. The soothing touch seems to slow his racing thoughts before it slowly rubs down to his cheek. When his eyes slowly open, he finds Chloe worriedly starring at him.
+Ryan feels a soft and comforting hand rest on his forehead. The soothing touch seems to slow his racing thoughts before it slowly rubs down to his cheek. When his eyes slowly open, he finds Chloe worriedly staring at him.
 
 "You're not burning up," Chloe says as she withdraws her hand, "Maybe that's a good sign."
 
 Beth crouches down beside the couch to get a good look at him, "Ryan, I understand if you're tired, but we want to know what happened. We just want to help."
 
-Seeing as there an answer is practically being forced out of him, he strenuously sits up on the couch. Almost immediately Chloe takes to his side to keep him upright while Blake hands him a bottle of water. Drinking the chilled liquid immediately prompts him awake—if he were sleepy to begin with—and it immediately goes down the wrong pipe. Shoving his face into his elbow he coughs three times. All the while, the whole group stands around him with concern while Chloe rubs his back.
+Seeing as an answer is practically being forced out of him, he strenuously sits up on the couch. Almost immediately Chloe takes to his side to keep him upright while Blake hands him a bottle of water. Drinking the chilled liquid immediately prompts him awake—if he were sleepy to begin with—and it immediately goes down the wrong pipe. Shoving his face into his elbow, he coughs three times. All the while, the whole group stands around him with concern while Chloe rubs his back.
 
 "Stay away," he warns when the coughing finally subsides, "there's..." he trails off.
 
 He looks around the room at everyone in attendance and his gaze stalls on Blake. Echoes of his exploding head stain his memory and cause him to look away. He's safe—surrounded by trustworthy friends—yet he can't shake the foreboding feeling that something like that could easily happen again. How much can he even say?
 
-"There's what?" Caid asks a bit forcefully in which Beth holds out a hand to settle down. Despite the reaction, he can tell Caid isn't upset with him, though he has no idea what he could be upset at.
+"There's what?" Caid asks a bit forcefully, in response to which Beth holds out a hand to settle him down. Despite the reaction, he can tell Caid isn't upset with him, though he has no idea what he could be upset at.
 
 Ryan leans forward, placing his elbows against his knees as he feels the migraine slowly diminish to an annoying headache, "Nothing good will come of us ever going back."
 
-A couple of the people around him exchange worried looks but no one pushes him further. He notices Alison grow pale at the ominous declaration of his and proceed to walk across the room and stare out the window. One can only imagine how she's taking such disastrous news. After all, this is the first time any of them have come back injured. They had quite a long streak of safe trips too and from town, but this broke their long-running chain.
+A couple of the people around him exchange worried looks but no one pushes him further. He notices Alison grow pale at his ominous declaration and proceed to walk across the room and stare out the window. One can only imagine how she's taking such disastrous news. After all, this is the first time any of them have come back injured. They had quite a long streak of safe trips to and from town, but this broke their long-running chain.
 
 "I think..." Ryan starts again, this time finding his eyelids struggling to remain open, "I think we should prepare to leave. Get away from this town."
 
-He snaps his self awake which seems to startle a few people. The surrounding room is still safe, still occupied by people he trusts. Just to be sure, he checks one more time and lands on the comforting blue eyes of Chloe. She looks at him, and he looks at her, for a moment, that's enough.
+He snaps himself awake which seems to startle a few people. The surrounding room is still safe, still occupied by people he trusts. Just to be sure, he checks one more time and lands on the comforting blue eyes of Chloe. She looks at him, and he looks at her, for a moment, that's enough.
 
 "Alright then," Beth decides, standing up, "Don't force yourself. Get some rest and we'll make a decision afterward."
 
 "Okay," Ryan says slowly, his eyes already beating her to the punch. 
 
-He hears some muffled talking in the background. Not to long after that he hears some shouting. Then silence. Then some muffled talking—with fewer voices. Around that time is when everything goes dark.
+He hears some muffled talking in the background. Not too long after that he hears some shouting. Then silence. Then some muffled talking—with fewer voices. Around that time is when everything goes dark.
 
 ---
 
@@ -50,7 +50,7 @@ When Ryan comes too, he finds Chloe staring directly at him. She kneels on the f
 
 Chloe's expression drops, "The boys left, they headed off to town."
 
-Ryan's fist tightens but after finding Chloe's fingers interlocked with his he quickly eases off. Instead, he gets up slowly.
+Ryan's fist tightens but after finding Chloe's fingers interlocked with his, he quickly eases off. Instead, he gets up slowly.
 
 "How long have I been out?" he wonders as he rubs his eyes.
 
@@ -64,13 +64,13 @@ Almost immediately, Chloe looks up with a shocked expression in her eyes, "You'r
 
 Chloe stands halfway up with her knee still on the couch, "You're in no condition to do so. Beth and I tried to stop them, but they wouldn't have it. All three of them agreed that they needed answers. They weren't going to sit idly by while you lay bedridden."
 
-Ryan stubbornly tries to stand up by Chloe grabs his arm and pulls him back down.
+Ryan stubbornly tries to stand up but Chloe grabs his arm and pulls him back down.
 
 "This is not up for debate," she asserts with a strictness she's never used with him before, "I understand that they disrespected your wishes, but I'm not about to let you recklessly run off after them."
 
 "But—" he tries.
 
-Chloe shakes her head, "No buts!" she looks away, her voice suddenly growing quieter, "Do you have any idea how I felt when you came in like that."
+Chloe shakes her head, "No buts!" she looks away, her voice suddenly growing quieter, "Do you have any idea how I felt when you came in like that?"
 
 Stopping himself, Ryan looks to the floor. Honestly he can't blame her for thinking that. Pair that with what he said, and her concerns are warranted. If only he had just told more of the truth... but then... what happened to Blake.
 
@@ -92,11 +92,11 @@ Chloe shakes her head while hugging herself, "Last time you went after him, Jere
 
 Ryan stands up as well, "But I can't let them walk into their deaths."
 
-Stubbornly, Chloe turns away from him, "I don't know what we're supposed to do," she looks back, tears welling up in her eyes, "I still remember Amber's screams. Not just hers but so many people's. If that corrupt... monster is out there. You should stay as far away as possible. I can't let you go through that again... Ryan, when you found us..." one of her tears falls down her cheek, "It was the same look you had when you arrived back here."
+Stubbornly, Chloe turns away from him, "I don't know what we're supposed to do," she looks back, tears welling up in her eyes, "I still remember Amber's screams. Not just hers but so many people's. If that corrupt... monster is out there, you should stay as far away as possible. I can't let you go through that again... Ryan, when you found us..." one of her tears falls down her cheek, "It was the same look you had when you arrived back here."
 
 The scene seems to freeze as Ryan stands between two paths of decision. Half of him desperately desires to rush out the door and force his friends to turn around while the other half is afraid of what he'll find. Surely they haven't reached town yet, but with the current threats... he's not certain of anything right now. Does he stay to protect Chloe and the other girls or does he leave? Is he even capable of saving anyone?
 
-"Ryan please," she pleads, stepping towards him with her arms still folded against her chest, "Please don't go. Have some faith that your friends will be alright."
+"Ryan, please," she pleads, stepping towards him with her arms still folded against her chest, "Please don't go. Have some faith that your friends will be alright."
 
 Falling back on the couch, Ryan hangs his head, "What am I supposed to do?"
 
@@ -110,11 +110,11 @@ Ryan glances back which causes Beth to avert her eyes. Why are they all opposing
 
 Chloe studies Ryan closely for a moment. When he doesn't look up, she takes a single step towards Beth, "Okay... sure."
 
-While Ryan stares at his hands the two girls ascend the stairs and leave him alone. Off in the distance he hears the knocking on a wooden door, but he stops paying attention after that. 
+While Ryan stares at his hands, the two girls ascend the stairs and leave him alone. Off in the distance he hears the knocking on a wooden door, but he stops paying attention after that. 
 
 What has it come to? Is he really supposed to sit here and hope that everyone comes back? That Creep is a force to be reckoned with. In hindsight, he's genuinely shocked that he survived two encounters. If it weren't for the fact that he was being used in some sort of elaborate experiment, he'd easily have died twice already. He trusts his friends, but no one is ready for that—no one.
 
-A few minutes pass and Ryan doesn't move from his spot. Chloe and Beth return to the living room and take seats. Beth sits down in an old rocking chair in front of the dormant fireplace while Chloe sits on the front of a lazy boy. The fact that she sits so far away bothers him more than it probably should. Neither of them offer him an explanation for what happened, but their long faces doesn't provide for any consolation. 
+A few minutes pass and Ryan doesn't move from his spot. Chloe and Beth return to the living room and take seats. Beth sits down in an old rocking chair in front of the dormant fireplace while Chloe sits on the front of a lazy boy. The fact that she sits so far away bothers him more than it probably should. Neither of them offers him an explanation for what happened, but their long faces don't provide any consolation. 
 
 "Is it Alison?" Ryan guesses in the dark.
 
@@ -122,7 +122,7 @@ Beth nods slowly as she folds her hands and places them against her chin, "She w
 
 "We're just worried," Chloe adds, avoiding eye contact with Ryan.
 
-A lull befalls the conversation one more while Ryan can't help but notice the depressing atmosphere. He may still be conflicted about whether to leave, but this may provide for something actionable to do in the meantime. His attempt my not resolve much of anything, but this is the least he can do—maybe even all he can do.
+A lull befalls the conversation once more while Ryan can't help but notice the depressing atmosphere. He may still be conflicted about whether to leave, but this may provide something actionable to do in the meantime. His attempt may not resolve much of anything, but this is the least he can do—maybe even all he can do.
 
 He stands up and glances between the two girls, "I'll go check on her."
 
@@ -140,7 +140,7 @@ To his surprise, the door gradually opens revealing a pale girl looking fearfull
 
 She doesn't give a direct response but instead steps away from the door without closing it. Ryan takes this as reason enough to step inside, closing the door behind him. 
 
-Alison's room was originally used as a guest room, but you'd hardly guess that with how lived-in it now feels. Similarly to how Chloe added a few personal touched to his room, Alison took that same mentality and ramped it up. Custom artwork, repurposed sculptures, and a solid theme of purple and blue make the room hers. It's impressive to someone like Ryan, but to Alison it's probably so normal she doesn't even notice as she takes a seat on her dark blue comforter.
+Alison's room was originally used as a guest room, but you'd hardly guess that with how lived-in it now feels. Similarly to how Chloe added a few personal touches to his room, Alison took that same mentality and ramped it up. Custom artwork, repurposed sculptures, and a solid theme of purple and blue make the room hers. It's impressive to someone like Ryan, but to Alison it's probably so normal she doesn't even notice as she takes a seat on her dark blue comforter.
 
 Ryan lingers by the door as he's not sure where else to go, "Beth and Chloe are worried about you."
 
@@ -152,7 +152,7 @@ Ryan leans back against the door, attempting to look more casual and loose as he
 
 Alison flips over the notebook so that a blank page is present on top, "I'm not really sure."
 
-Looking towards the carpet, Ryan bites his lip. He came up here because he believed he could help in some way—the longer he stays here the more of a disillusionment that seems. Even if he weren't tired, he still wouldn't know what to say in a situation like this. Does he prompt her for more information? Wait and see what she does? Or does she really need space and his presence was forced to begin with?
+Looking towards the carpet, Ryan bites his lip. He came up here because he believed he could help in some way—the longer he stays here, the more of an illusion that seems. Even if he weren't tired, he still wouldn't know what to say in a situation like this. Does he prompt her for more information? Wait and see what she does? Or does she really need space and his presence was forced to begin with?
 
 "Ryan," she begins while looking out the window, "Do you ever hear... _voices_?" 
 
@@ -198,11 +198,11 @@ She shakes her head pathetically as if his words meant nothing to her, "The voic
 
 Ryan perks up, suddenly interested despite the aforementioned hysteria, "What is it?"
 
-Alison slides off her bed and meanders over to the nightstand. She runs her fingers over the fuzzy fabric that makes up the lamp shade in a melancholic motion. The action stalls midway as if caught up in a deliberate thought, but eventually continues as her hands instead fall on her pillow.
+Alison slides off her bed and meanders over to the nightstand. She runs her fingers over the fuzzy fabric that makes up the lampshade in a melancholic motion. The action stalls midway as if caught up in a deliberate thought, but eventually continues as her hands instead fall on her pillow.
 
 "I know they're lying," she says softly enough that Ryan wonders if she's only intending it for herself, "The solution doesn't make sense."
 
-Ryan's thoughts falter on the term 'they'. He stops to wonder if she meant to say it. Honestly, he's about to parish the thought all together, but Alison continues on confirms it instantly.
+Ryan's thoughts falter on the term 'they'. He stops to wonder if she meant to say it. Honestly, he's about to perish the thought altogether, but Alison continues on and confirms it instantly.
 
 "They reminded me over and over that this is a solution, but about an hour after you left, it suddenly got more aggressive—more demanding," she grabs onto the pillow tightly as if strangling a throat. Ryan stands up a bit straighter as he begins to take on a foreboding feeling. Alison's tone only darkens as she bites her teeth together, each word struggling to get out, "They know everything."
 
@@ -210,11 +210,11 @@ Ryan's thoughts falter on the term 'they'. He stops to wonder if she meant to sa
 
 For a brief moment, Alison looks back. Upon her face is not the usual timid demeanor of a soft-spoken, kind-hearted girl. Instead, he finds two eyes dripping with fear as terror makes her shoulders tremble. Her teeth clatter together as the veins in her neck bulge. The horrific sight of her visage causes Ryan to backpedal into the door.
 
-"They won't stop..." she says slowly, each wording bleeding with cryptic horror, "not until you're dead."
+"They won't stop..." she says slowly, each word bleeding with cryptic horror, "not until you're dead."
 
 The pillow Alison had been strangling is promptly yanked out of the way to reveal a pistol underneath—one that should be locked up in storage. She then latches onto the gun and points it at Ryan.
 
-Ryan holds out his hands defensively, he refuses to let Alison go through with something like this, "Wait! We can still talk this through."
+Ryan holds out his hands defensively—he refuses to let Alison go through with something like this, "Wait! We can still talk this through."
 
 She shakes her head slowly, "No. Everything they've told me has come true. I know... that you're not human anymore."
 
@@ -224,41 +224,41 @@ He tries to intervene by taking a step forward, perhaps even to knock the gun ou
 
 At first, he only sees the flash of the gun and wonders if anything even happened, then the pain sets in. Looking down at his torso, he finds his shirt quickly filling with blood as a small and insignificant sensation grows into a tumultuous agony. 
 
-He groans as he leans over, he can feel blood bubbling up in his throat. The pain nauseates him as he stumbles over, catching himself on the door handle. As he takes a hand off the injury, he finds it coated in his own blood. He opens his mouth the gasp but more blood spits out covering his hand and the floor below.
+He groans as he leans over; he can feel blood bubbling up in his throat. The pain nauseates him as he stumbles over, catching himself on the door handle. As he takes a hand off the injury, he finds it coated in his own blood. He opens his mouth to gasp but more blood spits out, covering his hand and the floor below.
 
 As he looks back to Alison, he finds her shaking her head slowly as she drops the gun on the ground. She whispers something unintelligible as Ryan collapses onto the floor. His voice tries to call out but chokes on blood as his next breath fails. 
 
 Is this really how he's going to die? For real this time?
 
-It's at the moment that he unconsciously tightens his muscles—one of which happens to an invisible one. The world flashes.
+It's at the moment that he unconsciously tightens his muscles—one of which happens to be an invisible one. The world flashes.
 
-He finds Alison strangling a pillow before promptly yanking it away to reveal the pistol laying underneath. It's not wrong to say he hesitates as the pain in his torso has all but disappeared, but this doesn't last long as his body moves on it's own. Rushing forward, he reaches out for the pistol but he clearly misunderstood the distance. Before he can intercept the weapon, Alison freaks out and fires a round into his leg. He stumbles forward, still dead set on getting the gun out of her hands, but he slips and Alison pulls the trigger twice more. The first shatters his hip while the second pierces his throat.
+He finds Alison strangling a pillow before promptly yanking it away to reveal the pistol lying underneath. It's not wrong to say he hesitates as the pain in his torso has all but disappeared, but this doesn't last long as his body moves on its own. Rushing forward, he reaches out for the pistol but he clearly misunderstood the distance. Before he can intercept the weapon, Alison freaks out and fires a round into his leg. He stumbles forward, still dead set on getting the gun out of her hands, but he slips and Alison pulls the trigger twice more. The first shatters his hip while the second pierces his throat.
 
-Collapsing to the ground he can't even scream in pain as his windpipe is completely torn in half. Regardless of the reality, he tries to cry out but gurgles blood on it's way out. Helplessly, he watches in vain as blood pumps out of his neck and sprays the floor in front of him. The whole time, Alison stares in horror as the gun falls to the floor.
+Collapsing to the ground, he can't even scream in pain as his windpipe is completely torn in half. Regardless of the reality, he tries to cry out but gurgles blood on its way out. Helplessly, he watches in vain as blood pumps out of his neck and sprays the floor in front of him. The whole time, Alison stares in horror as the gun falls to the floor.
 
 The world flashes.
 
 "They won't stop..." Alison says slowly, as Ryan stands in front of the door, "not until you're dead."
 
-Instead of rushing forward, Ryan finds himself holding a hand over his neck and limping off of his leg. There are no tangible injuries anywhere on his body, but he can't seem to slow his heart rate as he collapses onto the floor expecting blood to be gushing out. Of course, the floor remains try, but he starts looking around the room frantically searching for something—he's not even sure what.
+Instead of rushing forward, Ryan finds himself holding a hand over his neck and limping on his injured leg. There are no tangible injuries anywhere on his body, but he can't seem to slow his heart rate as he collapses onto the floor expecting blood to be gushing out. Of course, the floor remains dry, but he starts looking around the room, frantically searching for something—he's not even sure what.
 
 At some point he looks back to Alison and finds her shaking her head slowly, still as terrified as before, if not more.
 
 "No..." she mutters, "They can't be right..." her voice raises to a bloodcurdling scream, "NO!! They said you would do this!"
 
-Alison fall to her knees with her head in her hands. The pistol remains buried under the pillow.
+Alison falls to her knees with her head in her hands. The pistol remains buried under the pillow.
 
-Ryan takes a deep breath but immediately coughs thinking that he's still choking. When it's clear that his lungs still work, he ends up on his hands and knees inhaling air as if he had none. The pain in his body doesn't exist yet he feels the whole in his torso, the two halves of a throat, the pieces of bone littering his hip. Each excruciating sensation stains his consciousness with phantom wounds. Even as he presses his hand against each spot, he just finds completely undisturbed flesh.
+Ryan takes a deep breath but immediately coughs thinking that he's still choking. When it's clear that his lungs still work, he ends up on his hands and knees inhaling air as if he had none. The pain in his body doesn't exist yet he feels the hole in his torso, the two halves of a throat, the pieces of bone littering his hip. Each excruciating sensation stains his consciousness with phantom wounds. Even as he presses his hand against each spot, he just finds completely undisturbed flesh.
 
 The door to his side swings open and knocks him over. Beth and Chloe appear in the doorway. Inspecting the scene briefly, Beth rushes over to Alison to check on her while Chloe kneels down next to him.
 
 Ryan points towards the bed, "Get the gun. Under the pillow."
 
-Both girls give him a confused look, but he doesn't let down. He continues to point directly at the pillow with conviction.
+Both girls give him a confused look, but he doesn't let up. He continues to point directly at the pillow with conviction.
 
 Eventually, Beth steps over and shifts the pillow only for her to stare at what lies below with horror. She turns to Alison who still remains on the floor, "What is this?"
 
-Continuing to hang her head in her hands, she begins to soak, "You're not supposed to know. I never told anyone. How do you know?!"
+Continuing to hang her head in her hands, she begins to sob, "You're not supposed to know. I never told anyone. How do you know?!"
 
 The whole room stares at the hyperventilating, hysterical girl. No one dares move as Beth steps away from Alison and transitions over to the door.
 
@@ -268,4 +268,4 @@ Alison shakes her head, repeating the word "no" over and over to herself. The tw
 
 "Where are you going?" Beth demands.
 
-He doesn't look back. Slowly and methodically, he puts his boots onto his feet, wraps his coat around his body, and walks outside. As he passes the fence line he hears Alison scream.
+He doesn't look back. Slowly and methodically, he pulls his boots onto his feet, wraps his coat around his body, and walks outside. As he passes the fence line he hears Alison scream.
