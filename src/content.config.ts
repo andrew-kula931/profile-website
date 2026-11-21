@@ -2,14 +2,14 @@
 import { defineCollection } from 'astro:content';
 
 // 2. Import loader(s)
-import { glob, file } from 'astro/loaders';
+import { glob } from 'astro/loaders';
 
 // 3. Import Zod
 import { z } from 'astro/zod';
 
 // 4. Define a `loader` and `schema` for each collection
-const experimentt = defineCollection({
-  loader: glob({ base: './src/content/experimentt', pattern: '**/*.{md,mdx}' }),
+const chapters = defineCollection({
+  loader: glob({ base: './src/content', pattern: '*/**/*.{md,mdx}' }),
   schema: z.object({
     book: z.string(),
     title: z.string(),
@@ -21,4 +21,4 @@ const experimentt = defineCollection({
 });
 
 // 5. Export a single `collections` object to register your collection(s)
-export const collections = { experimentt };
+export const collections = { chapters };
