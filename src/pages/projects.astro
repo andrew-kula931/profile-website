@@ -1,193 +1,348 @@
 ---
-import Layout from '../layout/layout.astro';
-import Nav from '../components/nav.astro';
-import Footer from '../components/footer.astro';
-import ProjectCarousel from '../components/project_carousel.astro';
+import Layout from "../layout/layout.astro";
+import Nav from "../components/nav.astro";
+import Footer from "../components/footer.astro";
+import ProjectCarousel from "../components/project_carousel.astro";
+import ProjectLightbox from "../components/project_lightbox.astro";
+import { projects } from "../data/projects";
+
+const industryCount = projects.filter((p) => p.category === "industry").length;
+const researchCount = projects.filter((p) => p.category === "research").length;
 ---
 
-<Layout>
-    <div class="overlay" id="overlay" onclick="closeFullscreen()">
-      <img class="fullscreen-img" id="fullscreen-img" src="/profile-website/PurchaseOrder.png" alt="Purchase Order Tracking Application">
-    </div>  
+<Layout title="Projects | Andrew Kula">
+  <ProjectLightbox />
 
-    <div class="flex flex-col h-full bg-gradient-to-b from-stone-100 to-stone-200 dark:from-slate-900 dark:via-gray-800 dark:to-black">
-      <Nav />
-      <div class="flex items-center justify-center">
-        <div class="flex flex-col p-2 space-y-2 w-max max-w-[970px] justify-center items-center">
-          <div id="lotrecords" class="home-tile w-full bg-gradient-to-r from-stone-200 to-stone-50 dark:from-slate-900 
-          dark:to-slate-800 dark:text-white opacity-0 translate-y-10 transition-all delay-0 duration-700">
-            <section class="flex flex-row justify-between items-center border-b-2 border-stone-400 dark:border-blue-800">
-              <div class="flex flex-col">
-                <p class="pl-2 pt-2 text-xl">Client Data Records</p>
-              </div>
-              <img class="h-[75px] w-[100px] p-2" src="/profile-website/2mation.png" alt="2Mation Logo">
-            </section>
-            <ul class="list-disc pl-8 pb-4 pt-4">
-              <li>Data Focused Record Keeping</li>
-                <ul class="list-disc pl-8 space-y-1">
-                    <li>Complex, client focused record keeping application which gives a spreadsheet-like feel while also keeping the user experience simple, streamlined, and largely automated.</li>
-                    <li>Features a data efficent version control system, basic document and chart editors, change tracking, keyboard shortcuts, and much more.</li>
-                    <li>Modularized for custom fit for client usage so that data can adhere to any client's needs.</li>
-                  </ul>
-            </ul>
-            <ProjectCarousel
-              aspectRatio="16 / 10"
-              slides={[
-                { src: "/profile-website/lot_lwcf.png", alt: "Record data page" },
-                { src: "/profile-website/lot_charts.png", alt: "Record chart editor page" },
-                { src: "/profile-website/lot_document_editor.png", alt: "Record document editor page" },
-                { src: "/profile-website/lot_export_all.png", alt: "Record export all modal" },
-              ]}
-            />
+  <div class="relative flex min-h-screen flex-col bg-gradient-to-b from-stone-100 via-stone-100 to-stone-200 text-stone-800 dark:from-slate-900 dark:via-slate-800 dark:to-black dark:text-slate-100">
+    <Nav />
+
+    <main class="relative z-10 mx-auto flex w-full max-w-[1060px] flex-1 flex-col gap-6 px-4 py-8 sm:px-6 lg:py-12">
+      <header
+        data-reveal
+        class="border-b border-stone-300/80 pb-5 transition-all duration-700 opacity-0 translate-y-6 dark:border-slate-700/80"
+      >
+        <div class="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <div class="space-y-1.5">
+            <h1 class="text-3xl font-bold tracking-tight text-stone-900 dark:text-white sm:text-4xl">
+              Projects
+            </h1>
+            <p class="max-w-xl text-sm leading-relaxed text-stone-600 dark:text-slate-300">
+              A collection of a few projects I've done.
+            </p>
           </div>
 
-          <div 
-            id="poSystem" 
-            class="home-tile bg-gradient-to-r from-stone-200 to-stone-50 dark:from-slate-900 
-            dark:to-slate-800 dark:text-white opacity-0 translate-y-10 transition-all delay-200 duration-700"
+          <div
+            role="group"
+            aria-label="Filter projects by category"
+            class="flex flex-wrap items-center gap-2"
           >
-            <section class="flex flex-row justify-between items-center border-b-2 border-stone-400 dark:border-blue-800">
-              <div class="flex flex-col">
-                <p class="pl-2 pt-2 text-xl">Inventory Management System</p>
-              </div>
-              <img class="h-[75px] w-[100px] p-2" src="/profile-website/2mation.png" alt="2Mation Logo">
-            </section>
-            <ul class="list-disc pl-8 pb-4 space-y-1">
-              <li>Network of Inventory Software</li>
-                <ul class="list-disc pl-8">
-                  <li>A network of multiple applications segmenting financial documentation, organization record tracking, and operations into focused sub-applications.</li>
-                  <li>Provides users with a streamlined experience to handle tedious, mundane tasks.</li>
-                  <li>Invoices, Order Receipts, Staff Requests, Inventories</li>
-                </ul>
-            </ul>
-            <ProjectCarousel
-              aspectRatio="16 / 10"
-              slides={[
-                { src: "/profile-website/PurchaseOrder.png", alt: "Purchase Order Details Page" },
-                { src: "/profile-website/po_main_list.png", alt: "Purchase Order Main List Page" },
-                { src: "/profile-website/po_add_ticket.png", alt: "Purchase Order Add Ticket Page" },
-              ]}
-            />
+            <button
+              type="button"
+              data-filter="all"
+              aria-pressed="true"
+              class="filter-pill filter-pill--active rounded-lg px-3 py-1.5 font-mono text-xs font-semibold transition-all"
+            >
+              All ({projects.length})
+            </button>
+            <button
+              type="button"
+              data-filter="industry"
+              aria-pressed="false"
+              class="filter-pill rounded-lg px-3 py-1.5 font-mono text-xs font-semibold transition-all"
+            >
+              2Mation Solutions ({industryCount})
+            </button>
+            <button
+              type="button"
+              data-filter="research"
+              aria-pressed="false"
+              class="filter-pill rounded-lg px-3 py-1.5 font-mono text-xs font-semibold transition-all"
+            >
+              UNL Research ({researchCount})
+            </button>
           </div>
-
-          <div id="admin" class="home-tile w-full bg-gradient-to-r from-stone-200 to-stone-50 dark:from-slate-900 
-          dark:to-slate-800 dark:text-white opacity-0 translate-y-10 transition-all delay-400 duration-700">
-            <section class="flex flex-row justify-between items-center border-b-2 border-stone-400 dark:border-blue-800">
-              <div class="flex flex-col">
-                <p class="pl-2 pt-2 text-xl">Administration Application</p>
-              </div>
-              <img class="h-[75px] w-[100px] p-2" src="/profile-website/2mation.png" alt="2Mation Logo">
-            </section>
-            <ul class="list-disc pl-8 pb-4 pt-4">
-              <li>Organizaiton Facilitation App</li>
-                <ul class="list-disc pl-8 space-y-1">
-                    <li>Facilitates organization level configurations such as user accessing, organization settings, and automated backend services.</li>
-                    <li>Involves a wide breadth of options across all applications an organization is subscribed to.</li>
-                  </ul>
-            </ul>
-            <ProjectCarousel
-              aspectRatio="16 / 10"
-              slides={[
-                { src: "/profile-website/admin_team.png", alt: "Administration team management page" },
-                { src: "/profile-website/admin_cron_job.png", alt: "Administration cron job management page" },
-                { src: "/profile-website/admin_line_items.png", alt: "Administration line item maintanence page" },
-              ]}
-            />
-          </div>
-
-          <div id="liftup" class="home-tile w-full bg-gradient-to-r from-stone-200 to-stone-50 dark:from-slate-900 
-          dark:to-slate-800 dark:text-white opacity-0 translate-y-10 transition-all delay-600 duration-700">
-            <section class="flex flex-row justify-between items-center border-b-2 border-stone-400 dark:border-blue-800">
-              <div class="flex flex-col">
-                <p class="pl-2 pt-2 text-xl">Lift Up</p>
-              </div>
-              <img class="h-[75px] w-[100px] p-2" src="/profile-website/2mation.png" alt="2Mation Logo">
-            </section>
-            <ul class="list-disc pl-8 pb-4 pt-4">
-              <li>Social Media Application</li>
-                <ul class="list-disc pl-8 space-y-1">
-                    <li>A mobile-first social platform for individuals of a community to help one another.</li>
-                    <li>Realtime features, image editor, team/group/individual based messaging architecture.</li>
-                  </ul>
-            </ul>
-            <ProjectCarousel
-              aspectRatio="12 / 10"
-              slides={[
-                { src: "/profile-website/lift_up_home.png", alt: "Lift Up Home page" },
-                { src: "/profile-website/LiftUp.png", alt: "Lift Up messaging page" },
-                { src: "/profile-website/lift_up_teams.png", alt: "Lift Up teams menu" },
-                { src: "/profile-website/lift_up_image_editor.png", alt: "Lift Up image editor" },
-              ]}
-            />
-          </div>
-
-          <div id="webVis" class="home-tile w-full bg-gradient-to-r from-stone-200 to-stone-50 dark:from-slate-900 
-          dark:to-slate-800 dark:text-white opacity-0 translate-y-10 transition-all delay-800 duration-700">
-            <section class="flex flex-row justify-between items-center border-b-2 border-stone-400 dark:border-blue-800">
-              <div class="flex flex-col">
-                <p class="pl-2 pt-4 pb-4 text-xl">Algorithm Visualization</p>
-              </div>
-            </section>
-            <ul class="list-disc pl-8 pb-4 pt-4">
-              <li>Visualize Runtime Results of Cutting Edge Algorithms</li>
-                <ul class="list-disc pl-8 space-y-1">
-                    <li>Internal algorithm visualization for UNL Constraint Processing Lab.</li>
-                    <li>Realtime visualizations of output data of custom satisfiability solver.</li>
-                  </ul>
-            </ul>
-            <ProjectCarousel
-              aspectRatio="12 / 10"
-              slides={[
-                { src: "/profile-website/webVis_bpd.png", alt: "Algorithm Visualization Backtracks Per Depth Editor Page" },
-                { src: "/profile-website/webVis_ipd.png", alt: "Algorithm Visualization Instantiations Per Depth Editor Page" },
-                { src: "/profile-website/webVis_multi_page.png", alt: "Algorithm Visualization editor with a grid of charts" },
-              ]}
-            />
-          </div>
-
         </div>
-      </div>
-      <Footer />
-      </div>
-    <script>
-      window.addEventListener('DOMContentLoaded', () => {
-        const content2 = document.getElementById('poSystem');
-        content2?.classList.remove('opacity-0', 'translate-y-10');
-        content2?.classList.add('opacity-100', 'translate-y-0');
+      </header>
 
-        const content3 = document.getElementById('liftup');
-        content3?.classList.remove('opacity-0', 'translate-y-10');
-        content3?.classList.add('opacity-100', 'translate-y-0');
+      <section class="flex flex-col" aria-label="Project showcase">
+        {projects.map((project, idx) => {
+          const panelId = `project-panel-${project.id}`;
+          return (
+            <article
+              id={project.id}
+              data-project-card
+              data-category={project.category}
+              data-reveal
+              style={`transition-delay: ${Math.min(idx * 80, 320)}ms;`}
+              class="group transition-all duration-500 opacity-0 translate-y-6"
+            >
+              <div
+                data-project-divider
+                aria-hidden="true"
+                class:list={[
+                  "my-2 flex items-center gap-3",
+                  idx === 0 && "hidden",
+                ]}
+              >
+                <div class="h-px flex-1 bg-stone-300 dark:bg-slate-700" />
+              </div>
 
-        const content4 = document.getElementById('admin');
-        content4?.classList.remove('opacity-0', 'translate-y-10');
-        content4?.classList.add('opacity-100', 'translate-y-0');
+              <div class="grid grid-cols-1 items-center gap-5 py-6 sm:py-8 lg:grid-cols-12 lg:gap-8">
+                <!-- Compact Details Pane -->
+                <div class="flex flex-col justify-between gap-3.5 lg:col-span-6">
+                  <div class="space-y-2.5">
+                    <div class="flex items-center justify-between gap-3">
+                      <span class="font-mono text-xs font-semibold text-blue-600 dark:text-sky-400">
+                        {project.index} - {project.organization}
+                      </span>
+                      {project.logo && (
+                        <div class="rounded-md bg-stone-900/90 px-2 py-1 dark:bg-slate-950/80">
+                          <img
+                            src={project.logo}
+                            alt={project.logoAlt ?? project.organization}
+                            class="h-5 w-auto object-contain"
+                          />
+                        </div>
+                      )}
+                    </div>
 
-        const content5 = document.getElementById('lotrecords');
-        content5?.classList.remove('opacity-0', 'translate-y-10');
-        content5?.classList.add('opacity-100', 'translate-y-0');
+                    <div>
+                      <h2 class="text-xl font-bold tracking-tight text-stone-900 transition-colors group-hover:text-blue-600 dark:text-white dark:group-hover:text-sky-400 sm:text-2xl">
+                        {project.title}
+                      </h2>
+                      <p class="text-xs font-medium text-stone-500 dark:text-slate-400 sm:text-sm">
+                        {project.subtitle}
+                      </p>
+                    </div>
 
-        const content6 = document.getElementById('webVis');
-        content6?.classList.remove('opacity-0', 'translate-y-10');
-        content6?.classList.add('opacity-100', 'translate-y-0');
+                    <p class="text-sm leading-relaxed text-stone-700 dark:text-slate-300">
+                      {project.summary}
+                    </p>
+                  </div>
 
-        const overlay = document.getElementById('overlay');
-        document.querySelectorAll<HTMLImageElement>('[data-carousel-slide] img').forEach((image) => {
-          image.parentElement?.addEventListener("click", () => openFullscreen(image));
+                  <!-- Tags + Optional Expansion Trigger -->
+                  <div class="flex flex-wrap items-center justify-between gap-2.5 pt-1">
+                    <div class="flex flex-wrap gap-1.5">
+                      {project.tags.map((tag) => (
+                        <span class="rounded-md bg-stone-200/80 px-2 py-0.5 font-mono text-[11px] font-medium text-stone-700 dark:bg-slate-700 dark:text-slate-300">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+
+                    <button
+                      type="button"
+                      data-proj-toggle
+                      aria-expanded="false"
+                      aria-controls={panelId}
+                      class="inline-flex cursor-pointer items-center gap-1.5 rounded-lg px-2 py-1 font-mono text-xs font-medium text-stone-600 transition-colors hover:bg-stone-200/70 hover:text-stone-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-stone-400 dark:text-slate-400 dark:hover:bg-slate-800/80 dark:hover:text-sky-400 dark:focus-visible:ring-sky-400"
+                    >
+                      <span data-proj-toggle-label>Details</span>
+                      <svg
+                        data-proj-chevron
+                        class="h-3.5 w-3.5 transition-transform duration-300"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+
+                  <!-- Expandable Highlights -->
+                  <div
+                    id={panelId}
+                    data-proj-panel
+                    class="proj-panel"
+                    aria-hidden="true"
+                  >
+                    <div class="proj-panel__inner">
+                      <ul class="space-y-2 border-t border-stone-300/60 pt-3 text-sm leading-relaxed text-stone-700 dark:border-slate-700/60 dark:text-slate-300">
+                        {project.highlights.map((item) => (
+                          <li class="flex items-start gap-2.5">
+                            <span class="font-mono text-xs leading-6 text-blue-600 dark:text-sky-400">
+                              &gt;
+                            </span>
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Compact Borderless Carousel Pane -->
+                <div class="lg:col-span-6">
+                  <div class="mx-auto max-w-[490px]">
+                    <ProjectCarousel
+                      aspectRatio={project.aspectRatio}
+                      slides={project.slides}
+                    />
+                  </div>
+                </div>
+              </div>
+            </article>
+          );
+        })}
+      </section>
+    </main>
+
+    <Footer />
+  </div>
+
+  <style>
+    .filter-pill {
+      background: rgba(231, 229, 228, 0.7);
+      color: rgb(68, 64, 60);
+    }
+
+    .filter-pill:hover {
+      background: rgba(214, 211, 209, 0.9);
+      color: rgb(28, 25, 23);
+    }
+
+    .filter-pill--active {
+      background: rgb(41, 37, 36);
+      color: rgb(250, 250, 249);
+    }
+
+    :global(.dark) .filter-pill {
+      background: rgba(30, 41, 59, 0.65);
+      color: rgb(203, 213, 225);
+    }
+
+    :global(.dark) .filter-pill:hover {
+      background: rgba(51, 65, 85, 0.8);
+      color: white;
+    }
+
+    :global(.dark) .filter-pill--active {
+      background: rgb(37, 99, 235);
+      color: white;
+    }
+
+    .proj-panel {
+      display: grid;
+      grid-template-rows: 0fr;
+      opacity: 0;
+      transition:
+        grid-template-rows 300ms cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 220ms ease;
+    }
+
+    .proj-panel--open {
+      grid-template-rows: 1fr;
+      opacity: 1;
+    }
+
+    .proj-panel__inner {
+      overflow: hidden;
+    }
+
+    /* Soften internal carousel viewport border to match border-light aesthetic */
+    :global(.project-carousel__viewport) {
+      border-color: rgba(120, 113, 108, 0.14);
+    }
+
+    :global(.dark .project-carousel__viewport) {
+      border-color: rgba(51, 65, 85, 0.25);
+    }
+
+    :global(.project-carousel__dots) {
+      padding-bottom: 0.25rem;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .proj-panel,
+      [data-proj-chevron] {
+        transition: none;
+      }
+    }
+  </style>
+
+  <script>
+    const initProjectsPage = () => {
+      document.querySelectorAll<HTMLElement>("[data-reveal]").forEach((el) => {
+        el.classList.remove("opacity-0", "translate-y-6");
+        el.classList.add("opacity-100", "translate-y-0");
+      });
+
+      const buttons =
+        document.querySelectorAll<HTMLButtonElement>("[data-filter]");
+      const cards = document.querySelectorAll<HTMLElement>(
+        "[data-project-card]",
+      );
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const filter = button.dataset.filter ?? "all";
+
+          buttons.forEach((btn) => {
+            const isActive = btn === button;
+            btn.classList.toggle("filter-pill--active", isActive);
+            btn.setAttribute("aria-pressed", String(isActive));
+          });
+
+          let seenVisible = false;
+          cards.forEach((card) => {
+            const matches =
+              filter === "all" || card.dataset.category === filter;
+            card.classList.toggle("hidden", !matches);
+
+            const divider = card.querySelector<HTMLElement>(
+              "[data-project-divider]",
+            );
+            if (divider) {
+              divider.classList.toggle("hidden", !matches || !seenVisible);
+            }
+            if (matches) {
+              seenVisible = true;
+            }
+          });
         });
-        overlay?.addEventListener("click", closeFullscreen);
-      })
+      });
 
-      function openFullscreen(img: HTMLImageElement) {
-        const overlay = document.getElementById("overlay");
-        const overlayImage = document.getElementById("fullscreen-img") as HTMLImageElement;
+      document
+        .querySelectorAll<HTMLButtonElement>("[data-proj-toggle]")
+        .forEach((toggle) => {
+          toggle.addEventListener("click", () => {
+            const card = toggle.closest("[data-project-card]");
+            const panel = card?.querySelector<HTMLElement>("[data-proj-panel]");
+            const chevron = toggle.querySelector<SVGElement>(
+              "[data-proj-chevron]",
+            );
+            const label = toggle.querySelector<HTMLElement>(
+              "[data-proj-toggle-label]",
+            );
+            if (!panel) return;
 
-        overlayImage!.src = img.src;
-        overlay!.style.display = 'flex';
-      }
+            const isOpen = toggle.getAttribute("aria-expanded") === "true";
+            const nextOpen = !isOpen;
 
-      function closeFullscreen() {
-        document.getElementById("overlay")!.style.display = 'none';
-      }
+            toggle.setAttribute("aria-expanded", String(nextOpen));
+            panel.setAttribute("aria-hidden", String(!nextOpen));
+            panel.classList.toggle("proj-panel--open", nextOpen);
+            chevron?.classList.toggle("rotate-180", nextOpen);
+            if (label) {
+              label.textContent = nextOpen ? "Less" : "Details";
+            }
+          });
+        });
+    };
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", () => {
+        requestAnimationFrame(initProjectsPage);
+      });
+    } else {
+      requestAnimationFrame(initProjectsPage);
+    }
   </script>
 </Layout>

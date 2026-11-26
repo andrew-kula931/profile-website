@@ -1,117 +1,957 @@
 ---
-import Layout from '../layout/layout.astro';
-import Nav from '../components/nav.astro';
-import Footer from '../components/footer.astro';
+import Layout from "../layout/layout.astro";
+import Nav from "../components/nav.astro";
+import Footer from "../components/footer.astro";
+
+const timeline = [
+  {
+    period: "April 2024 — Present",
+    status: "Startup",
+    organization: "2Mation Solutions Inc.",
+    role: "Software Developer",
+    logo: "/profile-website/2mation.png",
+    logoAlt: "2Mation Solutions Inc. Logo",
+    bullets: [
+      "Developed and maintained multi-platform applications using a Flutter, PostgreSQL, and Azure stack.",
+      "Designed and implemented database schemas, server-side logic, RLS, and microservices.",
+      "Handled performance-oriented processes and optimized client-server connections for smooth UX.",
+      "Worked directly with clients to understand their needs and develop tailored solutions.",
+    ],
+    stack: ["Flutter", "PostgreSQL", "Azure", "Supabase"],
+  },
+  {
+    period: "October 2025 — May 2026",
+    status: "Research",
+    organization: "Consystlab — University of Nebraska-Lincoln",
+    role: "Undergraduate Researcher",
+    bullets: [
+      "Developed data visualization software to summarize large sets of data.",
+      "Analyzed CSP algorithms and heuristics to better understand problem instances.",
+      "Collaborated with a team of researchers to design and implement software.",
+    ],
+    stack: ["Data Visualization", "CSP Algorithms", "Team Research"],
+  },
+  {
+    period: "June 2020 — March 2024",
+    status: "Management",
+    organization: "Sonic Drive–In",
+    role: "Assistant Manager",
+    bullets: [
+      "Managed daily operations and staff at a fast-paced restaurant.",
+      "Ensured compliance with company policies and quality standards.",
+      "Trained and mentored new employees to improve team performance.",
+    ],
+    stack: ["Management", "Team Leadership", "Operations"],
+  },
+];
+
+const interests = [
+  "Self hosting",
+  "CICD",
+  "Gaming",
+  "Writing",
+  "Taekwondo",
+  "Learning",
+];
+
+const favoriteTools = [
+  {
+    name: "Arch Linux",
+    tag: "OS",
+    url: "https://archlinux.org/",
+    detail:
+      "Lightweight, rolling-release Linux distribution customized from the ground up.",
+    viewBox: "0 0 24 24",
+    colorClass: "text-[#1793D1]",
+    path: "M11.39.605C10.376 3.092 9.764 4.72 8.635 7.132c.693.734 1.543 1.589 2.923 2.554-1.484-.61-2.496-1.224-3.252-1.86C6.86 10.842 4.596 15.138 0 23.395c3.612-2.085 6.412-3.37 9.021-3.862a6.61 6.61 0 01-.171-1.547l.003-.115c.058-2.315 1.261-4.095 2.687-3.973 1.426.12 2.534 2.096 2.478 4.409a6.52 6.52 0 01-.146 1.243c2.58.505 5.352 1.787 8.914 3.844-.702-1.293-1.33-2.459-1.929-3.57-.943-.73-1.926-1.682-3.933-2.713 1.38.359 2.367.772 3.137 1.234-6.09-11.334-6.582-12.84-8.67-17.74zM22.898 21.36v-.623h-.234v-.084h.562v.084h-.234v.623h.331v-.707h.142l.167.5.034.107a2.26 2.26 0 01.038-.114l.17-.493H24v.707h-.091v-.593l-.206.593h-.084l-.205-.602v.602h-.091",
+  },
+  {
+    name: "Nushell",
+    tag: "Shell",
+    url: "https://www.nushell.sh/",
+    detail:
+      "Modern shell that treats command output as structured tables and data.",
+    viewBox: "0 0 24 24",
+    colorClass: "text-[#4E9A06] dark:text-[#73D216]",
+    path: "M0 16.338h1.25v-5.7c.417-.624 1.205-1.309 2.127-1.309 1.176 0 1.34.64 1.34 2.247v4.762h1.25v-5.685c0-1.458-.67-2.32-2.202-2.32-.923 0-1.964.46-2.59 1.264l-.103-1.1H0Zm10.177-7.842h-1.25v5.698c0 1.46.745 2.307 2.263 2.307.921 0 1.889-.431 2.514-1.22l.104 1.057h1.072V8.496h-1.25v5.773c-.432.67-1.265 1.25-2.129 1.25-.907 0-1.324-.446-1.324-1.458zm8.11-.997-.61.952 5.251 3.229-5.251 3.244.669.922L24 12.32v-1.28z",
+  },
+  {
+    name: "VS Code",
+    tag: "Editor",
+    url: "https://code.visualstudio.com/",
+    detail:
+      "Go-to extensible code editor for day-to-day development and debugging.",
+    viewBox: "0 0 128 128",
+    colorClass: "text-[#007ACC] dark:text-[#38BDF8]",
+    fillRule: "evenodd" as const,
+    clipRule: "evenodd" as const,
+    path: "M90.767 127.126a7.97 7.97 0 0 0 6.35-.244l26.353-12.681a8 8 0 0 0 4.53-7.209V21.009a8 8 0 0 0-4.53-7.21L97.117 1.12a7.97 7.97 0 0 0-9.093 1.548l-50.45 46.026L15.6 32.013a5.33 5.33 0 0 0-6.807.302l-7.048 6.411a5.335 5.335 0 0 0-.006 7.888L20.796 64L1.74 81.387a5.336 5.336 0 0 0 .006 7.887l7.048 6.411a5.33 5.33 0 0 0 6.807.303l21.974-16.68l50.45 46.025a8 8 0 0 0 2.743 1.793Zm5.252-92.183L57.74 64l38.28 29.058V34.943Z",
+  },
+  {
+    name: "Obsidian",
+    tag: "Notes",
+    url: "https://obsidian.md/",
+    detail:
+      "Local-first Markdown knowledge base for technical notes and creative writing.",
+    viewBox: "0 0 24 24",
+    colorClass: "text-[#7C3AED] dark:text-[#A78BFA]",
+    path: "M19.355 18.538a68.967 68.959 0 0 0 1.858-2.954.81.81 0 0 0-.062-.9c-.516-.685-1.504-2.075-2.042-3.362-.553-1.321-.636-3.375-.64-4.377a1.707 1.707 0 0 0-.358-1.05l-3.198-4.064a3.744 3.744 0 0 1-.076.543c-.106.503-.307 1.004-.536 1.5-.134.29-.29.6-.446.914l-.31.626c-.516 1.068-.997 2.227-1.132 3.59-.124 1.26.046 2.73.815 4.481.128.011.257.025.386.044a6.363 6.363 0 0 1 3.326 1.505c.916.79 1.744 1.922 2.415 3.5zM8.199 22.569c.073.012.146.02.22.02.78.024 2.095.092 3.16.29.87.16 2.593.64 4.01 1.055 1.083.316 2.198-.548 2.355-1.664.114-.814.33-1.735.725-2.58l-.01.005c-.67-1.87-1.522-3.078-2.416-3.849a5.295 5.295 0 0 0-2.778-1.257c-1.54-.216-2.952.19-3.84.45.532 2.218.368 4.829-1.425 7.531zM5.533 9.938c-.023.1-.056.197-.098.29L2.82 16.059a1.602 1.602 0 0 0 .313 1.772l4.116 4.24c2.103-3.101 1.796-6.02.836-8.3-.728-1.73-1.832-3.081-2.55-3.831zM9.32 14.01c.615-.183 1.606-.465 2.745-.534-.683-1.725-.848-3.233-.716-4.577.154-1.552.7-2.847 1.235-3.95.113-.235.223-.454.328-.664.149-.297.288-.577.419-.86.217-.47.379-.885.46-1.27.08-.38.08-.72-.014-1.043-.095-.325-.297-.675-.68-1.06a1.6 1.6 0 0 0-1.475.36l-4.95 4.452a1.602 1.602 0 0 0-.513.952l-.427 2.83c.672.59 2.328 2.316 3.335 4.711.09.21.175.43.253.653z",
+  },
+  {
+    name: "Tailscale",
+    tag: "Networking",
+    url: "https://tailscale.com/",
+    detail:
+      "Zero-config WireGuard mesh VPN connecting my machines securely anywhere.",
+    viewBox: "0 0 24 24",
+    colorClass: "text-stone-800 dark:text-slate-100",
+    path: "M24 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-9 9a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm0-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm6-6a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM3 24a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm18 .5a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM6 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm9-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 2.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM3 5.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z",
+  },
+];
 ---
-<Layout>
 
-    <div class="overlay" id="overlay" onclick="closeFullscreen()">
-      <img class="fullscreen-img" id="fullscreen-img" src="/profile-website/PurchaseOrder.png" alt="Purchase Order Tracking Application">
-    </div>  
+<Layout title="About | Andrew Kula">
+  <div class="flex min-h-screen flex-col bg-gradient-to-b from-stone-100 to-stone-200 text-stone-800 dark:from-slate-900 dark:via-slate-800 dark:to-black dark:text-slate-100">
+    <Nav />
 
-    <div class="flex flex-col h-full bg-gradient-to-b from-stone-100 to-stone-200 dark:from-slate-900 dark:via-slate-800 dark:to-black">
-      <Nav />
-      <div class="flex items-center justify-center">
-        <div class="flex flex-col p-2 space-y-2 justify-center items-center">
-          <div 
-            id="whoami" 
-            class="home-tile w-full max-w-[970px] bg-gradient-to-r from-stone-50 to-stone-200 dark:from-slate-800 dark:to-slate-900 dark:text-white opacity-0
-            translate-y-10 transition-all duration-700" >
-            <p class="p-2 text-xl">Who Am I?</p>
-            <p class="pl-4 pr-4 pb-4">Currently a software engineering student at the University of Nebraska-Lincoln while also working in industry and have participated in research.</p>
-            <p class="pl-4 pt-2 font-bold">Some of interests:</p>
-            <ul class="list-disc pl-8 pb-4 pt-1 space-y-1">
-              <li>Full stack app development</li>
-              <li>Cloud Computing (CICD)</li>
-              <li>Gaming</li>
-              <li>Writing</li>
-              <li>Taekwondo</li>
-            </ul>
-            <a href="/profile-website/andrewkula20260826.pdf" target="_blank" rel="noopener noreferrer" 
-              class="pl-4 pb-4 inline-flex items-center gap-1 text-stone-700 font-medium underline underline-offset-4 decoration-2 hover:text-stone-500 dark:text-blue-600 dark:hover:text-indigo-600"
+    <main class="mx-auto w-full max-w-[1060px] flex-1 px-4 py-10 sm:px-6 lg:py-16">
+      <div class="grid grid-cols-1 gap-10 lg:grid-cols-[290px_1fr] lg:gap-12">
+        <!-- Sticky Developer Profile Sidebar -->
+        <aside class="lg:sticky lg:top-8 lg:self-start">
+          <div
+            data-reveal
+            class="rounded-2xl border border-stone-300/90 bg-stone-50/90 p-6 shadow-sm transition-all duration-700 opacity-0 translate-y-6 dark:border-slate-700/70 dark:bg-slate-900/85"
+          >
+            <div class="flex items-center gap-4 lg:flex-col lg:items-start">
+              <a href="https://github.com/andrew-kula931">
+                <img
+                  src="/profile-website/GithubProfile.png"
+                  alt="Andrew Kula profile image"
+                  class="h-16 w-16 rounded-full border-2 border-stone-300 object-cover dark:border-slate-700 lg:h-20 lg:w-20"
+                />
+              </a>
+              <div>
+                <h1 class="text-2xl font-bold tracking-tight text-stone-900 dark:text-white">
+                  Andrew Kula
+                </h1>
+                <p class="font-mono text-xs text-stone-600 dark:text-sky-400">
+                  Software Engineer · UNL
+                </p>
+              </div>
+            </div>
+
+            <p class="mt-4 text-sm leading-relaxed text-stone-600 dark:text-slate-300">
+              Software engineering student at the University of Nebraska-Lincoln
+              by day, and industry software developer by night.
+            </p>
+
+            <nav
+              aria-label="Section navigation"
+              class="mt-6 hidden space-y-1 border-t border-stone-300/80 pt-4 dark:border-slate-800 lg:block"
             >
-              Resume
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-            </a>
+              <a
+                href="#overview"
+                class="flex items-center justify-between rounded-md px-2.5 py-1.5 text-sm text-stone-700 transition-colors hover:bg-stone-200/70 dark:text-slate-300 dark:hover:bg-slate-800/80"
+              >
+                <span>Overview</span>
+                <span class="font-mono text-xs text-stone-400 dark:text-slate-500">
+                  01
+                </span>
+              </a>
+              <a
+                href="#experience"
+                class="flex items-center justify-between rounded-md px-2.5 py-1.5 text-sm text-stone-700 transition-colors hover:bg-stone-200/70 dark:text-slate-300 dark:hover:bg-slate-800/80"
+              >
+                <span>Experience</span>
+                <span class="font-mono text-xs text-stone-400 dark:text-slate-500">
+                  02
+                </span>
+              </a>
+              <a
+                href="#interests"
+                class="flex items-center justify-between px-2.5 py-1.5 text-sm text-stone-700 transition-colors hover:bg-stone-200/70 dark:text-slate-300 dark:hover:bg-slate-800/80"
+              >
+                <span>Interests</span>
+                <span class="font-mono text-xs text-stone-400 dark:text-slate-500">
+                  03
+                </span>
+              </a>
+              <a
+                href="#tools"
+                class="flex items-center justify-between px-2.5 py-1.5 text-sm text-stone-700 transition-colors hover:bg-stone-200/70 dark:text-slate-300 dark:hover:bg-slate-800/80 rounded-md"
+              >
+                <span>Tools I Enjoy</span>
+                <span class="font-mono text-xs text-stone-400 dark:text-slate-500">
+                  04
+                </span>
+              </a>
+            </nav>
 
+            <div class="mt-6 flex flex-col gap-2.5 border-t border-stone-300/80 pt-5 dark:border-slate-800">
+              <a
+                href="/profile-website/andrewkula20260826.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-stone-800 px-4 py-2.5 text-sm font-semibold text-stone-50 transition-colors hover:bg-stone-700 dark:bg-blue-600 dark:text-white dark:hover:bg-blue-500"
+              >
+                <span>Resume (PDF)</span>
+                <svg
+                  class="h-4 w-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
+        </aside>
 
-          <div 
-            id="2mation" 
-            class="home-tile w-full max-w-[970px] bg-gradient-to-r from-stone-200 to-stone-50 dark:from-slate-900 dark:to-slate-800 dark:text-white opacity-0 
-            translate-y-10 transition-all delay-200 duration-700"
+        <!-- Main Editorial Content Column -->
+        <div class="space-y-12">
+          <!-- 01 Overview -->
+          <section
+            id="overview"
+            data-reveal
+            style="transition-delay: 80ms;"
+            class="scroll-mt-8 space-y-5 transition-all duration-700 opacity-0 translate-y-6"
           >
-            <section class="flex flex-row justify-between items-center border-b-2 border-slate-600">
-              <div class="flex flex-col">
-                <p class="pl-2 pt-2 text-xl">2Mation Solutions Inc.</p>
-                <p class="pl-2 text-xs">April 2024 - Present</p>
-              </div>
-              <img class="h-[75px] w-[100px] p-2" src="/profile-website/2mation.png" alt="2Mation Logo">
-            </section>
-            <p class="pl-4 pt-2 font-bold">Responsibilities:</p>
-            <ul class="list-disc pl-8 pb-4 pt-1 space-y-1">
-              <li>Developed and maintained multi-platform applications using a Flutter, PostgreSQL, and Azure stack.</li>
-              <li>Designed and implemented database schemas, server-side logic, RLS, and microservices.</li>
-              <li>Handled performance oriented processes and optimized client-server connections for smooth UX.</li>
-              <li>Implemented realtime features such as chats using websockets.</li>
-            </ul>
+            <div class="flex items-baseline gap-3 border-b border-stone-300 pb-3 dark:border-slate-700/80">
+              <h2 class="text-2xl font-bold tracking-tight text-stone-900 dark:text-white">
+                Who Am I?
+              </h2>
+            </div>
 
-          </div>
-          <div 
-            id="consystlab" 
-            class="home-tile w-full max-w-[970px] bg-gradient-to-r from-stone-200 to-stone-50 dark:from-slate-900 dark:to-slate-800 dark:text-white opacity-0 
-            translate-y-10 transition-all delay-200 duration-700"
+            <p class="text-base leading-relaxed text-stone-700 dark:text-slate-300 sm:text-[17px]">
+              Currently a software engineering student at the University of
+              Nebraska-Lincoln while also working in industry and having
+              participated in research. I enjoy exploring new technologies and
+              solving real problems as every opportunity breeds growth—and
+              improvement is the name of the game.
+            </p>
+          </section>
+
+          <!-- 02 Experience Timeline -->
+          <section
+            id="experience"
+            data-reveal
+            style="transition-delay: 160ms;"
+            class="scroll-mt-8 space-y-6 transition-all duration-700 opacity-0 translate-y-6"
           >
-            <section class="flex flex-row justify-between items-center border-b-2 border-slate-600">
-              <div class="flex flex-col">
-                <p class="pl-2 pt-2 text-xl">Consystlab - University of Nebraska-Lincoln</p>
-                <p class="pl-2 text-xs pb-2">October 2025 - May 2026</p>
-              </div>
-            </section>
-            <p class="pl-4 pt-2 font-bold">Responsbilities:</p>
-            <ul class="list-disc pl-8 pb-4 pt-1 space-y-1">
-              <li>Developed data visualization software to summarize large sets of data.</li>
-              <li>Analyzed CSP algorithms and heuristics to better understand problem instances.</li>
-              <li>Collaborated with a team of researchers to design and implement software.</li>
-            </ul>
+            <div class="flex items-baseline gap-3 border-b border-stone-300 pb-3 dark:border-slate-700/80">
+              <h2 class="text-2xl font-bold tracking-tight text-stone-900 dark:text-white">
+                Experience
+              </h2>
+            </div>
 
-          </div>
+            <div class="relative space-y-6 pl-6 before:absolute before:left-[7px] before:top-2 before:bottom-2 before:w-px before:bg-stone-300 dark:before:bg-slate-700">
+              {timeline.map((item, idx) => {
+                const panelId = `experience-panel-${idx}`;
+                return (
+                  <article
+                    data-exp-card
+                    class="relative transition-all duration-300 hover:border-stone-400 dark:from-slate-900/90 dark:to-slate-800/80"
+                  >
+                    <!-- Timeline node -->
+                    <span
+                      aria-hidden="true"
+                      class:list={[
+                        "absolute -left-[25px] top-13 h-3.5 w-3.5 rounded-full border-2 border-stone-100 dark:border-slate-900",
+                        item.status === "Active"
+                          ? "bg-blue-600 ring-4 ring-blue-600/20 dark:bg-sky-400 dark:ring-sky-400/20"
+                          : "bg-stone-400 dark:bg-slate-500",
+                      ]}
+                    />
+
+                    <button
+                      type="button"
+                      data-exp-toggle
+                      aria-expanded="false"
+                      aria-controls={panelId}
+                      class="group flex w-full cursor-pointer flex-col gap-3 rounded-2xl p-6 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-stone-400 dark:focus-visible:ring-sky-400 sm:flex-row sm:items-center sm:justify-between"
+                    >
+                      <div class="space-y-1">
+                        <div class="flex flex-wrap items-center gap-2">
+                          <span class="font-mono text-xs font-medium text-stone-500 dark:text-slate-400">
+                            {item.period}
+                          </span>
+                          <span class="rounded bg-stone-200 px-2 py-0.5 font-mono text-[10px] font-semibold uppercase tracking-wider text-stone-700 dark:bg-slate-800 dark:text-sky-300">
+                            {item.status}
+                          </span>
+                        </div>
+                        <h3 class="text-xl font-bold text-stone-900 transition-colors group-hover:text-blue-600 dark:text-white dark:group-hover:text-sky-400">
+                          {item.organization}
+                        </h3>
+                        <p class="text-sm font-medium text-stone-600 dark:text-slate-300">
+                          {item.role}
+                        </p>
+                      </div>
+
+                      <div class="flex items-center gap-3 self-start sm:self-center">
+                        {item.logo && (
+                          <div class="shrink-0 rounded-lg border border-stone-300/70 bg-stone-900/90 p-2 dark:border-slate-700 dark:bg-slate-950/80">
+                            <img
+                              src={item.logo}
+                              alt={item.logoAlt}
+                              class="h-9 w-auto object-contain"
+                            />
+                          </div>
+                        )}
+                        <span
+                          aria-hidden="true"
+                          class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-stone-300/80 bg-stone-100/80 text-stone-500 transition-colors group-hover:border-stone-400 group-hover:text-stone-800 dark:border-slate-700 dark:bg-slate-950/60 dark:text-slate-400 dark:group-hover:border-sky-400/40 dark:group-hover:text-sky-400"
+                        >
+                          <svg
+                            data-exp-chevron
+                            class="h-4 w-4 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                    </button>
+
+                    <div
+                      id={panelId}
+                      data-exp-panel
+                      class="exp-panel"
+                      aria-hidden="true"
+                    >
+                      <div class="exp-panel__inner">
+                        <div class="px-6 pb-6 dark:border-slate-700/70">
+                          <ul class="space-y-2.5 text-sm leading-relaxed text-stone-700 dark:text-slate-300">
+                            {item.bullets.map((bullet) => (
+                              <li class="flex items-start gap-2.5">
+                                <span class="font-mono text-xs leading-6 text-blue-600 dark:text-sky-400">
+                                  &gt;
+                                </span>
+                                <span>{bullet}</span>
+                              </li>
+                            ))}
+                          </ul>
+
+                          <div class="mt-5 flex flex-wrap gap-1.5">
+                            {item.stack.map((tech) => (
+                              <span class="rounded border border-stone-300/80 bg-stone-100/80 px-2 py-0.5 font-mono text-[11px] text-stone-700 dark:border-slate-700 dark:bg-slate-950/60 dark:text-slate-300">
+                                {tech}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          </section>
+
+          <!-- 03 Interests -->
+          <section
+            id="interests"
+            data-reveal
+            style="transition-delay: 240ms;"
+            class="scroll-mt-8 space-y-5 transition-all duration-700 opacity-0 translate-y-6"
+          >
+            <div class="flex items-baseline justify-between gap-3 border-b border-stone-300 pb-3 dark:border-slate-700/80">
+              <h2 class="text-2xl font-bold tracking-tight text-stone-900 dark:text-white">
+                Interests
+              </h2>
+              <span class="font-mono text-[11px] text-stone-500 dark:text-slate-400">
+                Drag nodes around
+              </span>
+            </div>
+
+            <div
+              data-idea-cloud-stage
+              class="relative min-h-[210px] px-2 py-6 sm:min-h-[230px] sm:px-4 sm:py-8"
+            >
+              <div
+                aria-hidden="true"
+                class="pointer-events-none absolute -inset-4 bg-[radial-gradient(ellipse_at_center,rgba(120,113,108,0.1)_0%,rgba(37,99,235,0.06)_38%,transparent_72%)] dark:bg-[radial-gradient(ellipse_at_center,rgba(56,189,248,0.1)_0%,rgba(15,23,42,0.45)_42%,transparent_75%)]"
+              />
+
+              <ul
+                data-idea-cloud
+                class="relative z-10 flex flex-wrap items-center justify-center gap-3.5 sm:gap-4"
+                aria-label="Interests idea cloud"
+              >
+                {interests.map((interest, idx) => {
+                  const offsets = [
+                    "sm:-translate-y-1.5",
+                    "sm:translate-y-2",
+                    "sm:-translate-y-0.5",
+                    "sm:translate-y-1.5",
+                    "sm:-translate-y-2",
+                  ];
+                  const sizes = [
+                    "px-5 py-3 text-sm sm:text-[15px]",
+                    "px-4 py-2.5 text-sm",
+                    "px-4 py-2 text-xs sm:text-sm",
+                    "px-4 py-2.5 text-sm",
+                    "px-4 py-2 text-xs sm:text-sm",
+                  ];
+                  return (
+                    <li
+                      data-idea-item
+                      tabindex="0"
+                      class:list={[
+                        "idea-item cursor-grab select-none touch-none rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 dark:focus-visible:ring-sky-400",
+                        offsets[idx % offsets.length],
+                      ]}
+                    >
+                      <div
+                        style={`--float-delay: ${idx * -1.1}s; --float-duration: ${5.2 + (idx % 3) * 0.9}s;`}
+                        class:list={[
+                          "idea-node group inline-flex items-center gap-2.5 rounded-full border border-stone-300/90 bg-stone-50/95 shadow-sm backdrop-blur-sm transition-shadow duration-200 hover:border-stone-400 hover:shadow-md dark:border-slate-700/80 dark:bg-slate-900/90 dark:hover:border-sky-400/50",
+                          sizes[idx % sizes.length],
+                        ]}
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="h-2 w-2 shrink-0 rounded-full bg-blue-600/80 ring-4 ring-blue-600/10 transition-transform duration-300 group-hover:scale-125 dark:bg-sky-400 dark:ring-sky-400/15"
+                        />
+                        <span class="font-semibold text-stone-800 dark:text-slate-100">
+                          {interest}
+                        </span>
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </section>
+
+          <!-- 04 Favorite Technologies -->
+          <section
+            id="tools"
+            data-reveal
+            style="transition-delay: 320ms;"
+            class="scroll-mt-8 space-y-5 transition-all duration-700 opacity-0 translate-y-6"
+          >
+            <div class="flex items-baseline justify-between gap-3 border-b border-stone-300 pb-3 dark:border-slate-700/80">
+              <h2 class="text-2xl font-bold tracking-tight text-stone-900 dark:text-white">
+                Tools I Enjoy
+              </h2>
+              <span class="font-mono text-[11px] text-stone-500 dark:text-slate-400">
+                Click to learn more
+              </span>
+            </div>
+
+            <div class="grid grid-cols-1 gap-3.5 sm:grid-cols-2">
+              {favoriteTools.map((tool) => (
+                <a
+                  href={tool.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="group flex items-start gap-3.5 rounded-xl border border-stone-300/80 bg-stone-50/80 p-4 transition-all hover:-translate-y-0.5 hover:border-stone-400 hover:shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-stone-400 dark:border-slate-700/70 dark:bg-slate-900/70 dark:hover:border-sky-400/40 dark:focus-visible:ring-sky-400"
+                >
+                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-stone-300/80 bg-stone-100/90 dark:border-slate-700 dark:bg-slate-950/70">
+                    <svg
+                      role="img"
+                      viewBox={tool.viewBox}
+                      fill="currentColor"
+                      aria-hidden="true"
+                      class:list={["h-5 w-5", tool.colorClass]}
+                    >
+                      <path
+                        d={tool.path}
+                        fill-rule={tool.fillRule}
+                        clip-rule={tool.clipRule}
+                      />
+                    </svg>
+                  </div>
+
+                  <div class="min-w-0 flex-1">
+                    <div class="flex items-center justify-between gap-2">
+                      <h3 class="inline-flex items-center gap-1 text-sm font-semibold text-stone-900 transition-colors group-hover:text-blue-600 dark:text-white dark:group-hover:text-sky-400">
+                        <span>{tool.name}</span>
+                        <svg
+                          class="h-3.5 w-3.5 opacity-0 transition-opacity group-hover:opacity-100"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
+                        </svg>
+                      </h3>
+                      <span class="font-mono text-[10px] uppercase tracking-widest text-stone-500 dark:text-sky-400">
+                        {tool.tag}
+                      </span>
+                    </div>
+                    <p class="mt-1 text-xs leading-relaxed text-stone-600 dark:text-slate-400">
+                      {tool.detail}
+                    </p>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </section>
         </div>
       </div>
-      <Footer/>
-    </div>
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      const content = document.getElementById('whoami');
-      content?.classList.remove('opacity-0', 'translate-y-10');
-      content?.classList.add('opacity-100', 'translate-y-0');
+    </main>
 
-      const content2 = document.getElementById('2mation');
-      content2?.classList.remove('opacity-0', 'translate-y-10');
-      content2?.classList.add('opacity-100', 'translate-y-0');
+    <Footer />
+  </div>
 
-      const content3 = document.getElementById('consystlab');
-      content3?.classList.remove('opacity-0', 'translate-y-10');
-      content3?.classList.add('opacity-100', 'translate-y-0');
-
-      const poImage = document.getElementById('poImage') as HTMLImageElement;
-      const liftUpImage = document.getElementById('LiftUpImage') as HTMLImageElement;
-      const overlay = document.getElementById('overlay');
-      poImage.addEventListener("click", () => openFullscreen(poImage));
-      liftUpImage.addEventListener("click", () => openFullscreen(liftUpImage));
-      overlay?.addEventListener("click", closeFullscreen);
-    })
-
-    function openFullscreen(img: HTMLImageElement) {
-      const overlay = document.getElementById("overlay");
-      const overlayImage = document.getElementById("fullscreen-img") as HTMLImageElement;
-
-      overlayImage!.src = img.src;
-      overlay!.style.display = 'flex';
+  <style>
+    .exp-panel {
+      display: grid;
+      grid-template-rows: 0fr;
+      opacity: 0;
+      transition:
+        grid-template-rows 320ms cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 240ms ease;
     }
 
-    function closeFullscreen() {
-      document.getElementById("overlay")!.style.display = 'none';
+    .exp-panel--open {
+      grid-template-rows: 1fr;
+      opacity: 1;
+    }
+
+    .exp-panel__inner {
+      overflow: hidden;
+    }
+
+    @keyframes ideaFloat {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-4px);
+      }
+    }
+
+    .idea-node {
+      animation: ideaFloat var(--float-duration, 6s) ease-in-out
+        var(--float-delay, 0s) infinite;
+    }
+
+    .idea-node:hover,
+    .idea-item--dragging .idea-node {
+      animation-play-state: paused;
+    }
+
+    .idea-item--dragging {
+      cursor: grabbing;
+      z-index: 30;
+    }
+
+    .idea-item--dragging .idea-node {
+      transform: scale(1.04);
+      box-shadow:
+        0 14px 28px -6px rgba(0, 0, 0, 0.18),
+        0 6px 12px -4px rgba(0, 0, 0, 0.12);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .exp-panel,
+      [data-exp-chevron],
+      .idea-node {
+        transition: none;
+        animation: none;
+      }
+    }
+  </style>
+
+  <script>
+    interface CloudNode {
+      el: HTMLElement;
+      x: number;
+      y: number;
+      w: number;
+      h: number;
+      vx: number;
+      vy: number;
+    }
+
+    const initIdeaCloud = () => {
+      const stage = document.querySelector<HTMLElement>(
+        "[data-idea-cloud-stage]",
+      );
+      const cloud = document.querySelector<HTMLElement>("[data-idea-cloud]");
+      if (!stage || !cloud) return;
+
+      const items = Array.from(
+        cloud.querySelectorAll<HTMLElement>("[data-idea-item]"),
+      );
+      if (items.length === 0) return;
+
+      const pad = 8;
+      const gap = 12;
+      let stageW = stage.clientWidth;
+      let stageH = Math.max(stage.clientHeight, 250);
+
+      // Measure node dimensions before switching to absolute coordinates
+      const nodes: CloudNode[] = items.map((el) => {
+        const rect = el.getBoundingClientRect();
+        return {
+          el,
+          x: 0,
+          y: 0,
+          w: rect.width,
+          h: rect.height,
+          vx: 0,
+          vy: 0,
+        };
+      });
+
+      const flexBottom = items.reduce((max, el) => {
+        const rect = el.getBoundingClientRect();
+        const stageTop = stage.getBoundingClientRect().top;
+        return Math.max(max, rect.bottom - stageTop);
+      }, 0);
+      stageH = Math.max(stageH, Math.ceil(flexBottom + pad * 2));
+      stage.style.height = `${stageH}px`;
+      cloud.style.position = "static";
+
+      nodes.forEach((n) => {
+        n.el.classList.remove(
+          "sm:-translate-y-1.5",
+          "sm:translate-y-2",
+          "sm:-translate-y-0.5",
+          "sm:translate-y-1.5",
+          "sm:-translate-y-2",
+        );
+        n.el.style.position = "absolute";
+        n.el.style.left = "0";
+        n.el.style.top = "0";
+        n.el.style.margin = "0";
+      });
+
+      const overlapsAny = (candidate: CloudNode, placed: CloudNode[]) =>
+        placed.some((other) => {
+          const dx = Math.abs(
+            candidate.x + candidate.w / 2 - (other.x + other.w / 2),
+          );
+          const dy = Math.abs(
+            candidate.y + candidate.h / 2 - (other.y + other.h / 2),
+          );
+          return (
+            dx < (candidate.w + other.w) / 2 + gap &&
+            dy < (candidate.h + other.h) / 2 + gap
+          );
+        });
+
+      const placed: CloudNode[] = [];
+      nodes.forEach((n) => {
+        const spanX = Math.max(0, stageW - n.w - pad * 2);
+        const spanY = Math.max(0, stageH - n.h - pad * 2);
+        let chosenX = pad + Math.random() * spanX;
+        let chosenY = pad + Math.random() * spanY;
+
+        for (let attempt = 0; attempt < 40; attempt++) {
+          n.x = pad + Math.random() * spanX;
+          n.y = pad + Math.random() * spanY;
+          if (!overlapsAny(n, placed)) {
+            chosenX = n.x;
+            chosenY = n.y;
+            break;
+          }
+        }
+
+        n.x = chosenX;
+        n.y = chosenY;
+        placed.push(n);
+      });
+
+      let dragged: CloudNode | null = null;
+      let targetX = 0;
+      let targetY = 0;
+      let pointerOffsetX = 0;
+      let pointerOffsetY = 0;
+      let dragVx = 0;
+      let dragVy = 0;
+      let lastMoveTime = 0;
+      let rafId: number | null = null;
+
+      const clampNode = (n: CloudNode) => {
+        const maxX = Math.max(pad, stageW - n.w - pad);
+        const maxY = Math.max(pad, stageH - n.h - pad);
+        if (n.x < pad) {
+          n.x = pad;
+          n.vx = n === dragged ? 0 : Math.abs(n.vx) * 0.35;
+        } else if (n.x > maxX) {
+          n.x = maxX;
+          n.vx = n === dragged ? 0 : -Math.abs(n.vx) * 0.35;
+        }
+        if (n.y < pad) {
+          n.y = pad;
+          n.vy = n === dragged ? 0 : Math.abs(n.vy) * 0.35;
+        } else if (n.y > maxY) {
+          n.y = maxY;
+          n.vy = n === dragged ? 0 : -Math.abs(n.vy) * 0.35;
+        }
+      };
+
+      const render = () => {
+        nodes.forEach((n) => {
+          n.el.style.transform = `translate3d(${n.x.toFixed(1)}px, ${n.y.toFixed(1)}px, 0)`;
+        });
+      };
+
+      const resolveCollisions = (applyVelocity = true) => {
+        const iterations = 6;
+        for (let iter = 0; iter < iterations; iter++) {
+          for (let i = 0; i < nodes.length; i++) {
+            for (let j = i + 1; j < nodes.length; j++) {
+              const a = nodes[i];
+              const b = nodes[j];
+
+              const dx = b.x + b.w / 2 - (a.x + a.w / 2);
+              const dy = b.y + b.h / 2 - (a.y + a.h / 2);
+              const hx = (a.w + b.w) / 2 + gap;
+              const hy = (a.h + b.h) / 2 + gap;
+
+              const ox = hx - Math.abs(dx);
+              const oy = hy - Math.abs(dy);
+              if (ox <= 0 || oy <= 0) continue;
+
+              // Minimum translation vector along axis of least overlap
+              let px = 0;
+              let py = 0;
+              if (ox < oy) {
+                px = (dx >= 0 ? 1 : -1) * ox;
+              } else {
+                py = (dy >= 0 ? 1 : -1) * oy;
+              }
+
+              if (a === dragged) {
+                const prevBx = b.x;
+                const prevBy = b.y;
+                b.x += px;
+                b.y += py;
+                if (applyVelocity) {
+                  b.vx += px * 0.16;
+                  b.vy += py * 0.16;
+                }
+                clampNode(b);
+                a.x -= px - (b.x - prevBx);
+                a.y -= py - (b.y - prevBy);
+                clampNode(a);
+              } else if (b === dragged) {
+                const prevAx = a.x;
+                const prevAy = a.y;
+                a.x -= px;
+                a.y -= py;
+                if (applyVelocity) {
+                  a.vx -= px * 0.16;
+                  a.vy -= py * 0.16;
+                }
+                clampNode(a);
+                b.x += px - (prevAx - a.x);
+                b.y += py - (prevAy - a.y);
+                clampNode(b);
+              } else {
+                a.x -= px * 0.5;
+                a.y -= py * 0.5;
+                b.x += px * 0.5;
+                b.y += py * 0.5;
+                if (applyVelocity) {
+                  a.vx -= px * 0.12;
+                  a.vy -= py * 0.12;
+                  b.vx += px * 0.12;
+                  b.vy += py * 0.12;
+                }
+                clampNode(a);
+                clampNode(b);
+              }
+            }
+          }
+        }
+      };
+
+      const step = () => {
+        if (dragged) {
+          const prevX = dragged.x;
+          const prevY = dragged.y;
+          dragged.x = targetX;
+          dragged.y = targetY;
+          clampNode(dragged);
+          dragVx = dragVx * 0.5 + (dragged.x - prevX) * 0.5;
+          dragVy = dragVy * 0.5 + (dragged.y - prevY) * 0.5;
+          dragged.vx = 0;
+          dragged.vy = 0;
+        }
+
+        let moving = dragged !== null;
+        nodes.forEach((n) => {
+          if (n === dragged) return;
+          if (Math.abs(n.vx) > 0.08 || Math.abs(n.vy) > 0.08) {
+            n.x += n.vx;
+            n.y += n.vy;
+            n.vx *= 0.88;
+            n.vy *= 0.88;
+            clampNode(n);
+            moving = true;
+          } else {
+            n.vx = 0;
+            n.vy = 0;
+          }
+        });
+
+        resolveCollisions(true);
+        render();
+
+        if (moving) {
+          rafId = requestAnimationFrame(step);
+        } else {
+          rafId = null;
+        }
+      };
+
+      const scheduleStep = () => {
+        if (rafId === null) {
+          rafId = requestAnimationFrame(step);
+        }
+      };
+
+      nodes.forEach((node) => {
+        node.el.addEventListener("pointerdown", (event) => {
+          if (event.button !== 0 && event.pointerType === "mouse") return;
+          event.preventDefault();
+          const rect = stage.getBoundingClientRect();
+          dragged = node;
+          pointerOffsetX = event.clientX - rect.left - node.x;
+          pointerOffsetY = event.clientY - rect.top - node.y;
+          targetX = node.x;
+          targetY = node.y;
+          dragVx = 0;
+          dragVy = 0;
+          lastMoveTime = performance.now();
+          node.el.classList.add("idea-item--dragging");
+          node.el.setPointerCapture(event.pointerId);
+          scheduleStep();
+        });
+
+        node.el.addEventListener("pointermove", (event) => {
+          if (dragged !== node) return;
+          const rect = stage.getBoundingClientRect();
+          targetX = event.clientX - rect.left - pointerOffsetX;
+          targetY = event.clientY - rect.top - pointerOffsetY;
+          lastMoveTime = performance.now();
+          scheduleStep();
+        });
+
+        const endDrag = (event: PointerEvent) => {
+          if (dragged !== node) return;
+          node.el.classList.remove("idea-item--dragging");
+          if (node.el.hasPointerCapture(event.pointerId)) {
+            node.el.releasePointerCapture(event.pointerId);
+          }
+          if (performance.now() - lastMoveTime < 90) {
+            const maxSpeed = 10;
+            node.vx = Math.max(-maxSpeed, Math.min(maxSpeed, dragVx * 0.65));
+            node.vy = Math.max(-maxSpeed, Math.min(maxSpeed, dragVy * 0.65));
+          }
+          dragged = null;
+          scheduleStep();
+        };
+
+        node.el.addEventListener("pointerup", endDrag);
+        node.el.addEventListener("pointercancel", endDrag);
+
+        node.el.addEventListener("keydown", (event) => {
+          const moveBy = 18;
+          let moved = false;
+          if (event.key === "ArrowLeft") {
+            node.vx -= moveBy * 0.45;
+            node.x -= moveBy;
+            moved = true;
+          } else if (event.key === "ArrowRight") {
+            node.vx += moveBy * 0.45;
+            node.x += moveBy;
+            moved = true;
+          } else if (event.key === "ArrowUp") {
+            node.vy -= moveBy * 0.45;
+            node.y -= moveBy;
+            moved = true;
+          } else if (event.key === "ArrowDown") {
+            node.vy += moveBy * 0.45;
+            node.y += moveBy;
+            moved = true;
+          }
+          if (moved) {
+            event.preventDefault();
+            clampNode(node);
+            scheduleStep();
+          }
+        });
+      });
+
+      const handleResize = () => {
+        stageW = stage.clientWidth;
+        nodes.forEach((n) => {
+          n.w = n.el.offsetWidth;
+          n.h = n.el.offsetHeight;
+          clampNode(n);
+        });
+        resolveCollisions(false);
+        render();
+      };
+
+      window.addEventListener("resize", handleResize);
+      resolveCollisions(false);
+      render();
+    };
+
+    const initAboutPage = () => {
+      document.querySelectorAll<HTMLElement>("[data-reveal]").forEach((el) => {
+        el.classList.remove("opacity-0", "translate-y-6");
+        el.classList.add("opacity-100", "translate-y-0");
+      });
+
+      document
+        .querySelectorAll<HTMLButtonElement>("[data-exp-toggle]")
+        .forEach((button) => {
+          button.addEventListener("click", () => {
+            const card = button.closest("[data-exp-card]");
+            const panel = card?.querySelector<HTMLElement>("[data-exp-panel]");
+            const chevron =
+              button.querySelector<SVGElement>("[data-exp-chevron]");
+            if (!panel) return;
+
+            const isOpen = button.getAttribute("aria-expanded") === "true";
+            const nextOpen = !isOpen;
+
+            button.setAttribute("aria-expanded", String(nextOpen));
+            panel.setAttribute("aria-hidden", String(!nextOpen));
+            panel.classList.toggle("exp-panel--open", nextOpen);
+            chevron?.classList.toggle("rotate-180", nextOpen);
+          });
+        });
+
+      initIdeaCloud();
+    };
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", () => {
+        requestAnimationFrame(initAboutPage);
+      });
+    } else {
+      requestAnimationFrame(initAboutPage);
     }
   </script>
 </Layout>

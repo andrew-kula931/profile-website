@@ -1,97 +1,218 @@
 ---
-import Layout from '../layout/layout.astro';
-import Nav from '../components/nav.astro';
-import Footer from '../components/footer.astro';
+import Layout from "../layout/layout.astro";
+import Nav from "../components/nav.astro";
+import Footer from "../components/footer.astro";
 ---
 
 <Layout>
-  <div class="bg-gradient-to-t from-stone-200 to-stone-50 dark:from-black dark:via-gray-800 dark:to-slate-900">
-    <div class="h-[50px] sticky top-0">
+  <div class="flex min-h-screen flex-col bg-gradient-to-t from-stone-200 to-stone-50 text-stone-800 dark:from-black dark:via-gray-800 dark:to-slate-900 dark:text-slate-100">
+    <div class="sticky top-0 z-30">
       <Nav />
     </div>
-    <div id="hero_animation" class="flex h-[calc(100vh-125px)] w-full items-center justify-center sticky top-13 transition-opacity duration-200 opacity-100">
-      <div class="flex flex-wrap justify-center items-center">
-        <div class="bg-gray-600 rounded-full m-5">
-          <img class="h-[200px] w-[200px] p-2 rounded-full" src="/profile-website/GithubProfile.png" alt="Github Profile Image">
-        </div>
-        <ul id="summary_list" class="list-disc pl-5 text-lg m-5">
-          <li id="dev" class="opacity-0 translate-x-10 transition-all delay-100 duration-1000 dark:text-gray-200">Software Engineer</li>
-          <li id="one" class="opacity-0 translate-x-10 transition-all delay-300 duration-1000 dark:text-gray-200">Fullstack Experience</li>
-          <li id="two" class="opacity-0 translate-x-10 transition-all delay-200 duration-1000 dark:text-gray-200">Flutter/Dart</li>
-          <li id="three" class="opacity-0 translate-x-10 transition-all delay-400 duration-1000 dark:text-gray-200">PostgreSQL</li>
-        </ul>
+
+    <!-- Scroll-driven crossfade stage (100vh sticky viewport + 100vh full-page scroll travel) -->
+    <main id="scroll_stage" class="relative h-[calc(200vh-52px)]">
+      <div
+        id="sticky_viewport"
+        class="sticky top-[52px] flex h-[calc(100vh-52px)] w-full items-center justify-center overflow-hidden px-4"
+      >
+        <!-- Hero -->
+        <section
+          id="hero_animation"
+          aria-label="Introduction"
+          class="flex flex-col items-center justify-center gap-6 will-change-[opacity,transform]"
+        >
+          <div class="flex flex-wrap items-center justify-center gap-8 sm:gap-10">
+            <div class="rounded-full bg-stone-300/70 p-1.5 shadow-sm dark:bg-slate-700/70">
+              <a href="https://github.com/andrew-kula931">
+                <img
+                  class="h-40 w-40 rounded-full object-cover sm:h-48 sm:w-48"
+                  src="/profile-website/GithubProfile.png"
+                  alt="Andrew Kula"
+                />
+              </a>
+            </div>
+
+            <ul
+              id="summary_list"
+              class="space-y-2.5 text-lg font-medium sm:text-xl"
+            >
+              <li
+                data-intro
+                style="transition-delay: 80ms;"
+                class="flex items-center gap-3 opacity-0 translate-x-6 transition-all duration-700 ease-out"
+              >
+                <span class="h-1.5 w-1.5 rounded-full bg-blue-600 dark:bg-sky-400"></span>
+                <span>Software Engineer</span>
+              </li>
+              <li
+                data-intro
+                style="transition-delay: 180ms;"
+                class="flex items-center gap-3 opacity-0 translate-x-6 transition-all duration-700 ease-out"
+              >
+                <span class="h-1.5 w-1.5 rounded-full bg-blue-600 dark:bg-sky-400"></span>
+                <span>Full-Stack Experience</span>
+              </li>
+              <li
+                data-intro
+                style="transition-delay: 280ms;"
+                class="flex items-center gap-3 opacity-0 translate-x-6 transition-all duration-700 ease-out"
+              >
+                <span class="h-1.5 w-1.5 rounded-full bg-blue-600 dark:bg-sky-400"></span>
+                <span>Hobby Novelist</span>
+              </li>
+              <li
+                data-intro
+                style="transition-delay: 380ms;"
+                class="flex items-center gap-3 opacity-0 translate-x-6 transition-all duration-700 ease-out"
+              >
+                <span class="h-1.5 w-1.5 rounded-full bg-blue-600 dark:bg-sky-400"></span>
+                <span>Overall Chill Guy</span>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            id="scroll_hint"
+            aria-hidden="true"
+            class="mt-6 flex flex-col items-center gap-1.5 font-mono text-xs text-stone-500 transition-opacity duration-300 dark:text-slate-400"
+          >
+            <span>Scroll</span>
+            <svg
+              class="h-4 w-4 animate-bounce"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </div>
+        </section>
+
+        <!-- Post-scroll generic text -->
+        <section
+          id="anti_hero"
+          aria-label="Closing message"
+          class="pointer-events-none absolute inset-0 flex flex-col items-center justify-center px-6 text-center opacity-0 will-change-[opacity,transform]"
+        >
+          <p class="text-2xl font-semibold tracking-tight text-stone-800 dark:text-slate-100 sm:text-3xl">
+            Thanks for stopping by.
+          </p>
+          <p class="mt-2 max-w-md text-sm text-stone-600 dark:text-slate-400 sm:text-base">
+            Always building, learning, and exploring new ideas—feel free to
+            reach out... also, grab yourself another coffee, you deserve it.
+          </p>
+        </section>
       </div>
-    </div>
-    <div id="anti_hero" class="flex h-[calc(100vh-50px)] w-full items-center justify-center">
-      <div id="bottom-text" class="flex flex-wrap justify-center items-center dark:text-gray-200">
-        Feel free to reach out!
-      </div>
-    </div>
+    </main>
+
     <Footer />
   </div>
-  </div>
-  <script>
-    window.addEventListener("DOMContentLoaded", () => {
-      const devContent = document.getElementById("dev");
-      devContent?.classList.remove('opacity-0', 'translate-x-10');
-      devContent?.classList.add('opacity-100', 'translate-x-0');
 
-      const firstContent = document.getElementById("one");
-      firstContent?.classList.remove('opacity-0', 'translate-x-10');
-      firstContent?.classList.add('opacity-100', 'translate-x-0');
-
-      const secondContent = document.getElementById("two");
-      secondContent?.classList.remove('opacity-0', 'translate-x-10');
-      secondContent?.classList.add('opacity-100', 'translate-x-0');
-
-      const thirdContent = document.getElementById("three");
-      thirdContent?.classList.remove('opacity-0', 'translate-x-10');
-      thirdContent?.classList.add('opacity-100', 'translate-x-0');
-    });
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.remove('opacity-0', 'translate-y-10')
-          e.target.classList.add("opacity-100", 'translate-y-0');
-        }
-      });
-    }, { threshold: 0.2 });
-
-    document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
-
-    const hero = document.getElementById("hero_animation");
-    const antiHero = document.getElementById("anti_hero")
-
-    let currentOpacityClass = "opacity-100";
-    let currentAntiClass = "opacity-0";
-
-    window.addEventListener("scroll", () => {
-      const progress = window.scrollY / window.innerHeight;
-
-      hero?.classList.remove('opacity-100', 'opacity-80', 'opacity-60', 'opacity-40', 'opacity-20', 'opacity-0');
-      antiHero?.classList.remove('opacity-100', 'opacity-80', 'opacity-60', 'opacity-40', 'opacity-20', 'opacity-0');
-
-      if (progress < 0.15) {
-        hero?.classList.add('opacity-100');
-        antiHero?.classList.add('opacity-0');
-      } else if (progress < 0.3) {
-        hero?.classList.add('opacity-80');
-        antiHero?.classList.add('opacity-0');
-      } else if (progress < 0.45) {
-        hero?.classList.add('opacity-60');
-        antiHero?.classList.add('opacity-20');
-      } else if (progress < 0.6) {
-        hero?.classList.add('opacity-40');
-        antiHero?.classList.add('opacity-40');
-      } else if (progress < 0.75) {
-        hero?.classList.add('opacity-20');
-        antiHero?.classList.add('opacity-60');
-      } else {
-        hero?.classList.add('opacity-0');
-        antiHero?.classList.add('opacity-100');
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      #scroll_stage {
+        height: auto;
       }
 
-    });
+      #scroll_stage > div {
+        position: static;
+        height: auto;
+        flex-direction: column;
+        gap: 4rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+      }
+
+      #anti_hero {
+        position: static;
+        opacity: 1 !important;
+        pointer-events: auto;
+      }
+
+      #scroll_hint {
+        display: none;
+      }
+    }
+  </style>
+
+  <script>
+    const initHome = () => {
+      document.querySelectorAll<HTMLElement>("[data-intro]").forEach((el) => {
+        el.classList.remove("opacity-0", "translate-x-6");
+        el.classList.add("opacity-100", "translate-x-0");
+      });
+
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+      const stage = document.getElementById("scroll_stage");
+      const stickyViewport = document.getElementById("sticky_viewport");
+      const hero = document.getElementById("hero_animation");
+      const antiHero = document.getElementById("anti_hero");
+      const scrollHint = document.getElementById("scroll_hint");
+      if (!stage || !stickyViewport || !hero || !antiHero) return;
+
+      const clamp01 = (v: number) => Math.max(0, Math.min(1, v));
+      const smoothstep = (edge0: number, edge1: number, x: number) => {
+        const t = clamp01((x - edge0) / (edge1 - edge0));
+        return t * t * (3 - 2 * t);
+      };
+
+      let ticking = false;
+
+      const updateScroll = () => {
+        ticking = false;
+        const scrollable = Math.max(
+          1,
+          stage.offsetHeight - stickyViewport.offsetHeight,
+        );
+        const progress = clamp01(window.scrollY / scrollable);
+
+        // Hero fades out smoothly across the first ~65% of a full page scroll
+        const heroOut = smoothstep(0.0, 0.65, progress);
+        const heroOpacity = 1 - heroOut;
+        const heroY = -heroOut * 28;
+        const heroScale = 1 - heroOut * 0.04;
+        hero.style.opacity = heroOpacity.toFixed(3);
+        hero.style.transform = `translate3d(0, ${heroY.toFixed(1)}px, 0) scale(${heroScale.toFixed(4)})`;
+        hero.style.pointerEvents = heroOpacity > 0.1 ? "auto" : "none";
+
+        if (scrollHint) {
+          scrollHint.style.opacity = String(clamp01(1 - progress * 5));
+        }
+
+        // Generic closing text fades and glides in across the rest of the full page scroll
+        const textIn = smoothstep(0.35, 1.0, progress);
+        const textY = (1 - textIn) * 24;
+        const textScale = 0.97 + textIn * 0.03;
+        antiHero.style.opacity = textIn.toFixed(3);
+        antiHero.style.transform = `translate3d(0, ${textY.toFixed(1)}px, 0) scale(${textScale.toFixed(4)})`;
+        antiHero.style.pointerEvents = textIn > 0.1 ? "auto" : "none";
+      };
+
+      const onScroll = () => {
+        if (!ticking) {
+          ticking = true;
+          requestAnimationFrame(updateScroll);
+        }
+      };
+
+      window.addEventListener("scroll", onScroll, { passive: true });
+      window.addEventListener("resize", onScroll, { passive: true });
+      updateScroll();
+    };
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", () => {
+        requestAnimationFrame(initHome);
+      });
+    } else {
+      requestAnimationFrame(initHome);
+    }
   </script>
 </Layout>
