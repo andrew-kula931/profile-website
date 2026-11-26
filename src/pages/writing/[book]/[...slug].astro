@@ -20,26 +20,23 @@ const bookId = book.id.split("/")[0];
 const bookChapters = allChapters
   .filter((chapter) => chapter.id.split("/")[0] === bookId)
   .sort((a, b) => a.data.chapNum - b.data.chapNum);
-const bookUrl = `${import.meta.env.BASE_URL}writing/${bookId}`;
+const bookUrl = `${import.meta.env.BASE_URL}/writing/${bookId}`;
 const chapterIndex = bookChapters.findIndex(
   (chapter) => chapter.id === book.id,
 );
 
 const prevBook = bookChapters[chapterIndex - 1];
 const prevHref = prevBook
-  ? `${import.meta.env.BASE_URL}writing/${prevBook.id}`
+  ? `${import.meta.env.BASE_URL}/writing/${prevBook.id}`
   : undefined;
 const nextBook = bookChapters[chapterIndex + 1];
 const nextHref = nextBook
-  ? `${import.meta.env.BASE_URL}writing/${nextBook.id}`
+  ? `${import.meta.env.BASE_URL}/writing/${nextBook.id}`
   : undefined;
 ---
 
 <Layout title={book.data.title}>
-  <div
-    class="fixed inset-0 -z-10 bg-gradient-to-b from-stone-100 to-stone-200 dark:from-slate-900 dark:via-slate-800 dark:to-slate-950"
-  >
-  </div>
+  <div class="fixed inset-0 -z-10 bg-gradient-to-b from-stone-100 to-stone-200 dark:from-slate-900 dark:via-slate-800 dark:to-slate-950"></div>
   <div class="flex flex-col min-h-screen">
     <Nav
       title={book.data.book}
@@ -80,30 +77,24 @@ const nextHref = nextBook
     <!-- Chapter Content -->
 
     <main class="flex justify-center px-4 py-6">
-      <article
-        class="markdown-body home-tile-hoverless w-full max-w-[800px] p-8 pt-2"
-      >
+      <article class="markdown-body home-tile-hoverless w-full max-w-[800px] p-8 pt-2">
         <h2>{book.data.title}</h2>
-        {
-          book.data.updatedDate ? (
+        {book.data.updatedDate ? (
+          <div>
             <div>
-              <div>
-                Written: {book.data.pubDate.toLocaleDateString()} | Updated:{" "}
-                {book.data.updatedDate.toLocaleDateString()}
-              </div>
+              Written: {book.data.pubDate.toLocaleDateString()} | Updated:{" "}
+              {book.data.updatedDate.toLocaleDateString()}
             </div>
-          ) : (
-            <div>Written: {book.data.pubDate.toLocaleDateString()}</div>
-          )
-        }
+          </div>
+        ) : (
+          <div>Written: {book.data.pubDate.toLocaleDateString()}</div>
+        )}
         <div>
-          {
-            book.data.updatedDate ? (
-              <div>Updated: {book.data.updatedDate ?? ""}</div>
-            ) : (
-              <div />
-            )
-          }
+          {book.data.updatedDate ? (
+            <div>Updated: {book.data.updatedDate ?? ""}</div>
+          ) : (
+            <div />
+          )}
         </div>
         <br />
 

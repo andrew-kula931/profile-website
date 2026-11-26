@@ -17,13 +17,11 @@ const books = (await getCollection("chapters"))
   .filter((chapter) => chapter.id.split("/")[0] === bookId)
   .sort((a, b) => a.data.chapNum - b.data.chapNum);
 const bookTitle = books[0].data.book;
-const bookUrl = `${import.meta.env.BASE_URL}writing/${bookId}`;
+const bookUrl = `${import.meta.env.BASE_URL}/writing/${bookId}`;
 ---
 
 <Layout title={bookTitle}>
-  <div
-    class="flex flex-col min-h-screen h-full pb-10 bg-gradient-to-b from-stone-100 to-stone-200 dark:from-slate-900 dark:via-gray-800 dark:to-black"
-  >
+  <div class="flex flex-col min-h-screen h-full pb-10 bg-gradient-to-b from-stone-100 to-stone-200 dark:from-slate-900 dark:via-gray-800 dark:to-black">
     <Nav
       title={bookTitle}
       chapter="Table of Contents"
@@ -66,19 +64,17 @@ const bookUrl = `${import.meta.env.BASE_URL}writing/${bookId}`;
     >
       {bookTitle} Chapters
     </div>
-    {
-      books.map((book) => (
-        <section class="flex flex-col self-center justify-center w-full max-w-[800px] p-1">
-          <a href={`${import.meta.env.BASE_URL}writing/${book.id}`}>
-            <div class="home-tile bg-gradient-to-r from-stone-50 to-stone-200 dark:from-slate-800 dark:to-slate-900 dark:text-white">
-              <p class="p-2 text-xl">
-                {book.data.chapNum}. {book.data.title}
-              </p>
-            </div>
-          </a>
-        </section>
-      ))
-    }
+    {books.map((book) => (
+      <section class="flex flex-col self-center justify-center w-full max-w-[800px] p-1">
+        <a href={`${import.meta.env.BASE_URL}/writing/${book.id}`}>
+          <div class="home-tile bg-gradient-to-r from-stone-50 to-stone-200 dark:from-slate-800 dark:to-slate-900 dark:text-white">
+            <p class="p-2 text-xl">
+              {book.data.chapNum}. {book.data.title}
+            </p>
+          </div>
+        </a>
+      </section>
+    ))}
   </div>
   <script>
     window.addEventListener("DOMContentLoaded", () => {
