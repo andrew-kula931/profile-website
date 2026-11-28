@@ -4,18 +4,18 @@ import LinkedIn from "../assets/linkedIn.astro";
 ---
 
 <nav
-    class="flex flex-row justify-between items-center p-2 bg-gradient-to-t from-stone-200 to-stone-50
-dark:from-slate-900 dark:to-stone-950 dark:text-gray-300 border-b border-slate-700"
+    class="flex flex-row justify-between items-center px-3 sm:px-6 h-14 bg-gradient-to-t from-stone-200/95 to-stone-50/95
+dark:from-slate-900/95 dark:to-stone-950/95 backdrop-blur-md text-stone-800 dark:text-gray-300 border-b border-stone-300/80 dark:border-slate-700"
 >
     <a
         href="/profile-website/"
-        class="desktop text-2xl font-semibold hover:text-gray-700 dark:hover:text-gray-400"
+        class="desktop text-2xl font-semibold hover:text-blue-600 dark:hover:text-sky-400 transition-colors"
     >
         Andrew Kula
     </a>
     <a
         href="/profile-website/"
-        class="mobile text-xl font-semibold hover:text-gray-700 dark:hover:text-gray-400"
+        class="mobile text-xl font-semibold hover:text-blue-600 dark:hover:text-sky-400 transition-colors"
     >
         Andrew Kula
     </a>
@@ -23,19 +23,19 @@ dark:from-slate-900 dark:to-stone-950 dark:text-gray-300 border-b border-slate-7
     <div id="links" class="flex flex-row items-center space-x-3">
         <a
             href="/profile-website/writing"
-            class="hover:text-gray-700 dark:hover:text-gray-400"
+            class="text-sm font-medium hover:text-blue-600 dark:hover:text-sky-400 transition-colors"
         >
             Writing
         </a>
         <a
             href="/profile-website/about"
-            class="hover:text-gray-700 dark:hover:text-gray-400"
+            class="text-sm font-medium hover:text-blue-600 dark:hover:text-sky-400 transition-colors"
         >
             About
         </a>
         <a
             href="/profile-website/projects"
-            class="hover:text-gray-700 dark:hover:text-gray-400"
+            class="text-sm font-medium hover:text-blue-600 dark:hover:text-sky-400 transition-colors"
         >
             Projects
         </a>
@@ -48,11 +48,11 @@ dark:from-slate-900 dark:to-stone-950 dark:text-gray-300 border-b border-slate-7
         <div>
             <div
                 id="day_button"
-                class="text-white bg-gray-800 w-[32px] rounded p-1 cursor-pointer hover:bg-gray-700"
+                class="flex items-center justify-center w-9 h-9 rounded-lg border border-stone-300/80 dark:border-slate-700/80 bg-stone-100/90 dark:bg-slate-800/90 text-stone-700 dark:text-slate-200 hover:border-stone-400 dark:hover:border-sky-400/50 transition-colors cursor-pointer"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="w-6 h-6"
+                    class="w-4 h-4"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -66,11 +66,11 @@ dark:from-slate-900 dark:to-stone-950 dark:text-gray-300 border-b border-slate-7
             </div>
             <div
                 id="night_button"
-                class="bg-stone-300 w-[32px] rounded p-1 cursor-pointer hover:bg-stone-400 hidden"
+                class="flex items-center justify-center w-9 h-9 rounded-lg border border-stone-300/80 dark:border-slate-700/80 bg-stone-100/90 dark:bg-slate-800/90 text-stone-700 dark:text-slate-200 hover:border-stone-400 dark:hover:border-sky-400/50 transition-colors cursor-pointer hidden"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="w-6 h-6"
+                    class="w-4 h-4"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                 >

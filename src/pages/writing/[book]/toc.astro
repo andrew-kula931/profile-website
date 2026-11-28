@@ -1,8 +1,136 @@
 ---
 import Layout from "../../../layout/layout.astro";
-import Nav from "../../../components/novel_nav.astro";
-
 import { getCollection } from "astro:content";
+
+interface BookMetadata {
+  description?: string | string[];
+  cover?: string;
+  coverImage?: string;
+  image?: string;
+}
+
+function parseInline(str: string): string {
+  let res = str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+
+  res = res.replace(
+    /`([^`]+)`/g,
+    '<code class="px-1.5 py-0.5 rounded bg-stone-200/80 dark:bg-slate-700/80 text-xs font-mono">$1</code>',
+  );
+  res = res.replace(/(\*\*\*|___)(.*?)\1/g, "<strong><em>$2</em></strong>");
+  res = res.replace(/(\*\*|__)(.*?)\1/g, "<strong>$2</strong>");
+  res = res.replace(/(^|[^\w])(\*|_)(.*?)\2(?=[^\w]|$)/g, "$1<em>$3</em>");
+  res = res.replace(/~~(.*?)~~/g, '<del class="opacity-75">$1</del>');
+  res = res.replace(
+    /\[([^\]]+)\]\(([^)]+)\)/g,
+    '<a href="$2" class="underline underline-offset-2 font-medium text-blue-600 dark:text-sky-400 hover:opacity-80">$1</a>',
+  );
+
+  return res;
+}
+
+function renderMarkdown(input?: string | string[]): string {
+  if (!input) return "";
+  const rawText = Array.isArray(input) ? input.join("\n\n") : input;
+  const text = rawText.trim();
+  if (!text) return "";
+
+  const blocks = text.split(/\n\s*\n/);
+  const htmlBlocks: string[] = [];
+
+  for (const rawBlock of blocks) {
+    const block = rawBlock.trim();
+    if (!block) continue;
+
+    if (/^(-{3,}|\*{3,}|_{3,})$/.test(block)) {
+      htmlBlocks.push(
+        '<hr class="my-3 border-stone-300 dark:border-slate-700" />',
+      );
+      continue;
+    }
+
+    const headingMatch = block.match(/^(#{1,6})\s+(.*)$/);
+    if (headingMatch) {
+      const level = headingMatch[1].length;
+      const content = parseInline(headingMatch[2]);
+      const headingClass =
+        level === 1
+          ? "text-lg font-bold my-1 text-stone-900 dark:text-stone-100"
+          : level === 2
+            ? "text-base font-bold my-1 text-stone-900 dark:text-stone-100"
+            : "text-sm font-bold my-0.5 text-stone-900 dark:text-stone-100";
+      htmlBlocks.push(
+        `<h${level} class="${headingClass}">${content}</h${level}>`,
+      );
+      continue;
+    }
+
+    if (block.startsWith(">")) {
+      const quoteLines = block
+        .split("\n")
+        .map((line) => line.replace(/^>\s?/, ""));
+      htmlBlocks.push(
+        `<blockquote class="border-l-2 border-stone-400 dark:border-slate-500 pl-3 my-1.5 italic text-stone-600 dark:text-stone-300 opacity-90">${parseInline(quoteLines.join(" "))}</blockquote>`,
+      );
+      continue;
+    }
+
+    if (block.split("\n").every((line) => /^[-*+]\s+/.test(line.trim()))) {
+      const items = block.split("\n").map((line) => {
+        const itemText = line.trim().replace(/^[-*+]\s+/, "");
+        return `<li class="my-0.5">${parseInline(itemText)}</li>`;
+      });
+      htmlBlocks.push(
+        `<ul class="list-disc pl-5 my-1.5 space-y-1">${items.join("")}</ul>`,
+      );
+      continue;
+    }
+
+    if (block.split("\n").every((line) => /^\d+\.\s+/.test(line.trim()))) {
+      const items = block.split("\n").map((line) => {
+        const itemText = line.trim().replace(/^\d+\.\s+/, "");
+        return `<li class="my-0.5">${parseInline(itemText)}</li>`;
+      });
+      htmlBlocks.push(
+        `<ol class="list-decimal pl-5 my-1.5 space-y-1">${items.join("")}</ol>`,
+      );
+      continue;
+    }
+
+    const lines = block
+      .split("\n")
+      .map((line) =>
+        line.endsWith("  ")
+          ? parseInline(line.slice(0, -2)) + "<br />"
+          : parseInline(line),
+      );
+    htmlBlocks.push(`<p class="leading-relaxed">${lines.join(" ")}</p>`);
+  }
+
+  return htmlBlocks.join("");
+}
+
+function countWords(text?: string): number {
+  if (!text) return 0;
+  return text.trim().split(/\s+/).filter(Boolean).length;
+}
+
+function formatCompactWords(words: number): string {
+  if (words >= 1000) {
+    return `${(words / 1000).toFixed(words >= 10000 ? 0 : 1)}k`;
+  }
+  return words.toLocaleString();
+}
+
+function formatTotalReadTime(totalMinutes: number): string {
+  const hours = Math.floor(totalMinutes / 60);
+  const mins = totalMinutes % 60;
+  if (hours === 0) return `${mins}m`;
+  if (mins === 0) return `${hours}h`;
+  return `${hours}h ${mins}m`;
+}
 
 export async function getStaticPaths() {
   const chapters = await getCollection("chapters");
@@ -12,103 +140,663 @@ export async function getStaticPaths() {
   return bookIds.map((book) => ({ params: { book } }));
 }
 
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
 const bookId = Astro.params.book!;
-const books = (await getCollection("chapters"))
+const chapters = (await getCollection("chapters"))
   .filter((chapter) => chapter.id.split("/")[0] === bookId)
-  .sort((a, b) => a.data.chapNum - b.data.chapNum);
-const bookTitle = books[0].data.book;
-const bookUrl = `${import.meta.env.BASE_URL}/writing/${bookId}`;
+  .sort(
+    (a, b) =>
+      a.data.chapNum - b.data.chapNum ||
+      a.data.title.localeCompare(b.data.title),
+  );
+
+const bookTitle = chapters[0]?.data.book ?? bookId;
+const bookDirectory =
+  chapters[0]?.filePath?.replace(/^src\/content\//, "").split("/")[0] ??
+  bookId;
+
+const metadata = import.meta.glob<BookMetadata>("../../../content/*/book.json", {
+  eager: true,
+  import: "default",
+});
+const descriptionMarkdown = import.meta.glob<string>(
+  "../../../content/*/{description,summary,synopsis}.md",
+  { eager: true, query: "?raw", import: "default" },
+);
+const coverImages = import.meta.glob<{ default: string | { src: string } }>(
+  "../../../content/*/*.{png,jpg,jpeg,webp,avif}",
+  { eager: true },
+);
+
+const bookMeta = metadata[`../../../content/${bookDirectory}/book.json`];
+const matchedCoverImage =
+  coverImages[`../../../content/${bookDirectory}/cover.png`] ??
+  coverImages[`../../../content/${bookDirectory}/cover.jpg`] ??
+  coverImages[`../../../content/${bookDirectory}/cover.jpeg`] ??
+  coverImages[`../../../content/${bookDirectory}/cover.webp`] ??
+  coverImages[`../../../content/${bookDirectory}/cover.avif`];
+
+const detectedCover =
+  typeof matchedCoverImage?.default === "string"
+    ? matchedCoverImage.default
+    : matchedCoverImage?.default?.src;
+
+const rawCover =
+  bookMeta?.cover ?? bookMeta?.coverImage ?? bookMeta?.image ?? detectedCover;
+
+const resolvedCover = rawCover
+  ? rawCover.startsWith("http://") ||
+    rawCover.startsWith("https://") ||
+    rawCover.startsWith(baseUrl)
+    ? rawCover
+    : rawCover.startsWith("/")
+      ? `${baseUrl}${rawCover}`
+      : `${baseUrl}/${rawCover}`
+  : undefined;
+
+const rawDescription =
+  bookMeta?.description ??
+  descriptionMarkdown[`../../../content/${bookDirectory}/description.md`] ??
+  descriptionMarkdown[`../../../content/${bookDirectory}/summary.md`] ??
+  descriptionMarkdown[`../../../content/${bookDirectory}/synopsis.md`];
+
+const descriptionHtml = renderMarkdown(rawDescription);
+
+const chapterItems = chapters.map((chapter, index) => {
+  const words = countWords(chapter.body);
+  const readMinutes = Math.max(1, Math.round(words / 225));
+  const dateObj = chapter.data.updatedDate ?? chapter.data.pubDate;
+  const formattedDate = dateObj.toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  });
+  return {
+    id: chapter.id,
+    chapNum: chapter.data.chapNum,
+    order: index + 1,
+    title: chapter.data.title,
+    href: `${baseUrl}/writing/${chapter.id}`,
+    words,
+    compactWords: formatCompactWords(words),
+    readMinutes,
+    formattedDate,
+    timestamp: dateObj.getTime(),
+  };
+});
+
+const totalWords = chapterItems.reduce((sum, c) => sum + c.words, 0);
+const totalMinutes = chapterItems.reduce((sum, c) => sum + c.readMinutes, 0);
+const latestTimestamp = Math.max(...chapterItems.map((c) => c.timestamp), 0);
+const latestDateFormatted =
+  latestTimestamp > 0
+    ? new Date(latestTimestamp).toLocaleDateString("en-US", {
+        month: "short",
+        day: "numeric",
+        year: "numeric",
+      })
+    : "";
+
+const firstChapter = chapterItems[0];
+const latestChapter = chapterItems[chapterItems.length - 1];
 ---
 
-<Layout title={bookTitle}>
-  <div class="flex flex-col min-h-screen h-full pb-10 bg-gradient-to-b from-stone-100 to-stone-200 dark:from-slate-900 dark:via-gray-800 dark:to-black">
-    <Nav
-      title={bookTitle}
-      chapter="Table of Contents"
-      prevFilePath={bookUrl + "/toc"}
-    />
-    <div
-      id="day_button"
-      class="text-white bg-gray-800 w-[32px] rounded p-1 cursor-pointer absolute right-2 top-3 hover:bg-gray-700"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="w-6 h-6"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
+<Layout title={`${bookTitle} · Table of Contents`}>
+  <div class="min-h-screen flex flex-col bg-gradient-to-b from-stone-100 via-stone-100 to-stone-200 dark:from-slate-900 dark:via-slate-900 dark:to-slate-950 text-stone-800 dark:text-slate-100">
+    <!-- Sticky Platform Header -->
+    <header class="sticky top-0 z-30 border-b border-stone-200/90 dark:border-slate-800/90 bg-stone-50/85 dark:bg-slate-950/85 backdrop-blur-md">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between gap-3">
+        <nav class="flex items-center gap-2 min-w-0 text-sm">
+          <a
+            href={`${baseUrl}/writing`}
+            class="inline-flex items-center gap-1.5 font-medium text-stone-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-sky-400 transition-colors shrink-0"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+            <span>Writing</span>
+          </a>
+          <span class="text-stone-400 dark:text-slate-600 select-none">/</span>
+          <span class="font-semibold text-stone-900 dark:text-slate-100 truncate">
+            {bookTitle}
+          </span>
+        </nav>
+
+        <div class="flex items-center gap-2 shrink-0">
+          <a
+            href="#chapters-section"
+            class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium text-stone-700 dark:text-slate-300 bg-stone-200/70 dark:bg-slate-800/80 hover:bg-stone-300/80 dark:hover:bg-slate-700 transition-colors"
+          >
+            <span>{chapterItems.length} Chapters</span>
+          </a>
+
+          <button
+            id="theme_toggle"
+            type="button"
+            aria-label="Toggle color theme"
+            class="inline-flex items-center justify-center w-9 h-9 rounded-lg border border-stone-300/80 dark:border-slate-700/80 bg-stone-100 dark:bg-slate-800 text-stone-700 dark:text-slate-200 hover:border-stone-400 dark:hover:border-sky-400/50 transition-colors cursor-pointer"
+          >
+            <svg
+              id="icon_sun"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4 hidden dark:block"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <path
+                d="M12 1v2m0 18v2m11-11h-2M3 12H1m16.95-6.95l-1.414 1.414M6.464 17.536l-1.414 1.414m0-13.657l1.414 1.414M18.364 18.364l1.414 1.414"
+              ></path>
+            </svg>
+            <svg
+              id="icon_moon"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4 block dark:hidden"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-10 space-y-8">
+      <!-- Book Hero Showcase -->
+      <section class="relative overflow-hidden rounded-2xl border border-stone-300/80 dark:border-slate-800 bg-gradient-to-br from-stone-50 via-stone-50 to-stone-200/80 dark:from-slate-800/90 dark:via-slate-900 dark:to-slate-950 shadow-lg">
+        <!-- Subtle ambient glow matching site palette -->
+        <div class="pointer-events-none absolute -top-24 -right-24 w-72 h-72 rounded-full bg-blue-500/5 dark:bg-sky-400/10 blur-3xl"></div>
+
+        <div class="relative p-5 sm:p-8 flex flex-col md:flex-row gap-6 sm:gap-8 items-center md:items-start">
+          <!-- Book Cover -->
+          <div class="shrink-0 w-40 sm:w-48 md:w-52">
+            <div class="relative aspect-[2/3] rounded-lg overflow-hidden shadow-xl border border-stone-300/90 dark:border-slate-700/90 bg-gradient-to-br from-stone-200 via-stone-300 to-stone-400 dark:from-slate-700 dark:via-slate-800 dark:to-slate-900 flex items-center justify-center">
+              {resolvedCover ? (
+                <img
+                  src={resolvedCover}
+                  alt={`Cover of ${bookTitle}`}
+                  class="w-full h-full object-cover"
+                />
+              ) : (
+                <div class="flex flex-col items-center justify-center p-4 text-center text-stone-500 dark:text-slate-400 select-none">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-12 h-12 opacity-60 mb-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
+                    />
+                  </svg>
+                  <span class="text-xs font-semibold uppercase tracking-wider opacity-80">
+                    {bookTitle}
+                  </span>
+                </div>
+              )}
+              <!-- Spine crease highlight -->
+              <div class="absolute left-0 top-0 bottom-0 w-2 bg-gradient-to-r from-black/20 via-white/15 to-transparent pointer-events-none"></div>
+            </div>
+          </div>
+
+          <!-- Book Details & Actions -->
+          <div class="flex-1 min-w-0 w-full flex flex-col">
+            <div class="text-center md:text-left">
+              <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 dark:text-sky-400 mb-1.5">
+                Fiction Series · Andrew Kula
+              </p>
+              <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-stone-900 dark:text-slate-50">
+                {bookTitle}
+              </h1>
+            </div>
+
+            <!-- Book Stats Row -->
+            <div class="mt-4 flex flex-wrap justify-center md:justify-start gap-2">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-stone-200/80 dark:bg-slate-800 text-stone-700 dark:text-slate-300 border border-stone-300/60 dark:border-slate-700/70">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-3.5 h-3.5 opacity-75"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4 6h16M4 12h16M4 18h10"
+                  />
+                </svg>
+                <span>{chapterItems.length} Chapters</span>
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-stone-200/80 dark:bg-slate-800 text-stone-700 dark:text-slate-300 border border-stone-300/60 dark:border-slate-700/70">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-3.5 h-3.5 opacity-75"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z"
+                  />
+                </svg>
+                <span>~{formatTotalReadTime(totalMinutes)} read</span>
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-stone-200/80 dark:bg-slate-800 text-stone-700 dark:text-slate-300 border border-stone-300/60 dark:border-slate-700/70">
+                <span>{formatCompactWords(totalWords)} words</span>
+              </span>
+              {latestDateFormatted && (
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-stone-200/80 dark:bg-slate-800 text-stone-700 dark:text-slate-300 border border-stone-300/60 dark:border-slate-700/70">
+                  <span>Updated {latestDateFormatted}</span>
+                </span>
+              )}
+            </div>
+
+            <!-- Primary Reading Actions -->
+            {firstChapter && (
+              <div class="mt-5 flex flex-wrap justify-center md:justify-start items-center gap-3">
+                <a
+                  id="primary_read_cta"
+                  href={firstChapter.href}
+                  data-default-href={firstChapter.href}
+                  data-default-label={`Start Reading · Ch. ${firstChapter.chapNum}`}
+                  data-default-sub={firstChapter.title}
+                  class="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-xl font-semibold text-sm bg-stone-900 text-stone-50 hover:bg-stone-800 dark:bg-sky-500 dark:text-slate-950 dark:hover:bg-sky-400 shadow-sm transition-all"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4 shrink-0"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                    />
+                  </svg>
+                  <span id="primary_read_label">
+                    Start Reading · Ch. {firstChapter.chapNum}
+                  </span>
+                </a>
+
+                {latestChapter && latestChapter.id !== firstChapter.id && (
+                  <a
+                    href={latestChapter.href}
+                    class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-medium text-sm border border-stone-300 dark:border-slate-700 bg-stone-100/80 dark:bg-slate-800/80 text-stone-800 dark:text-slate-200 hover:border-blue-500/60 dark:hover:border-sky-400/60 hover:text-blue-600 dark:hover:text-sky-400 transition-colors"
+                  >
+                    <span>Latest · Ch. {latestChapter.chapNum}</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-4 h-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </a>
+                )}
+              </div>
+            )}
+
+            <!-- Reader Progress Strip (revealed by JS when user has history) -->
+            <div
+              id="reading_progress_banner"
+              class="hidden mt-4 p-3 rounded-xl border border-stone-300/70 dark:border-slate-700/70 bg-stone-100/80 dark:bg-slate-800/60"
+            >
+              <div class="flex items-center justify-between gap-2 text-xs text-stone-600 dark:text-slate-300 mb-1.5">
+                <span id="progress_summary_text" class="font-medium truncate">
+                  Reading progress
+                </span>
+                <button
+                  id="clear_progress_btn"
+                  type="button"
+                  class="text-stone-500 dark:text-slate-400 hover:text-stone-900 dark:hover:text-slate-100 underline underline-offset-2 shrink-0 cursor-pointer"
+                >
+                  Reset
+                </button>
+              </div>
+              <div class="w-full h-1.5 rounded-full bg-stone-300/80 dark:bg-slate-700 overflow-hidden">
+                <div
+                  id="progress_bar_fill"
+                  class="h-full rounded-full bg-blue-600 dark:bg-sky-400 transition-all duration-300"
+                  style="width: 0%"
+                ></div>
+              </div>
+            </div>
+
+            <!-- Book Synopsis -->
+            {descriptionHtml && (
+              <div class="mt-5 pt-5 border-t border-stone-200/90 dark:border-slate-800/90">
+                <h2 class="text-xs font-semibold uppercase tracking-widest text-stone-500 dark:text-slate-400 mb-2">
+                  Synopsis
+                </h2>
+                <div
+                  class="toc-synopsis space-y-2.5 text-sm sm:text-[15px] leading-relaxed text-stone-700 dark:text-slate-300"
+                  set:html={descriptionHtml}
+                />
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
+
+      <!-- Table of Contents Section -->
+      <section
+        id="chapters-section"
+        class="rounded-2xl border border-stone-300/80 dark:border-slate-800 bg-stone-50/90 dark:bg-slate-900/80 shadow-md overflow-hidden"
       >
-        <circle cx="12" cy="12" r="5" stroke-width="2"></circle>
-        <path
-          stroke-width="2"
-          d="M12 1v2m0 18v2m11-11h-2M3 12H1m16.95-6.95l-1.414 1.414M6.464 17.536l-1.414 1.414m0-13.657l1.414 1.414M18.364 18.364l1.414 1.414"
-        ></path>
-      </svg>
-    </div>
-    <div
-      id="night_button"
-      class="bg-stone-300 w-[32px] rounded p-1 cursor-pointer absolute right-2 top-3 hover:bg-stone-400 hidden"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="w-6 h-6"
-        fill="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"></path>
-      </svg>
-    </div>
-    <div
-      class="flex flex-col self-center justify-center w-full max-w-[800px] m-2 p-2 text-xl dark:text-white
-            border-b border-b border-slate-600"
-    >
-      {bookTitle} Chapters
-    </div>
-    {books.map((book) => (
-      <section class="flex flex-col self-center justify-center w-full max-w-[800px] p-1">
-        <a href={`${import.meta.env.BASE_URL}/writing/${book.id}`}>
-          <div class="home-tile bg-gradient-to-r from-stone-50 to-stone-200 dark:from-slate-800 dark:to-slate-900 dark:text-white">
-            <p class="p-2 text-xl">
-              {book.data.chapNum}. {book.data.title}
+        <!-- Controls Header -->
+        <div class="p-4 sm:p-5 border-b border-stone-200 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-stone-100/70 dark:bg-slate-900/95">
+          <div>
+            <h2 class="text-lg sm:text-xl font-bold text-stone-900 dark:text-slate-100">
+              Table of Contents
+            </h2>
+            <p
+              id="chapter_count_subtitle"
+              class="text-xs text-stone-500 dark:text-slate-400 mt-0.5"
+            >
+              Showing all {chapterItems.length} chapters
             </p>
           </div>
-        </a>
+
+          <div class="flex items-center gap-2 w-full sm:w-auto">
+            <!-- Search Input -->
+            <div class="relative flex-1 sm:w-64">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-stone-400 dark:text-slate-500 pointer-events-none"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z"
+                />
+              </svg>
+              <input
+                id="chapter_search"
+                type="search"
+                placeholder="Filter chapters..."
+                aria-label="Filter chapters by title or number"
+                class="w-full pl-9 pr-3 py-1.5 text-sm rounded-lg border border-stone-300 dark:border-slate-700 bg-white dark:bg-slate-800/90 text-stone-800 dark:text-slate-100 placeholder:text-stone-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500/40 dark:focus:ring-sky-400/40"
+              />
+            </div>
+
+            <!-- Sort Button -->
+            <button
+              id="sort_toggle_btn"
+              type="button"
+              data-order="asc"
+              class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium border border-stone-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-stone-700 dark:text-slate-200 hover:border-stone-400 dark:hover:border-sky-400/60 transition-colors shrink-0 cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-3.5 h-3.5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 4h13M3 8h9m-9 4h6m4 0l4-4m0 0l4 4m-4-4v12"
+                />
+              </svg>
+              <span id="sort_label">Oldest</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Chapter Rows -->
+        <ul
+          id="chapter_list"
+          class="divide-y divide-stone-200/80 dark:divide-slate-800/80"
+        >
+          {chapterItems.map((chapter) => (
+            <li
+              class="chapter-row"
+              data-chapter-id={chapter.id}
+              data-chapter-num={chapter.chapNum}
+              data-chapter-order={chapter.order}
+              data-chapter-title={chapter.title.toLowerCase()}
+            >
+              <a
+                href={chapter.href}
+                class="group flex items-center justify-between gap-4 px-4 sm:px-6 py-3.5 hover:bg-stone-200/50 dark:hover:bg-slate-800/60 transition-colors"
+              >
+                <div class="flex items-center gap-3.5 min-w-0">
+                  <span class="chapter-num-badge shrink-0 inline-flex items-center justify-center min-w-[2.75rem] px-2 py-1 rounded-md text-xs font-semibold tabular-nums bg-stone-200/80 dark:bg-slate-800 text-stone-700 dark:text-slate-300 border border-stone-300/60 dark:border-slate-700/70 group-hover:border-blue-500/40 dark:group-hover:border-sky-400/40 transition-colors">
+                    Ch. {chapter.chapNum}
+                  </span>
+
+                  <div class="min-w-0">
+                    <div class="flex items-center gap-2">
+                      <span class="font-medium text-sm sm:text-base text-stone-900 dark:text-slate-100 group-hover:text-blue-600 dark:group-hover:text-sky-400 transition-colors truncate">
+                        {chapter.title}
+                      </span>
+                      <span class="read-badge hidden shrink-0 inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-semibold uppercase tracking-wide bg-blue-100 text-blue-700 dark:bg-sky-500/15 dark:text-sky-300">
+                        Read
+                      </span>
+                      <span class="current-badge hidden shrink-0 inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-semibold uppercase tracking-wide bg-stone-800 text-stone-50 dark:bg-sky-400 dark:text-slate-950">
+                        Last Read
+                      </span>
+                    </div>
+                    <div class="flex sm:hidden items-center gap-2 text-xs text-stone-500 dark:text-slate-400 mt-0.5">
+                      <span>{chapter.readMinutes} min</span>
+                      <span>·</span>
+                      <span>{chapter.formattedDate}</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-4 shrink-0 text-xs text-stone-500 dark:text-slate-400">
+                  <span class="hidden md:inline tabular-nums">
+                    {chapter.compactWords} words
+                  </span>
+                  <span class="hidden sm:inline tabular-nums">
+                    {chapter.readMinutes} min read
+                  </span>
+                  <span class="hidden sm:inline tabular-nums w-24 text-right">
+                    {chapter.formattedDate}
+                  </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4 text-stone-400 dark:text-slate-500 group-hover:text-blue-600 dark:group-hover:text-sky-400 transition-transform duration-200 group-hover:translate-x-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        <!-- Empty Filter State -->
+        <div
+          id="empty_search_state"
+          class="hidden py-12 px-4 text-center text-sm text-stone-500 dark:text-slate-400"
+        >
+          No chapters match your filter.
+        </div>
       </section>
-    ))}
+    </main>
   </div>
-  <script>
+
+  <script define:vars={{ bookId, totalChapters: chapterItems.length }}>
     window.addEventListener("DOMContentLoaded", () => {
-      const isDark = document.documentElement.classList.contains("dark");
-      document
-        .getElementById("day_button")
-        ?.classList.toggle("hidden", !isDark);
-      document
-        .getElementById("night_button")
-        ?.classList.toggle("hidden", isDark);
-      document
-        .getElementById("night_button")
-        ?.addEventListener("click", () => switchTheme(true));
-      document
-        .getElementById("day_button")
-        ?.addEventListener("click", () => switchTheme(false));
-    });
-
-    function switchTheme(isDay: boolean) {
       const html = document.documentElement;
-      const night = document.getElementById("night_button");
-      const day = document.getElementById("day_button");
+      const themeToggle = document.getElementById("theme_toggle");
 
-      if (isDay) {
-        html.classList.add("dark");
-        localStorage.setItem("theme", "dark");
-        night?.classList.add("hidden");
-        day?.classList.remove("hidden");
-      } else {
-        html.classList.remove("dark");
-        localStorage.setItem("theme", "light");
-        night?.classList.remove("hidden");
-        day?.classList.add("hidden");
+      themeToggle?.addEventListener("click", () => {
+        const nextDark = !html.classList.contains("dark");
+        html.classList.toggle("dark", nextDark);
+        localStorage.setItem("theme", nextDark ? "dark" : "light");
+      });
+
+      const storageKey = `reader-progress:${bookId}`;
+      const ctaLink = document.getElementById("primary_read_cta");
+      const ctaLabel = document.getElementById("primary_read_label");
+      const progressBanner = document.getElementById("reading_progress_banner");
+      const progressSummary = document.getElementById("progress_summary_text");
+      const progressFill = document.getElementById("progress_bar_fill");
+      const clearBtn = document.getElementById("clear_progress_btn");
+      const chapterRows = Array.from(document.querySelectorAll(".chapter-row"));
+
+      function hydrateProgress() {
+        let saved = null;
+        try {
+          const raw = localStorage.getItem(storageKey);
+          if (raw) saved = JSON.parse(raw);
+        } catch {
+          saved = null;
+        }
+
+        const readSet = new Set(Array.isArray(saved?.readChapters) ? saved.readChapters : []);
+
+        chapterRows.forEach((row) => {
+          const id = row.getAttribute("data-chapter-id");
+          const readBadge = row.querySelector(".read-badge");
+          const currentBadge = row.querySelector(".current-badge");
+          const isCurrent = saved?.lastChapterId && id === saved.lastChapterId;
+          const isRead = id && readSet.has(id);
+
+          currentBadge?.classList.toggle("hidden", !isCurrent);
+          readBadge?.classList.toggle("hidden", !isRead || Boolean(isCurrent));
+        });
+
+        if (saved && saved.lastUrl && ctaLink && ctaLabel) {
+          ctaLink.setAttribute("href", saved.lastUrl);
+          ctaLabel.textContent = `Continue · Ch. ${saved.lastChapterNum}: ${saved.lastChapterTitle}`;
+
+          if (progressBanner && progressSummary && progressFill) {
+            const readCount = Math.min(totalChapters, readSet.size || 1);
+            const pct = Math.round((readCount / Math.max(1, totalChapters)) * 100);
+            progressSummary.textContent = `Read ${readCount} of ${totalChapters} chapters (${pct}%) · Last on Ch. ${saved.lastChapterNum}`;
+            progressFill.style.width = `${pct}%`;
+            progressBanner.classList.remove("hidden");
+          }
+        } else if (ctaLink && ctaLabel) {
+          ctaLink.setAttribute(
+            "href",
+            ctaLink.getAttribute("data-default-href") || "#",
+          );
+          ctaLabel.textContent =
+            ctaLink.getAttribute("data-default-label") || "Start Reading";
+          progressBanner?.classList.add("hidden");
+        }
       }
-    }
+
+      hydrateProgress();
+
+      clearBtn?.addEventListener("click", () => {
+        localStorage.removeItem(storageKey);
+        hydrateProgress();
+      });
+
+      const searchInput = document.getElementById("chapter_search");
+      const sortBtn = document.getElementById("sort_toggle_btn");
+      const sortLabel = document.getElementById("sort_label");
+      const chapterList = document.getElementById("chapter_list");
+      const emptyState = document.getElementById("empty_search_state");
+      const countSubtitle = document.getElementById("chapter_count_subtitle");
+
+      function applyFilterAndSort() {
+        const query = (searchInput?.value || "").trim().toLowerCase();
+        const order = sortBtn?.getAttribute("data-order") || "asc";
+
+        const sorted = [...chapterRows].sort((a, b) => {
+          const ordA = Number(a.getAttribute("data-chapter-order") || 0);
+          const ordB = Number(b.getAttribute("data-chapter-order") || 0);
+          return order === "asc" ? ordA - ordB : ordB - ordA;
+        });
+
+        let visibleCount = 0;
+        sorted.forEach((row) => {
+          const title = row.getAttribute("data-chapter-title") || "";
+          const num = row.getAttribute("data-chapter-num") || "";
+          const matches =
+            !query ||
+            title.includes(query) ||
+            num.includes(query) ||
+            `ch. ${num}`.includes(query) ||
+            `chapter ${num}`.includes(query);
+
+          row.classList.toggle("hidden", !matches);
+          if (matches) visibleCount += 1;
+          chapterList?.appendChild(row);
+        });
+
+        emptyState?.classList.toggle("hidden", visibleCount > 0);
+        if (countSubtitle) {
+          countSubtitle.textContent = query
+            ? `Showing ${visibleCount} of ${totalChapters} chapters`
+            : `Showing all ${totalChapters} chapters`;
+        }
+      }
+
+      searchInput?.addEventListener("input", applyFilterAndSort);
+
+      sortBtn?.addEventListener("click", () => {
+        const current = sortBtn.getAttribute("data-order") || "asc";
+        const next = current === "asc" ? "desc" : "asc";
+        sortBtn.setAttribute("data-order", next);
+        if (sortLabel) {
+          sortLabel.textContent = next === "asc" ? "Oldest" : "Newest";
+        }
+        applyFilterAndSort();
+      });
+    });
   </script>
 </Layout>
+
+<style>
+  .toc-synopsis :global(strong) {
+    font-weight: 700;
+  }
+  .toc-synopsis :global(em) {
+    font-style: italic;
+  }
+</style>

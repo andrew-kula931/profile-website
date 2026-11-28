@@ -1,7 +1,5 @@
 ---
 import Layout from "../../../layout/layout.astro";
-import Nav from "../../../components/novel_nav.astro";
-import PageNav from "../../../components/novel_page_nav.astro";
 import { type CollectionEntry, getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
@@ -11,136 +9,1087 @@ export async function getStaticPaths() {
     return { params: { book, slug: slug.join("/") }, props: chapter };
   });
 }
+
 type Props = CollectionEntry<"chapters">;
 const allChapters = await getCollection("chapters");
 
-const book = Astro.props;
-const { Content } = await render(book);
-const bookId = book.id.split("/")[0];
-const bookChapters = allChapters
-  .filter((chapter) => chapter.id.split("/")[0] === bookId)
-  .sort((a, b) => a.data.chapNum - b.data.chapNum);
-const bookUrl = `${import.meta.env.BASE_URL}/writing/${bookId}`;
-const chapterIndex = bookChapters.findIndex(
-  (chapter) => chapter.id === book.id,
-);
+const chapter = Astro.props;
+const { Content } = await render(chapter);
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
+const bookId = chapter.id.split("/")[0];
 
-const prevBook = bookChapters[chapterIndex - 1];
-const prevHref = prevBook
-  ? `${import.meta.env.BASE_URL}/writing/${prevBook.id}`
+const bookChapters = allChapters
+  .filter((item) => item.id.split("/")[0] === bookId)
+  .sort(
+    (a, b) =>
+      a.data.chapNum - b.data.chapNum ||
+      a.data.title.localeCompare(b.data.title),
+  );
+
+const bookUrl = `${baseUrl}/writing/${bookId}`;
+const tocHref = `${bookUrl}/toc`;
+const currentUrl = `${baseUrl}/writing/${chapter.id}`;
+const chapterIndex = bookChapters.findIndex((item) => item.id === chapter.id);
+
+const prevChapter = bookChapters[chapterIndex - 1];
+const prevHref = prevChapter
+  ? `${baseUrl}/writing/${prevChapter.id}`
   : undefined;
-const nextBook = bookChapters[chapterIndex + 1];
-const nextHref = nextBook
-  ? `${import.meta.env.BASE_URL}/writing/${nextBook.id}`
+
+const nextChapter = bookChapters[chapterIndex + 1];
+const nextHref = nextChapter
+  ? `${baseUrl}/writing/${nextChapter.id}`
   : undefined;
+
+const wordCount = (chapter.body ?? "")
+  .trim()
+  .split(/\s+/)
+  .filter(Boolean).length;
+const readMinutes = Math.max(1, Math.round(wordCount / 225));
+const totalChapters = bookChapters.length;
+const bookProgressPct = Math.round(((chapterIndex + 1) / totalChapters) * 100);
+
+const pubDateFormatted = chapter.data.pubDate.toLocaleDateString("en-US", {
+  month: "short",
+  day: "numeric",
+  year: "numeric",
+});
+const updatedDateFormatted = chapter.data.updatedDate?.toLocaleDateString(
+  "en-US",
+  {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  },
+);
 ---
 
-<Layout title={book.data.title}>
-  <div class="fixed inset-0 -z-10 bg-gradient-to-b from-stone-100 to-stone-200 dark:from-slate-900 dark:via-slate-800 dark:to-slate-950"></div>
-  <div class="flex flex-col min-h-screen">
-    <Nav
-      title={book.data.book}
-      chapter={book.data.title}
-      prevFilePath={`${bookUrl}/toc`}
-    />
-    <div
-      id="day_button"
-      class="text-white bg-gray-800 w-[32px] rounded p-1 cursor-pointer absolute right-2 top-3 hover:bg-gray-700"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="w-6 h-6"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <circle cx="12" cy="12" r="5" stroke-width="2"></circle>
-        <path
-          stroke-width="2"
-          d="M12 1v2m0 18v2m11-11h-2M3 12H1m16.95-6.95l-1.414 1.414M6.464 17.536l-1.414 1.414m0-13.657l1.414 1.414M18.364 18.364l1.414 1.414"
-        ></path>
-      </svg>
-    </div>
-    <div
-      id="night_button"
-      class="bg-stone-600 w-[32px] rounded p-1 cursor-pointer absolute right-2 top-3 hover:bg-stone-500 hidden"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="w-6 h-6"
-        fill="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"></path>
-      </svg>
-    </div>
-    <!-- Chapter Content -->
+<Layout title={`${chapter.data.title} · ${chapter.data.book}`}>
+  <div class="fixed inset-0 -z-10 bg-gradient-to-b from-stone-100 via-stone-100 to-stone-200 dark:from-slate-900 dark:via-slate-900 dark:to-slate-950"></div>
 
-    <main class="flex justify-center px-4 py-6">
-      <article class="markdown-body home-tile-hoverless w-full max-w-[800px] p-8 pt-2">
-        <h2>{book.data.title}</h2>
-        {book.data.updatedDate ? (
+  <!-- Top Reading Scroll Progress Bar -->
+  <div class="fixed top-0 left-0 right-0 z-50 h-[3px] bg-stone-200/70 dark:bg-slate-800/80 pointer-events-none">
+    <div
+      id="scroll_progress_bar"
+      class="h-full bg-blue-600 dark:bg-sky-400 transition-[width] duration-75"
+      style="width: 0%"
+    ></div>
+  </div>
+
+  <!-- Auto-Hiding Sticky Reader Toolbar -->
+  <header
+    id="reader_header"
+    class="sticky top-0 z-40 border-b border-stone-300/80 dark:border-slate-700 bg-gradient-to-t from-stone-200/95 to-stone-50/95 dark:from-slate-900/95 dark:to-stone-950/95 backdrop-blur-md text-stone-800 dark:text-gray-300 transition-transform duration-300"
+  >
+    <div class="px-3 sm:px-6 h-14 flex items-center justify-between gap-3">
+      <!-- Left: Book TOC & Chapter Indicator -->
+      <div class="flex items-center gap-2 min-w-0">
+        <a
+          href={tocHref}
+          class="inline-flex items-center gap-1.5 text-sm font-medium hover:text-blue-600 dark:hover:text-sky-400 transition-colors min-w-0"
+          title={`Back to ${chapter.data.book} Table of Contents`}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-4 h-4 shrink-0"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+          <span class="truncate max-w-[140px] sm:max-w-[220px]">
+            {chapter.data.book}
+          </span>
+        </a>
+
+        <span class="text-stone-300 dark:text-slate-700 select-none">|</span>
+
+        <span class="text-xs font-semibold tabular-nums text-stone-500 dark:text-slate-400 shrink-0">
+          Ch. {chapter.data.chapNum}
+          <span class="hidden sm:inline font-normal">
+            {" "}
+            ({chapterIndex + 1}/{totalChapters})
+          </span>
+        </span>
+      </div>
+
+      <!-- Center: Scrolled Chapter Title -->
+      <div
+        id="header_chapter_title"
+        class="hidden md:block text-sm font-semibold text-stone-800 dark:text-slate-200 truncate max-w-xs opacity-0 transition-opacity duration-200 pointer-events-none"
+      >
+        {chapter.data.title}
+      </div>
+
+      <!-- Right: Reader Controls -->
+      <div class="flex items-center gap-1.5 sm:gap-2 shrink-0 relative">
+        <!-- Chapter Drawer Toggle -->
+        <button
+          id="open_drawer_btn"
+          type="button"
+          aria-label="Open chapter list"
+          aria-expanded="false"
+          class="inline-flex items-center gap-1.5 px-2.5 sm:px-3 h-9 rounded-lg text-xs font-medium border border-stone-300/80 dark:border-slate-700/80 bg-stone-100 dark:bg-slate-800/90 text-stone-700 dark:text-slate-200 hover:border-stone-400 dark:hover:border-sky-400/50 transition-colors cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h10"
+            />
+          </svg>
+          <span class="hidden sm:inline">Chapters</span>
+        </button>
+
+        <!-- Typography Settings Toggle -->
+        <button
+          id="settings_toggle_btn"
+          type="button"
+          aria-label="Reader display settings"
+          aria-expanded="false"
+          class="inline-flex items-center justify-center w-9 h-9 rounded-lg text-xs font-bold border border-stone-300/80 dark:border-slate-700/80 bg-stone-100 dark:bg-slate-800/90 text-stone-700 dark:text-slate-200 hover:border-stone-400 dark:hover:border-sky-400/50 transition-colors cursor-pointer"
+        >
+          Aa
+        </button>
+
+        <!-- Theme Toggle -->
+        <button
+          id="theme_toggle"
+          type="button"
+          aria-label="Toggle color theme"
+          class="inline-flex items-center justify-center w-9 h-9 rounded-lg border border-stone-300/80 dark:border-slate-700/80 bg-stone-100 dark:bg-slate-800/90 text-stone-700 dark:text-slate-200 hover:border-stone-400 dark:hover:border-sky-400/50 transition-colors cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-4 h-4 hidden dark:block"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="12" cy="12" r="5"></circle>
+            <path d="M12 1v2m0 18v2m11-11h-2M3 12H1m16.95-6.95l-1.414 1.414M6.464 17.536l-1.414 1.414m0-13.657l1.414 1.414M18.364 18.364l1.414 1.414"></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-4 h-4 block dark:hidden"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Reader Settings Popover -->
+        <div
+          id="settings_popover"
+          class="hidden absolute right-0 top-12 w-72 sm:w-80 rounded-2xl border border-stone-300 dark:border-slate-700 bg-stone-50 dark:bg-slate-900 shadow-2xl p-4 space-y-4 text-stone-800 dark:text-slate-100 z-50"
+        >
+          <div class="flex items-center justify-between border-b border-stone-200 dark:border-slate-800 pb-2.5">
+            <span class="text-xs font-bold uppercase tracking-wider text-stone-500 dark:text-slate-400">
+              Reading Preferences
+            </span>
+            <button
+              id="reset_prefs_btn"
+              type="button"
+              class="text-xs text-blue-600 dark:text-sky-400 hover:underline cursor-pointer"
+            >
+              Reset
+            </button>
+          </div>
+
+          <!-- Font Family -->
           <div>
-            <div>
-              Written: {book.data.pubDate.toLocaleDateString()} | Updated:{" "}
-              {book.data.updatedDate.toLocaleDateString()}
+            <p class="text-xs font-medium text-stone-500 dark:text-slate-400 mb-1.5">
+              Typeface
+            </p>
+            <div class="grid grid-cols-3 gap-1.5">
+              <button
+                type="button"
+                data-pref-font="serif"
+                class="pref-font-btn py-1.5 px-2 rounded-lg text-xs font-serif border border-stone-300 dark:border-slate-700 cursor-pointer transition-colors"
+              >
+                Serif
+              </button>
+              <button
+                type="button"
+                data-pref-font="sans"
+                class="pref-font-btn py-1.5 px-2 rounded-lg text-xs font-sans border border-stone-300 dark:border-slate-700 cursor-pointer transition-colors"
+              >
+                Sans
+              </button>
+              <button
+                type="button"
+                data-pref-font="mono"
+                class="pref-font-btn py-1.5 px-2 rounded-lg text-xs font-mono border border-stone-300 dark:border-slate-700 cursor-pointer transition-colors"
+              >
+                Mono
+              </button>
             </div>
           </div>
-        ) : (
-          <div>Written: {book.data.pubDate.toLocaleDateString()}</div>
-        )}
-        <div>
-          {book.data.updatedDate ? (
-            <div>Updated: {book.data.updatedDate ?? ""}</div>
-          ) : (
-            <div />
-          )}
+
+          <!-- Font Size -->
+          <div>
+            <div class="flex items-center justify-between text-xs text-stone-500 dark:text-slate-400 mb-1.5">
+              <span class="font-medium">Font Size</span>
+              <span
+                id="font_size_readout"
+                class="tabular-nums font-semibold text-stone-700 dark:text-slate-200"
+              >
+                18px
+              </span>
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+              <button
+                id="font_dec_btn"
+                type="button"
+                class="py-1.5 rounded-lg text-sm font-semibold border border-stone-300 dark:border-slate-700 hover:bg-stone-200/70 dark:hover:bg-slate-800 cursor-pointer transition-colors"
+              >
+                A−
+              </button>
+              <button
+                id="font_inc_btn"
+                type="button"
+                class="py-1.5 rounded-lg text-sm font-semibold border border-stone-300 dark:border-slate-700 hover:bg-stone-200/70 dark:hover:bg-slate-800 cursor-pointer transition-colors"
+              >
+                A+
+              </button>
+            </div>
+          </div>
+
+          <!-- Line Spacing -->
+          <div>
+            <p class="text-xs font-medium text-stone-500 dark:text-slate-400 mb-1.5">
+              Line Spacing
+            </p>
+            <div class="grid grid-cols-3 gap-1.5">
+              <button
+                type="button"
+                data-pref-leading="1.6"
+                class="pref-leading-btn py-1.5 px-2 rounded-lg text-xs border border-stone-300 dark:border-slate-700 cursor-pointer transition-colors"
+              >
+                Compact
+              </button>
+              <button
+                type="button"
+                data-pref-leading="1.85"
+                class="pref-leading-btn py-1.5 px-2 rounded-lg text-xs border border-stone-300 dark:border-slate-700 cursor-pointer transition-colors"
+              >
+                Standard
+              </button>
+              <button
+                type="button"
+                data-pref-leading="2.1"
+                class="pref-leading-btn py-1.5 px-2 rounded-lg text-xs border border-stone-300 dark:border-slate-700 cursor-pointer transition-colors"
+              >
+                Relaxed
+              </button>
+            </div>
+          </div>
+
+          <!-- Page Width -->
+          <div>
+            <p class="text-xs font-medium text-stone-500 dark:text-slate-400 mb-1.5">
+              Line Width
+            </p>
+            <div class="grid grid-cols-3 gap-1.5">
+              <button
+                type="button"
+                data-pref-width="58ch"
+                class="pref-width-btn py-1.5 px-2 rounded-lg text-xs border border-stone-300 dark:border-slate-700 cursor-pointer transition-colors"
+              >
+                Narrow
+              </button>
+              <button
+                type="button"
+                data-pref-width="68ch"
+                class="pref-width-btn py-1.5 px-2 rounded-lg text-xs border border-stone-300 dark:border-slate-700 cursor-pointer transition-colors"
+              >
+                Medium
+              </button>
+              <button
+                type="button"
+                data-pref-width="78ch"
+                class="pref-width-btn py-1.5 px-2 rounded-lg text-xs border border-stone-300 dark:border-slate-700 cursor-pointer transition-colors"
+              >
+                Wide
+              </button>
+            </div>
+          </div>
         </div>
-        <br />
+      </div>
+    </div>
+  </header>
 
+  <!-- Main Reader Surface -->
+  <main class="flex-1 px-2 sm:px-6 py-4 sm:py-8 flex flex-col items-center">
+    <article
+      id="reader_surface"
+      class="w-full max-w-[840px] rounded-2xl border border-stone-300/80 dark:border-slate-800/90 bg-stone-50/95 dark:bg-slate-900/85 shadow-xl px-5 sm:px-10 md:px-14 py-8 sm:py-12 transition-colors"
+    >
+      <!-- Chapter Header -->
+      <header class="mx-auto mb-8 pb-7 border-b border-stone-200 dark:border-slate-800 reader-measure">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <a
+            href={tocHref}
+            class="text-xs font-semibold uppercase tracking-widest text-blue-600 dark:text-sky-400 hover:underline"
+          >
+            {chapter.data.book} · Chapter {chapter.data.chapNum}
+          </a>
+          <span class="text-xs font-medium tabular-nums text-stone-500 dark:text-slate-400">
+            {chapterIndex + 1} of {totalChapters}
+          </span>
+        </div>
+
+        <h1
+          id="chapter_main_title"
+          class="text-2xl sm:text-4xl font-bold tracking-tight text-stone-900 dark:text-slate-50 leading-tight"
+        >
+          {chapter.data.title}
+        </h1>
+
+        <div class="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs sm:text-sm text-stone-500 dark:text-slate-400">
+          <span>Published {pubDateFormatted}</span>
+          {updatedDateFormatted && (
+            <>
+              <span aria-hidden="true">·</span>
+              <span>Updated {updatedDateFormatted}</span>
+            </>
+          )}
+          <span aria-hidden="true">·</span>
+          <span>{readMinutes} min read</span>
+          <span aria-hidden="true">·</span>
+          <span>{wordCount.toLocaleString()} words</span>
+        </div>
+      </header>
+
+      <!-- Story Prose -->
+      <div class="reader-prose reader-measure mx-auto">
         <Content />
-        <PageNav
-          prevHref={prevHref}
-          prevTitle={prevBook?.data.title}
-          nextHref={nextHref}
-          nextTitle={nextBook?.data.title}
-        />
-      </article>
-    </main>
-  </div>
-  <script>
+      </div>
+
+      <!-- End of Chapter Ornament & Book Progress -->
+      <footer class="mx-auto mt-12 pt-8 border-t border-stone-200 dark:border-slate-800 reader-measure">
+        <div class="flex flex-col items-center text-center mb-8">
+          <span class="text-xs font-semibold uppercase tracking-[0.2em] text-stone-400 dark:text-slate-500">
+            End of Chapter {chapter.data.chapNum}
+          </span>
+          <div class="mt-3 w-48 h-1.5 rounded-full bg-stone-200 dark:bg-slate-800 overflow-hidden">
+            <div
+              class="h-full rounded-full bg-blue-600 dark:bg-sky-400"
+              style={`width: ${bookProgressPct}%`}
+            ></div>
+          </div>
+          <span class="mt-1.5 text-xs text-stone-500 dark:text-slate-400 tabular-nums">
+            {bookProgressPct}% through {chapter.data.book}
+          </span>
+        </div>
+
+        <!-- Chapter Navigation Cards -->
+        <nav
+          aria-label="Chapter navigation"
+          class="grid grid-cols-1 sm:grid-cols-2 gap-3"
+        >
+          {prevHref && prevChapter ? (
+            <a
+              id="prev_chapter_link"
+              href={prevHref}
+              class="group flex items-center gap-3 p-4 rounded-xl border border-stone-300/80 dark:border-slate-700/80 bg-stone-100/80 dark:bg-slate-800/60 hover:border-blue-500/60 dark:hover:border-sky-400/60 hover:bg-stone-200/60 dark:hover:bg-slate-800 transition-all"
+            >
+              <span class="text-xl text-stone-500 dark:text-slate-400 group-hover:text-blue-600 dark:group-hover:text-sky-400 transition-transform duration-200 group-hover:-translate-x-1">
+                ←
+              </span>
+              <div class="min-w-0">
+                <p class="text-[11px] font-semibold uppercase tracking-wider text-stone-500 dark:text-slate-400">
+                  Previous · Ch. {prevChapter.data.chapNum}
+                </p>
+                <p class="text-sm font-semibold text-stone-900 dark:text-slate-100 truncate group-hover:text-blue-600 dark:group-hover:text-sky-400 transition-colors">
+                  {prevChapter.data.title}
+                </p>
+              </div>
+            </a>
+          ) : (
+            <a
+              href={tocHref}
+              class="group flex items-center gap-3 p-4 rounded-xl border border-stone-300/80 dark:border-slate-700/80 bg-stone-100/60 dark:bg-slate-800/40 hover:border-blue-500/60 dark:hover:border-sky-400/60 transition-all"
+            >
+              <span class="text-xl text-stone-500 dark:text-slate-400">←</span>
+              <div class="min-w-0">
+                <p class="text-[11px] font-semibold uppercase tracking-wider text-stone-500 dark:text-slate-400">
+                  Book Overview
+                </p>
+                <p class="text-sm font-semibold text-stone-900 dark:text-slate-100 truncate">
+                  Table of Contents
+                </p>
+              </div>
+            </a>
+          )}
+
+          {nextHref && nextChapter ? (
+            <a
+              id="next_chapter_link"
+              href={nextHref}
+              class="group flex items-center justify-end gap-3 p-4 rounded-xl border border-stone-300/80 dark:border-slate-700/80 bg-stone-900 text-stone-50 hover:bg-stone-800 dark:bg-sky-500/15 dark:text-slate-100 dark:border-sky-400/40 dark:hover:bg-sky-500/25 transition-all text-right"
+            >
+              <div class="min-w-0">
+                <p class="text-[11px] font-semibold uppercase tracking-wider text-stone-300 dark:text-sky-300">
+                  Next · Ch. {nextChapter.data.chapNum}
+                </p>
+                <p class="text-sm font-semibold truncate">
+                  {nextChapter.data.title}
+                </p>
+              </div>
+              <span class="text-xl transition-transform duration-200 group-hover:translate-x-1">
+                →
+              </span>
+            </a>
+          ) : (
+            <a
+              href={`${baseUrl}/writing`}
+              class="group flex items-center justify-end gap-3 p-4 rounded-xl border border-stone-300/80 dark:border-slate-700/80 bg-stone-100/80 dark:bg-slate-800/60 hover:border-blue-500/60 dark:hover:border-sky-400/60 transition-all text-right"
+            >
+              <div class="min-w-0">
+                <p class="text-[11px] font-semibold uppercase tracking-wider text-stone-500 dark:text-slate-400">
+                  Latest Chapter Reached
+                </p>
+                <p class="text-sm font-semibold text-stone-900 dark:text-slate-100 truncate group-hover:text-blue-600 dark:group-hover:text-sky-400">
+                  Browse More Stories
+                </p>
+              </div>
+              <span class="text-xl text-stone-500 dark:text-slate-400 group-hover:translate-x-1 transition-transform">
+                →
+              </span>
+            </a>
+          )}
+        </nav>
+
+        <div class="mt-4 flex items-center justify-between text-xs text-stone-500 dark:text-slate-400">
+          <a
+            href={tocHref}
+            class="hover:text-blue-600 dark:hover:text-sky-400 underline underline-offset-2"
+          >
+            All Chapters ({totalChapters})
+          </a>
+          <span class="hidden sm:inline">
+            Tip: Use ← / → arrow keys to switch chapters
+          </span>
+        </div>
+      </footer>
+    </article>
+  </main>
+
+  <!-- Floating Back-to-Top Button -->
+  <button
+    id="back_to_top_btn"
+    type="button"
+    aria-label="Scroll back to top"
+    class="fixed bottom-5 right-5 z-30 w-10 h-10 rounded-full border border-stone-300 dark:border-slate-700 bg-stone-50/90 dark:bg-slate-800/90 backdrop-blur-md text-stone-700 dark:text-slate-200 shadow-lg flex items-center justify-center opacity-0 pointer-events-none translate-y-2 hover:border-blue-500 dark:hover:border-sky-400 transition-all duration-200 cursor-pointer"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="w-4 h-4"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      stroke-width="2"
+    >
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+
+  <!-- Slide-Over Table of Contents Drawer -->
+  <div
+    id="drawer_backdrop"
+    class="fixed inset-0 z-50 bg-black/50 backdrop-blur-xs hidden opacity-0 transition-opacity duration-200"
+  ></div>
+  <aside
+    id="chapter_drawer"
+    aria-label="Book chapters drawer"
+    class="fixed top-0 right-0 bottom-0 z-50 w-full max-w-sm bg-stone-50 dark:bg-slate-900 border-l border-stone-300 dark:border-slate-800 shadow-2xl translate-x-full transition-transform duration-250 flex flex-col"
+  >
+    <div class="p-4 border-b border-stone-200 dark:border-slate-800 flex items-center justify-between gap-2">
+      <div class="min-w-0">
+        <p class="text-[11px] font-semibold uppercase tracking-wider text-blue-600 dark:text-sky-400">
+          Table of Contents
+        </p>
+        <h2 class="text-base font-bold text-stone-900 dark:text-slate-100 truncate">
+          {chapter.data.book}
+        </h2>
+      </div>
+      <button
+        id="close_drawer_btn"
+        type="button"
+        aria-label="Close chapter list"
+        class="w-8 h-8 rounded-lg flex items-center justify-center text-stone-500 dark:text-slate-400 hover:bg-stone-200 dark:hover:bg-slate-800 cursor-pointer"
+      >
+        ✕
+      </button>
+    </div>
+
+    <div class="p-3 border-b border-stone-200 dark:border-slate-800">
+      <input
+        id="drawer_search"
+        type="search"
+        placeholder="Jump to chapter..."
+        class="w-full px-3 py-1.5 text-sm rounded-lg border border-stone-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-stone-800 dark:text-slate-100 placeholder:text-stone-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500/40 dark:focus:ring-sky-400/40"
+      />
+    </div>
+
+    <ul
+      id="drawer_chapter_list"
+      class="flex-1 overflow-y-auto divide-y divide-stone-200/70 dark:divide-slate-800/70"
+    >
+      {bookChapters.map((item) => {
+        const isActive = item.id === chapter.id;
+        return (
+          <li
+            class="drawer-chapter-item"
+            data-search={`${item.data.chapNum} ${item.data.title.toLowerCase()}`}
+            data-active={isActive ? "true" : "false"}
+          >
+            <a
+              href={`${baseUrl}/writing/${item.id}`}
+              class:list={[
+                "flex items-center gap-3 px-4 py-3 text-sm transition-colors",
+                isActive
+                  ? "bg-blue-50 dark:bg-sky-500/15 text-blue-700 dark:text-sky-300 font-semibold border-l-4 border-blue-600 dark:border-sky-400"
+                  : "text-stone-700 dark:text-slate-300 hover:bg-stone-200/60 dark:hover:bg-slate-800/70",
+              ]}
+            >
+              <span class="tabular-nums text-xs font-semibold opacity-70 w-10 shrink-0">
+                Ch. {item.data.chapNum}
+              </span>
+              <span class="truncate flex-1">{item.data.title}</span>
+              {isActive && (
+                <span class="text-[10px] uppercase tracking-wider font-bold shrink-0">
+                  Now
+                </span>
+              )}
+            </a>
+          </li>
+        );
+      })}
+    </ul>
+  </aside>
+
+  <script
+    define:vars={{
+      bookId,
+      chapterId: chapter.id,
+      chapNum: chapter.data.chapNum,
+      chapterTitle: chapter.data.title,
+      currentUrl,
+      prevHref,
+      nextHref,
+    }}
+  >
     window.addEventListener("DOMContentLoaded", () => {
-      const isDark = document.documentElement.classList.contains("dark");
-      document
-        .getElementById("day_button")
-        ?.classList.toggle("hidden", !isDark);
-      document
-        .getElementById("night_button")
-        ?.classList.toggle("hidden", isDark);
-      document
-        .getElementById("night_button")
-        ?.addEventListener("click", () => switchTheme(true));
-      document
-        .getElementById("day_button")
-        ?.addEventListener("click", () => switchTheme(false));
-    });
-
-    function switchTheme(isDay: boolean) {
       const html = document.documentElement;
-      const night = document.getElementById("night_button");
-      const day = document.getElementById("day_button");
+      const surface = document.getElementById("reader_surface");
 
-      if (isDay) {
-        html.classList.add("dark");
-        localStorage.setItem("theme", "dark");
-        night?.classList.add("hidden");
-        day?.classList.remove("hidden");
-      } else {
-        html.classList.remove("dark");
-        localStorage.setItem("theme", "light");
-        night?.classList.remove("hidden");
-        day?.classList.add("hidden");
+      // Theme toggle
+      document.getElementById("theme_toggle")?.addEventListener("click", () => {
+        const nextDark = !html.classList.contains("dark");
+        html.classList.toggle("dark", nextDark);
+        localStorage.setItem("theme", nextDark ? "dark" : "light");
+      });
+
+      // Persist reading progress for this book
+      const progressKey = `reader-progress:${bookId}`;
+      try {
+        const raw = localStorage.getItem(progressKey);
+        const prev = raw ? JSON.parse(raw) : {};
+        const readSet = new Set(
+          Array.isArray(prev.readChapters) ? prev.readChapters : [],
+        );
+        readSet.add(chapterId);
+        localStorage.setItem(
+          progressKey,
+          JSON.stringify({
+            lastChapterId: chapterId,
+            lastChapterNum: chapNum,
+            lastChapterTitle: chapterTitle,
+            lastUrl: currentUrl,
+            readChapters: Array.from(readSet),
+            updatedAt: Date.now(),
+          }),
+        );
+      } catch {
+        // Ignore storage errors
       }
-    }
+
+      // Reader display preferences
+      const prefsKey = "reader-prefs";
+      const defaultPrefs = {
+        font: "serif",
+        size: 18,
+        leading: "1.85",
+        width: "68ch",
+      };
+
+      function loadPrefs() {
+        try {
+          const raw = localStorage.getItem(prefsKey);
+          return raw
+            ? { ...defaultPrefs, ...JSON.parse(raw) }
+            : { ...defaultPrefs };
+        } catch {
+          return { ...defaultPrefs };
+        }
+      }
+
+      let prefs = loadPrefs();
+      const fontMap = {
+        serif: 'Georgia, Cambria, "Times New Roman", Times, serif',
+        sans: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+        mono: "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
+      };
+
+      const sizeReadout = document.getElementById("font_size_readout");
+
+      function applyPrefs() {
+        if (!surface) return;
+        surface.style.setProperty(
+          "--reader-font",
+          fontMap[prefs.font] || fontMap.serif,
+        );
+        surface.style.setProperty("--reader-size", `${prefs.size}px`);
+        surface.style.setProperty("--reader-leading", prefs.leading);
+        surface.style.setProperty("--reader-width", prefs.width);
+
+        if (sizeReadout) sizeReadout.textContent = `${prefs.size}px`;
+
+        document.querySelectorAll(".pref-font-btn").forEach((btn) => {
+          const active = btn.getAttribute("data-pref-font") === prefs.font;
+          btn.classList.toggle("bg-stone-900", active);
+          btn.classList.toggle("text-stone-50", active);
+          btn.classList.toggle("dark:bg-sky-500", active);
+          btn.classList.toggle("dark:text-slate-950", active);
+        });
+
+        document.querySelectorAll(".pref-leading-btn").forEach((btn) => {
+          const active =
+            btn.getAttribute("data-pref-leading") === prefs.leading;
+          btn.classList.toggle("bg-stone-900", active);
+          btn.classList.toggle("text-stone-50", active);
+          btn.classList.toggle("dark:bg-sky-500", active);
+          btn.classList.toggle("dark:text-slate-950", active);
+        });
+
+        document.querySelectorAll(".pref-width-btn").forEach((btn) => {
+          const active = btn.getAttribute("data-pref-width") === prefs.width;
+          btn.classList.toggle("bg-stone-900", active);
+          btn.classList.toggle("text-stone-50", active);
+          btn.classList.toggle("dark:bg-sky-500", active);
+          btn.classList.toggle("dark:text-slate-950", active);
+        });
+
+        try {
+          localStorage.setItem(prefsKey, JSON.stringify(prefs));
+        } catch {
+          // Ignore storage errors
+        }
+      }
+
+      applyPrefs();
+
+      document.querySelectorAll(".pref-font-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          prefs.font = btn.getAttribute("data-pref-font") || "serif";
+          applyPrefs();
+        });
+      });
+
+      document.querySelectorAll(".pref-leading-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          prefs.leading = btn.getAttribute("data-pref-leading") || "1.85";
+          applyPrefs();
+        });
+      });
+
+      document.querySelectorAll(".pref-width-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          prefs.width = btn.getAttribute("data-pref-width") || "68ch";
+          applyPrefs();
+        });
+      });
+
+      document.getElementById("font_dec_btn")?.addEventListener("click", () => {
+        prefs.size = Math.max(15, prefs.size - 1);
+        applyPrefs();
+      });
+
+      document.getElementById("font_inc_btn")?.addEventListener("click", () => {
+        prefs.size = Math.min(24, prefs.size + 1);
+        applyPrefs();
+      });
+
+      document
+        .getElementById("reset_prefs_btn")
+        ?.addEventListener("click", () => {
+          prefs = { ...defaultPrefs };
+          applyPrefs();
+        });
+
+      // Settings popover toggle
+      const settingsBtn = document.getElementById("settings_toggle_btn");
+      const settingsPopover = document.getElementById("settings_popover");
+
+      function toggleSettings(forceState) {
+        const isOpen =
+          typeof forceState === "boolean"
+            ? forceState
+            : settingsPopover?.classList.contains("hidden");
+        settingsPopover?.classList.toggle("hidden", !isOpen);
+        settingsBtn?.setAttribute("aria-expanded", String(Boolean(isOpen)));
+      }
+
+      settingsBtn?.addEventListener("click", (e) => {
+        e.stopPropagation();
+        toggleSettings();
+      });
+
+      document.addEventListener("click", (e) => {
+        if (
+          settingsPopover &&
+          !settingsPopover.classList.contains("hidden") &&
+          !settingsPopover.contains(e.target) &&
+          e.target !== settingsBtn
+        ) {
+          toggleSettings(false);
+        }
+      });
+
+      // Chapter drawer
+      const drawer = document.getElementById("chapter_drawer");
+      const backdrop = document.getElementById("drawer_backdrop");
+      const openDrawerBtn = document.getElementById("open_drawer_btn");
+      const closeDrawerBtn = document.getElementById("close_drawer_btn");
+      const drawerSearch = document.getElementById("drawer_search");
+      const drawerItems = Array.from(
+        document.querySelectorAll(".drawer-chapter-item"),
+      );
+
+      function openDrawer() {
+        toggleSettings(false);
+        backdrop?.classList.remove("hidden");
+        requestAnimationFrame(() => {
+          backdrop?.classList.remove("opacity-0");
+          drawer?.classList.remove("translate-x-full");
+        });
+        openDrawerBtn?.setAttribute("aria-expanded", "true");
+        const activeItem = drawer?.querySelector('[data-active="true"]');
+        activeItem?.scrollIntoView({ block: "center" });
+      }
+
+      function closeDrawer() {
+        backdrop?.classList.add("opacity-0");
+        drawer?.classList.add("translate-x-full");
+        openDrawerBtn?.setAttribute("aria-expanded", "false");
+        setTimeout(() => {
+          backdrop?.classList.add("hidden");
+        }, 200);
+      }
+
+      openDrawerBtn?.addEventListener("click", openDrawer);
+      closeDrawerBtn?.addEventListener("click", closeDrawer);
+      backdrop?.addEventListener("click", closeDrawer);
+
+      drawerSearch?.addEventListener("input", () => {
+        const query = drawerSearch.value.trim().toLowerCase();
+        drawerItems.forEach((item) => {
+          const text = item.getAttribute("data-search") || "";
+          item.classList.toggle(
+            "hidden",
+            Boolean(query) && !text.includes(query),
+          );
+        });
+      });
+
+      // Scroll progress, auto-hide header, & back-to-top
+      const progressBar = document.getElementById("scroll_progress_bar");
+      const readerHeader = document.getElementById("reader_header");
+      const headerTitle = document.getElementById("header_chapter_title");
+      const mainTitle = document.getElementById("chapter_main_title");
+      const backToTopBtn = document.getElementById("back_to_top_btn");
+      let lastScrollY = window.scrollY;
+
+      function onScroll() {
+        const currentY = window.scrollY;
+        const maxScroll =
+          document.documentElement.scrollHeight - window.innerHeight;
+        const pct =
+          maxScroll > 0
+            ? Math.min(100, Math.max(0, (currentY / maxScroll) * 100))
+            : 0;
+
+        if (progressBar) {
+          progressBar.style.width = `${pct.toFixed(1)}%`;
+        }
+
+        const pastMainTitle = mainTitle
+          ? mainTitle.getBoundingClientRect().bottom < 64
+          : currentY > 140;
+        headerTitle?.classList.toggle("opacity-0", !pastMainTitle);
+
+        const settingsOpen =
+          settingsPopover && !settingsPopover.classList.contains("hidden");
+        const drawerOpen =
+          drawer && !drawer.classList.contains("translate-x-full");
+
+        if (
+          currentY > 140 &&
+          currentY > lastScrollY + 6 &&
+          !settingsOpen &&
+          !drawerOpen
+        ) {
+          readerHeader?.classList.add("-translate-y-full");
+        } else if (currentY < lastScrollY - 4 || currentY <= 140) {
+          readerHeader?.classList.remove("-translate-y-full");
+        }
+
+        if (backToTopBtn) {
+          const showTop = currentY > 500;
+          backToTopBtn.classList.toggle("opacity-0", !showTop);
+          backToTopBtn.classList.toggle("pointer-events-none", !showTop);
+          backToTopBtn.classList.toggle("translate-y-2", !showTop);
+        }
+
+        lastScrollY = currentY;
+      }
+
+      window.addEventListener("scroll", onScroll, { passive: true });
+      onScroll();
+
+      backToTopBtn?.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      // Keyboard navigation
+      document.addEventListener("keydown", (e) => {
+        const tag = document.activeElement?.tagName;
+        if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") {
+          if (e.key === "Escape") {
+            closeDrawer();
+            toggleSettings(false);
+          }
+          return;
+        }
+
+        if (e.key === "Escape") {
+          closeDrawer();
+          toggleSettings(false);
+        } else if (e.key === "ArrowLeft" && prevHref) {
+          window.location.href = prevHref;
+        } else if (e.key === "ArrowRight" && nextHref) {
+          window.location.href = nextHref;
+        }
+      });
+    });
   </script>
 </Layout>
+
+<style>
+  .reader-measure {
+    max-width: var(--reader-width, 68ch);
+  }
+
+  .reader-prose {
+    font-family: var(
+      --reader-font,
+      Georgia,
+      Cambria,
+      "Times New Roman",
+      Times,
+      serif
+    );
+    font-size: var(--reader-size, 18px);
+    line-height: var(--reader-leading, 1.85);
+    color: rgb(41 37 36); /* stone-800 */
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+  }
+
+  :global(.dark) .reader-prose {
+    color: rgb(226 232 240); /* slate-200 */
+  }
+
+  .reader-prose :global(p) {
+    margin-bottom: 1.35em;
+  }
+
+  .reader-prose :global(h1),
+  .reader-prose :global(h2),
+  .reader-prose :global(h3),
+  .reader-prose :global(h4) {
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 2em;
+    margin-bottom: 0.75em;
+    color: rgb(28 25 23); /* stone-900 */
+  }
+
+  :global(.dark) .reader-prose :global(h1),
+  :global(.dark) .reader-prose :global(h2),
+  :global(.dark) .reader-prose :global(h3),
+  :global(.dark) .reader-prose :global(h4) {
+    color: rgb(248 250 252); /* slate-50 */
+  }
+
+  .reader-prose :global(h2) {
+    font-size: 1.4em;
+    padding-bottom: 0.35em;
+    border-bottom: 1px solid rgba(120, 113, 108, 0.25);
+  }
+
+  :global(.dark) .reader-prose :global(h2) {
+    border-bottom-color: rgba(51, 65, 85, 0.6);
+  }
+
+  .reader-prose :global(h3) {
+    font-size: 1.2em;
+  }
+
+  .reader-prose :global(em) {
+    font-style: italic;
+  }
+
+  .reader-prose :global(strong) {
+    font-weight: 700;
+    color: rgb(28 25 23);
+  }
+
+  :global(.dark) .reader-prose :global(strong) {
+    color: rgb(248 250 252);
+  }
+
+  .reader-prose :global(a) {
+    color: rgb(37 99 235); /* blue-600 */
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  :global(.dark) .reader-prose :global(a) {
+    color: rgb(56 189 248); /* sky-400 */
+  }
+
+  /* Literary scene-break ornament for horizontal rules */
+  .reader-prose :global(hr) {
+    border: none;
+    height: auto;
+    margin: 2.5em 0;
+    text-align: center;
+    overflow: visible;
+  }
+
+  .reader-prose :global(hr)::before {
+    content: "*   *   *";
+    letter-spacing: 0.35em;
+    font-size: 0.9em;
+    color: rgb(120 113 108); /* stone-500 */
+  }
+
+  :global(.dark) .reader-prose :global(hr)::before {
+    color: rgb(100 116 139); /* slate-500 */
+  }
+
+  .reader-prose :global(blockquote) {
+    border-left: 3px solid rgb(37 99 235);
+    background: rgba(231, 229, 228, 0.55); /* stone-200 */
+    padding: 0.9em 1.2em;
+    margin: 1.75em 0;
+    border-radius: 0 0.5rem 0.5rem 0;
+    font-style: italic;
+    color: rgb(68 64 60); /* stone-700 */
+  }
+
+  :global(.dark) .reader-prose :global(blockquote) {
+    border-left-color: rgb(56 189 248);
+    background: rgba(30, 41, 59, 0.7);
+    color: rgb(203 213 225); /* slate-300 */
+  }
+
+  .reader-prose :global(blockquote p:last-child) {
+    margin-bottom: 0;
+  }
+
+  .reader-prose :global(ul),
+  .reader-prose :global(ol) {
+    margin: 1.25em 0 1.5em 1.5em;
+  }
+
+  .reader-prose :global(ul) {
+    list-style-type: disc;
+  }
+
+  .reader-prose :global(ol) {
+    list-style-type: decimal;
+  }
+
+  .reader-prose :global(li) {
+    margin-bottom: 0.45em;
+  }
+
+  .reader-prose :global(code) {
+    font-family:
+      ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.88em;
+    padding: 0.15em 0.4em;
+    border-radius: 0.25rem;
+    background: rgba(214, 211, 209, 0.7);
+    color: rgb(41 37 36);
+  }
+
+  :global(.dark) .reader-prose :global(code) {
+    background: rgb(15 23 42);
+    color: rgb(226 232 240);
+  }
+
+  .reader-prose :global(pre) {
+    background: rgb(28 25 23);
+    color: rgb(245 245 244);
+    border-radius: 0.75rem;
+    padding: 1rem 1.25rem;
+    overflow-x: auto;
+    margin: 1.75em 0;
+    font-size: 0.85em;
+  }
+
+  :global(.dark) .reader-prose :global(pre) {
+    background: rgb(2 6 23);
+    border: 1px solid rgba(51, 65, 85, 0.6);
+  }
+
+  .reader-prose :global(pre code) {
+    background: transparent;
+    padding: 0;
+    color: inherit;
+  }
+
+  .reader-prose :global(img) {
+    border-radius: 0.75rem;
+    margin: 2em auto;
+    max-width: 100%;
+    box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.2);
+  }
+</style>
